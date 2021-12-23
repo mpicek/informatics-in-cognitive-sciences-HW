@@ -1,0 +1,111 @@
+---
+title: "IKV1 - Hypothesis 1"
+author: "Martin Picek"
+date: "23rd of November 2021"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if(!require(tidyverse)) {install.packages("tidyverse")}
+if(!require(pander)) {install.packages("pander")}
+if(!require(ez)) {install.packages("ez")}
+
+library(tidyverse)
+library(ez)
+library(stringr)
+
+```
+
+```{r download data, message = F}
+df <- read_csv("/home/mpicek/Downloads/ETRA2019Challenge/DataSummary.csv")
+df <- df %>% filter(Stimulus == "Waldo") %>% filter(Task == "FreeViewing")
+```
+
+Task is FreeViewing as the subject could explore the scene. In fixation task,
+the subject had to fixate his/her sight on a cross and therefore couldn't explore
+the scene for Waldo.
+```{r}
+subject_not_formatted <- c("9", "19", "22", "58", "59", "60", "62", "SMC")
+subject_names <- c("009", "019", "022", "058", "059", "060", "062", "SMC")
+subjects <- list()
+found <- filter(df, ClickH_1 != "NaN")
+not_found <- filter(df, ClickH_1 == "NaN")
+
+```
+
+```{r}
+wilcox_pvals_l <- list()
+t_test_pvals_l <- list()
+wilcox_pvals_r <- list()
+t_test_pvals_r <- list()
+
+num_of_maxes <- 5
+
+for (i in seq_along(subject_not_formatted)){
+
+  found_maxes_l <- list()
+  not_found_maxes_l <- list()
+  found_maxes_r <- list()
+  not_found_maxes_r <- list()
+  
+  found_sub_rows <- found %>% filter(Subject == subject_not_formatted[i])
+  not_found_sub_rows <- not_found %>% filter(Subject == subject_not_formatted[i])
+  
+  # trials with leading zeros
+  found_trials <-str_pad(found_sub_rows$TrialNumber, 3, pad = "0")
+  not_found_trials <-str_pad(not_found_sub_rows$TrialNumber, 3, pad = "0")
+
+  dir_name <- paste("/home/mpicek/Downloads/ETRA2019Challenge/data/", subject_names[i], sep="")
+
+  if(length(found_sub_rows$TrialNumber) == 0 || length(not_found_sub_rows$TrialNumber) == 0){
+    next
+  }
+  
+  for(j in seq_along(found_trials)){
+    patt <- paste(paste(subject_names[i], found_trials[j], sep="_"), "FreeViewing_Waldo", sep="_")
+    files <- list.files(path = dir_name, pattern = patt)
+    
+    for(f in seq_along(files)){
+      temp_df <- read_csv(paste(dir_name, files[f], sep="/"))
+      maxes_l <- tail(temp_df[order(temp_df$LP),], num_of_maxes)
+      found_maxes_l <- rbind(found_maxes_l, maxes_l)
+      maxes_r <- tail(temp_df[order(temp_df$RP),], num_of_maxes)
+      found_maxes_r <- rbind(found_maxes_r, maxes_r)
+    }
+  }
+  
+  for(j in seq_along(not_found_trials)){
+    patt <- paste(paste(subject_names[i], not_found_trials[j], sep="_"), "FreeViewing_Waldo", sep="_")
+    files <- list.files(path = dir_name, pattern = patt)
+    
+    for(f in seq_along(files)){
+      temp_df <- read_csv(paste(dir_name, files[f], sep="/"))
+      maxes_l <- tail(temp_df[order(temp_df$LP),], num_of_maxes)
+      not_found_maxes_l <- rbind(not_found_maxes_l, maxes_l)
+      maxes_r <- tail(temp_df[order(temp_df$RP),], num_of_maxes)
+      not_found_maxes_r <- rbind(not_found_maxes_r, maxes_r)
+    }
+  }
+  
+  # perform the t-test and return a p-value - left pupil
+  t_test_pvals_l <- c(t_test_pvals_l, t.test(found_maxes_l$LP, not_found_maxes_l$LP)$p.value) 
+  # perform the wilcox rank-sum test - left pupil
+  wilcox_pvals_l <- c(wilcox_pvals_l, wilcox.test(found_maxes_l$LP, not_found_maxes_l$LP, paired=FALSE)$p.value)
+  
+  # perform the t-test and return a p-value - right pupil
+  t_test_pvals_r <- c(t_test_pvals_r, t.test(found_maxes_r$RP, not_found_maxes_r$RP)$p.value) 
+  # perform the wilcox rank-sum test - right pupil
+  wilcox_pvals_r <- c(wilcox_pvals_r, wilcox.test(found_maxes_r$RP, not_found_maxes_r$RP, paired=FALSE)$p.value)
+}
+```
+
+
+```{r}
+unlist(t_test_pvals_l)
+unlist(t_test_pvals_r)
+unlist(wilcox_pvals_l)
+unlist(wilcox_pvals_r)
+```
