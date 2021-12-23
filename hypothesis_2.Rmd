@@ -1,0 +1,138 @@
+---
+title: "IKV1 - Hypothesis 2"
+author: "Martin Picek"
+date: "22th of November 2021"
+output: html_document
+---
+
+## Hypothesis 2
+### Pupil size the same on blank and natural stimuli (when free viewing).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if(!require(tidyverse)) {install.packages("tidyverse")}
+if(!require(pander)) {install.packages("pander")}
+if(!require(ez)) {install.packages("ez")}
+
+library(tidyverse)
+library(ez)
+
+```
+
+```{r}
+subject_names <- c("009", "019", "022", "058", "059", "060", "062", "SMC")
+subjects <- list()
+wilcox_pvals_l <- list()
+t_test_pvals_l <- list()
+wilcox_pvals_r <- list()
+t_test_pvals_r <- list()
+
+for (i in seq_along(subject_names)){ # iterate over subjects
+  blank_df <- list()
+  natural_df <- list()
+  dir_name <- paste("/home/mpicek/Downloads/ETRA2019Challenge/data/", subject_names[i], sep="")
+  
+  blank_files <- list.files(dir_name, pattern = "FreeViewing_Blank")
+  natural_files <- list.files(dir_name, pattern = "FreeViewing_Natural")
+  
+  # connect all the data files with blank stimulus
+  for(b in seq_along(blank_files)){
+      blank_df <- rbind(blank_df, read_csv(paste(dir_name, blank_files[b], sep="/")))
+  }
+
+  # connect all the data files with natural stimulus
+  for(n in seq_along(natural_files)){
+      natural_df <- rbind(natural_df, read_csv(paste(dir_name, natural_files[n], sep="/")))
+  }
+  
+  # perform the t-test and return a p-value - left pupil
+  t_test_pvals_l <- c(t_test_pvals_l, t.test(blank_df$LP, natural_df$LP)$p.value) 
+  # perform the wilcox rank-sum test - left pupil
+  wilcox_pvals_l <- c(wilcox_pvals_l, wilcox.test(blank_df$LP, natural_df$LP, paired=FALSE)$p.value)
+  
+  # perform the t-test and return a p-value - right pupil
+  t_test_pvals_r <- c(t_test_pvals_r, t.test(blank_df$LP, natural_df$RP)$p.value) 
+  # perform the wilcox rank-sum test - right pupil
+  wilcox_pvals_r <- c(wilcox_pvals_r, wilcox.test(blank_df$LP, natural_df$RP, paired=FALSE)$p.value)
+  
+}
+
+```
+
+```{r}
+unlist(t_test_pvals_l)
+unlist(t_test_pvals_r)
+unlist(wilcox_pvals_l)
+unlist(wilcox_pvals_r)
+```
+
+```{r}
+subject_names <- c("009", "019", "022", "058", "059", "060", "062", "SMC")
+subjects <- list()
+
+blank_df_019 <- list()
+natural_df_019 <- list()
+blank_df_009 <- list()
+natural_df_009 <- list()
+
+for (i in seq_along(subject_names)){ # iterate over subjects
+  dir_name <- paste("/home/mpicek/Downloads/ETRA2019Challenge/data/", subject_names[i], sep="")
+  
+  blank_files <- list.files(dir_name, pattern = "FreeViewing_Blank")
+  natural_files <- list.files(dir_name, pattern = "FreeViewing_Natural")
+  
+  # connect all the data files with blank stimulus
+  for(b in seq_along(blank_files)){
+      if(subject_names[i] == "019"){
+        blank_df_019 <- rbind(blank_df_019, read_csv(paste(dir_name, blank_files[b], sep="/")))
+      }
+      if(subject_names[i] == "009"){
+        blank_df_009 <- rbind(blank_df_009, read_csv(paste(dir_name, blank_files[b], sep="/")))
+      }
+  }
+
+  # connect all the data files with natural stimulus
+  for(n in seq_along(natural_files)){
+      natural_df <- rbind(natural_df, read_csv(paste(dir_name, natural_files[n], sep="/")))
+      if(subject_names[i] == "019"){
+        natural_df_019 <- rbind(natural_df_019, read_csv(paste(dir_name, natural_files[n], sep="/")))
+      }
+      if(subject_names[i] == "009"){
+        natural_df_009 <- rbind(natural_df_009, read_csv(paste(dir_name, natural_files[n], sep="/")))
+      }
+  }
+}
+
+```
+
+[Draw histograms over each other](https://www.dataanalytics.org.uk/plot-two-overlapping-histograms-on-one-chart-in-r/)
+
+```{r}
+plot_2_histograms <- function(blank_df, natural_df){
+  b <- min(blank_df$LP, natural_df$LP)
+  e <- max(blank_df$LP, natural_df$LP)
+  ax <- pretty(b:e, n = 25)
+  blank_hist <- hist(blank_df$LP, breaks = ax, plot = FALSE)
+  natural_hist <- hist(natural_df$LP, breaks = ax, plot = FALSE)
+  c1 <- rgb(173,216,230,max = 255, alpha = 80, names = "lt.blue")
+  c2 <- rgb(255,192,203, max = 255, alpha = 80, names = "lt.pink")
+  plot(blank_hist, col = c1)
+  plot(natural_hist, col = c2, add=TRUE)
+}
+```
+
+```{r}
+hist(blank_df_009$LP, main="Histogram of left pupil size of subject 009, blank stimulus is presented", xlab="Left pupil size")
+```
+```{r}
+hist(blank_df_019$LP, main="Histogram of left pupil size of subject 019, blank stimulus is presented", xlab="Left pupil size")
+```
+
+```{r}
+plot_2_histograms(blank_df_009, natural_df_009)
+```
+
+```{r}
+plot_2_histograms(blank_df_019, natural_df_019)
+```
