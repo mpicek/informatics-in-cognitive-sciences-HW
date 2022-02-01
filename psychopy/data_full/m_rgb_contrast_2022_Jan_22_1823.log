@@ -1,0 +1,3278 @@
+3.2784 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+28.6926 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000015ED5FA5BA8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000015ED5F8E0B8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+28.6930 	EXP 	window1: mouseVisible = True
+28.6931 	EXP 	window1: recordFrameIntervals = False
+28.8586 	EXP 	window1: recordFrameIntervals = True
+29.0420 	EXP 	window1: recordFrameIntervals = False
+29.4796 	EXP 	Created text_instruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_instruction', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.4833 	EXP 	Created patch_background = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([ 1, -1, -1]), fillColorSpace='rgb', fillRGB=array([ 1, -1, -1]), interpolate=True, lineColor=array([ 1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([ 1, -1, -1]), lineWidth=1, name='patch_background', opacity=1, ori=0.0, pos=array([-300.,    0.]), size=array([300., 300.]), units='pix', vertices=ndarray(...), win=Window(...))
+29.4858 	EXP 	Created patch_foreground = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([ 0.5, -1. , -1. ]), fillColorSpace='rgb', fillRGB=array([ 0.5, -1. , -1. ]), interpolate=True, lineColor=array([ 0.5, -1. , -1. ]), lineColorSpace='rgb', lineRGB=array([ 0.5, -1. , -1. ]), lineWidth=1, name='patch_foreground', opacity=1, ori=0.0, pos=array([-300.,    0.]), size=array([100., 100.]), units='pix', vertices=ndarray(...), win=Window(...))
+29.4884 	EXP 	Created patch_test = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1, name='patch_test', opacity=1, ori=0.0, pos=array([300.,   0.]), size=array([100., 100.]), units='pix', vertices=ndarray(...), win=Window(...))
+29.5055 	EXP 	Created text_task = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([0., 0., 0.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_task', opacity=1, ori=0, pos=array([0.  , 0.45]), rgb=UNKNOWN, text='select brighter patch', units='height', win=Window(...), wrapWidth=1)
+29.5155 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='.', units='height', win=Window(...), wrapWidth=1)
+29.5384 	EXP 	Created text_bye = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_bye', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Experiment is over\n\nTHANK YOU!', units='height', win=Window(...), wrapWidth=1)
+29.5730 	EXP 	text_instruction: autoDraw = True
+34.9703 	EXP 	Imported design.xlsx as conditions, 9 conditions, 1 params
+34.9712 	EXP 	Created sequence: random, trialTypes=9, nReps=30, seed=None
+34.9716 	EXP 	New trial (rep=0, index=0): {'rgb_luminance': 0.9}
+34.9777 	DATA 	Keypress: space
+34.9830 	EXP 	text_instruction: autoDraw = False
+34.9830 	EXP 	patch_background: autoDraw = True
+34.9830 	EXP 	patch_foreground: autoDraw = True
+34.9830 	EXP 	patch_test: autoDraw = True
+34.9830 	EXP 	text_task: autoDraw = True
+37.0188 	DATA 	Keypress: right
+37.0238 	EXP 	patch_background: autoDraw = False
+37.0238 	EXP 	patch_foreground: autoDraw = False
+37.0238 	EXP 	patch_test: autoDraw = False
+37.0238 	EXP 	text_task: autoDraw = False
+37.0238 	EXP 	text: autoDraw = True
+37.2190 	EXP 	New trial (rep=0, index=1): {'rgb_luminance': 0.45}
+37.2346 	EXP 	text: autoDraw = False
+37.2346 	EXP 	patch_background: autoDraw = True
+37.2346 	EXP 	patch_foreground: autoDraw = True
+37.2346 	EXP 	patch_test: autoDraw = True
+37.2346 	EXP 	text_task: autoDraw = True
+39.4800 	DATA 	Keypress: right
+39.5042 	EXP 	patch_background: autoDraw = False
+39.5042 	EXP 	patch_foreground: autoDraw = False
+39.5042 	EXP 	patch_test: autoDraw = False
+39.5042 	EXP 	text_task: autoDraw = False
+39.5042 	EXP 	text: autoDraw = True
+39.6998 	EXP 	New trial (rep=0, index=2): {'rgb_luminance': 0.5}
+39.7159 	EXP 	text: autoDraw = False
+39.7159 	EXP 	patch_background: autoDraw = True
+39.7159 	EXP 	patch_foreground: autoDraw = True
+39.7159 	EXP 	patch_test: autoDraw = True
+39.7159 	EXP 	text_task: autoDraw = True
+40.8022 	DATA 	Keypress: right
+40.8148 	EXP 	patch_background: autoDraw = False
+40.8148 	EXP 	patch_foreground: autoDraw = False
+40.8148 	EXP 	patch_test: autoDraw = False
+40.8148 	EXP 	text_task: autoDraw = False
+40.8148 	EXP 	text: autoDraw = True
+41.0010 	EXP 	New trial (rep=0, index=3): {'rgb_luminance': 0.3}
+41.0158 	EXP 	text: autoDraw = False
+41.0158 	EXP 	text: autoDraw = False
+41.0158 	EXP 	patch_background: autoDraw = True
+41.0158 	EXP 	patch_foreground: autoDraw = True
+41.0158 	EXP 	patch_test: autoDraw = True
+41.0158 	EXP 	text_task: autoDraw = True
+42.0511 	DATA 	Keypress: left
+42.0638 	EXP 	patch_background: autoDraw = False
+42.0638 	EXP 	patch_foreground: autoDraw = False
+42.0638 	EXP 	patch_test: autoDraw = False
+42.0638 	EXP 	text_task: autoDraw = False
+42.0638 	EXP 	text: autoDraw = True
+42.2497 	EXP 	New trial (rep=0, index=4): {'rgb_luminance': 0.55}
+42.2643 	EXP 	text: autoDraw = False
+42.2643 	EXP 	text: autoDraw = False
+42.2643 	EXP 	patch_background: autoDraw = True
+42.2643 	EXP 	patch_foreground: autoDraw = True
+42.2643 	EXP 	patch_test: autoDraw = True
+42.2643 	EXP 	text_task: autoDraw = True
+42.8938 	DATA 	Keypress: right
+42.8990 	EXP 	patch_background: autoDraw = False
+42.8990 	EXP 	patch_foreground: autoDraw = False
+42.8990 	EXP 	patch_test: autoDraw = False
+42.8990 	EXP 	text_task: autoDraw = False
+42.8990 	EXP 	text: autoDraw = True
+43.0973 	EXP 	New trial (rep=0, index=5): {'rgb_luminance': 0.6}
+43.1136 	EXP 	text: autoDraw = False
+43.1136 	EXP 	patch_background: autoDraw = True
+43.1136 	EXP 	patch_foreground: autoDraw = True
+43.1136 	EXP 	patch_test: autoDraw = True
+43.1136 	EXP 	text_task: autoDraw = True
+44.0052 	DATA 	Keypress: right
+44.0310 	EXP 	patch_background: autoDraw = False
+44.0310 	EXP 	patch_foreground: autoDraw = False
+44.0310 	EXP 	patch_test: autoDraw = False
+44.0310 	EXP 	text_task: autoDraw = False
+44.0310 	EXP 	text: autoDraw = True
+44.2294 	EXP 	New trial (rep=0, index=6): {'rgb_luminance': 0.4}
+44.2453 	EXP 	text: autoDraw = False
+44.2453 	EXP 	patch_background: autoDraw = True
+44.2453 	EXP 	patch_foreground: autoDraw = True
+44.2453 	EXP 	patch_test: autoDraw = True
+44.2453 	EXP 	text_task: autoDraw = True
+50.1645 	DATA 	Keypress: right
+50.1919 	EXP 	patch_background: autoDraw = False
+50.1919 	EXP 	patch_foreground: autoDraw = False
+50.1919 	EXP 	patch_test: autoDraw = False
+50.1919 	EXP 	text_task: autoDraw = False
+50.1919 	EXP 	text: autoDraw = True
+50.3907 	EXP 	New trial (rep=0, index=7): {'rgb_luminance': 0.7}
+50.4065 	EXP 	text: autoDraw = False
+50.4065 	EXP 	patch_background: autoDraw = True
+50.4065 	EXP 	patch_foreground: autoDraw = True
+50.4065 	EXP 	patch_test: autoDraw = True
+50.4065 	EXP 	text_task: autoDraw = True
+50.9323 	DATA 	Keypress: right
+50.9579 	EXP 	patch_background: autoDraw = False
+50.9579 	EXP 	patch_foreground: autoDraw = False
+50.9579 	EXP 	patch_test: autoDraw = False
+50.9579 	EXP 	text_task: autoDraw = False
+50.9579 	EXP 	text: autoDraw = True
+51.1568 	EXP 	New trial (rep=0, index=8): {'rgb_luminance': 0.1}
+51.1726 	EXP 	text: autoDraw = False
+51.1726 	EXP 	patch_background: autoDraw = True
+51.1726 	EXP 	patch_foreground: autoDraw = True
+51.1726 	EXP 	patch_test: autoDraw = True
+51.1726 	EXP 	text_task: autoDraw = True
+51.7689 	DATA 	Keypress: left
+51.7739 	EXP 	patch_background: autoDraw = False
+51.7739 	EXP 	patch_foreground: autoDraw = False
+51.7739 	EXP 	patch_test: autoDraw = False
+51.7739 	EXP 	text_task: autoDraw = False
+51.7739 	EXP 	text: autoDraw = True
+51.9725 	EXP 	New trial (rep=1, index=0): {'rgb_luminance': 0.55}
+51.9882 	EXP 	text: autoDraw = False
+51.9882 	EXP 	patch_background: autoDraw = True
+51.9882 	EXP 	patch_foreground: autoDraw = True
+51.9882 	EXP 	patch_test: autoDraw = True
+51.9882 	EXP 	text_task: autoDraw = True
+52.5349 	DATA 	Keypress: right
+52.5399 	EXP 	patch_background: autoDraw = False
+52.5399 	EXP 	patch_foreground: autoDraw = False
+52.5399 	EXP 	patch_test: autoDraw = False
+52.5399 	EXP 	text_task: autoDraw = False
+52.5399 	EXP 	text: autoDraw = True
+52.7386 	EXP 	New trial (rep=1, index=1): {'rgb_luminance': 0.4}
+52.7544 	EXP 	text: autoDraw = False
+52.7544 	EXP 	patch_background: autoDraw = True
+52.7544 	EXP 	patch_foreground: autoDraw = True
+52.7544 	EXP 	patch_test: autoDraw = True
+52.7544 	EXP 	text_task: autoDraw = True
+57.9401 	DATA 	Keypress: right
+57.9691 	EXP 	patch_background: autoDraw = False
+57.9691 	EXP 	patch_foreground: autoDraw = False
+57.9691 	EXP 	patch_test: autoDraw = False
+57.9691 	EXP 	text_task: autoDraw = False
+57.9691 	EXP 	text: autoDraw = True
+58.1672 	EXP 	New trial (rep=1, index=2): {'rgb_luminance': 0.1}
+58.1832 	EXP 	text: autoDraw = False
+58.1832 	EXP 	patch_background: autoDraw = True
+58.1832 	EXP 	patch_foreground: autoDraw = True
+58.1832 	EXP 	patch_test: autoDraw = True
+58.1832 	EXP 	text_task: autoDraw = True
+59.3624 	DATA 	Keypress: left
+59.3675 	EXP 	patch_background: autoDraw = False
+59.3675 	EXP 	patch_foreground: autoDraw = False
+59.3675 	EXP 	patch_test: autoDraw = False
+59.3675 	EXP 	text_task: autoDraw = False
+59.3675 	EXP 	text: autoDraw = True
+59.5660 	EXP 	New trial (rep=1, index=3): {'rgb_luminance': 0.7}
+59.5821 	EXP 	text: autoDraw = False
+59.5821 	EXP 	patch_background: autoDraw = True
+59.5821 	EXP 	patch_foreground: autoDraw = True
+59.5821 	EXP 	patch_test: autoDraw = True
+59.5821 	EXP 	text_task: autoDraw = True
+60.3449 	DATA 	Keypress: right
+60.3500 	EXP 	patch_background: autoDraw = False
+60.3500 	EXP 	patch_foreground: autoDraw = False
+60.3500 	EXP 	patch_test: autoDraw = False
+60.3500 	EXP 	text_task: autoDraw = False
+60.3500 	EXP 	text: autoDraw = True
+60.5485 	EXP 	New trial (rep=1, index=4): {'rgb_luminance': 0.45}
+60.5645 	EXP 	text: autoDraw = False
+60.5645 	EXP 	patch_background: autoDraw = True
+60.5645 	EXP 	patch_foreground: autoDraw = True
+60.5645 	EXP 	patch_test: autoDraw = True
+60.5645 	EXP 	text_task: autoDraw = True
+62.6763 	DATA 	Keypress: right
+62.6814 	EXP 	patch_background: autoDraw = False
+62.6814 	EXP 	patch_foreground: autoDraw = False
+62.6814 	EXP 	patch_test: autoDraw = False
+62.6814 	EXP 	text_task: autoDraw = False
+62.6814 	EXP 	text: autoDraw = True
+62.8797 	EXP 	New trial (rep=1, index=5): {'rgb_luminance': 0.9}
+62.8957 	EXP 	text: autoDraw = False
+62.8957 	EXP 	patch_background: autoDraw = True
+62.8957 	EXP 	patch_foreground: autoDraw = True
+62.8957 	EXP 	patch_test: autoDraw = True
+62.8957 	EXP 	text_task: autoDraw = True
+63.6253 	DATA 	Keypress: right
+63.6304 	EXP 	patch_background: autoDraw = False
+63.6304 	EXP 	patch_foreground: autoDraw = False
+63.6304 	EXP 	patch_test: autoDraw = False
+63.6304 	EXP 	text_task: autoDraw = False
+63.6304 	EXP 	text: autoDraw = True
+63.8290 	EXP 	New trial (rep=1, index=6): {'rgb_luminance': 0.5}
+63.8449 	EXP 	text: autoDraw = False
+63.8449 	EXP 	patch_background: autoDraw = True
+63.8449 	EXP 	patch_foreground: autoDraw = True
+63.8449 	EXP 	patch_test: autoDraw = True
+63.8449 	EXP 	text_task: autoDraw = True
+66.1900 	DATA 	Keypress: right
+66.1953 	EXP 	patch_background: autoDraw = False
+66.1953 	EXP 	patch_foreground: autoDraw = False
+66.1953 	EXP 	patch_test: autoDraw = False
+66.1953 	EXP 	text_task: autoDraw = False
+66.1953 	EXP 	text: autoDraw = True
+66.3937 	EXP 	New trial (rep=1, index=7): {'rgb_luminance': 0.3}
+66.4095 	EXP 	text: autoDraw = False
+66.4095 	EXP 	patch_background: autoDraw = True
+66.4095 	EXP 	patch_foreground: autoDraw = True
+66.4095 	EXP 	patch_test: autoDraw = True
+66.4095 	EXP 	text_task: autoDraw = True
+68.1010 	DATA 	Keypress: left
+68.1262 	EXP 	patch_background: autoDraw = False
+68.1262 	EXP 	patch_foreground: autoDraw = False
+68.1262 	EXP 	patch_test: autoDraw = False
+68.1262 	EXP 	text_task: autoDraw = False
+68.1262 	EXP 	text: autoDraw = True
+68.3250 	EXP 	New trial (rep=1, index=8): {'rgb_luminance': 0.6}
+68.3407 	EXP 	text: autoDraw = False
+68.3407 	EXP 	patch_background: autoDraw = True
+68.3407 	EXP 	patch_foreground: autoDraw = True
+68.3407 	EXP 	patch_test: autoDraw = True
+68.3407 	EXP 	text_task: autoDraw = True
+69.0130 	DATA 	Keypress: right
+69.0420 	EXP 	patch_background: autoDraw = False
+69.0420 	EXP 	patch_foreground: autoDraw = False
+69.0420 	EXP 	patch_test: autoDraw = False
+69.0420 	EXP 	text_task: autoDraw = False
+69.0420 	EXP 	text: autoDraw = True
+69.2408 	EXP 	New trial (rep=2, index=0): {'rgb_luminance': 0.9}
+69.2565 	EXP 	text: autoDraw = False
+69.2565 	EXP 	patch_background: autoDraw = True
+69.2565 	EXP 	patch_foreground: autoDraw = True
+69.2565 	EXP 	patch_test: autoDraw = True
+69.2565 	EXP 	text_task: autoDraw = True
+70.6180 	DATA 	Keypress: right
+70.6423 	EXP 	patch_background: autoDraw = False
+70.6423 	EXP 	patch_foreground: autoDraw = False
+70.6423 	EXP 	patch_test: autoDraw = False
+70.6423 	EXP 	text_task: autoDraw = False
+70.6423 	EXP 	text: autoDraw = True
+70.8396 	EXP 	New trial (rep=2, index=1): {'rgb_luminance': 0.1}
+70.8554 	EXP 	text: autoDraw = False
+70.8554 	EXP 	patch_background: autoDraw = True
+70.8554 	EXP 	patch_foreground: autoDraw = True
+70.8554 	EXP 	patch_test: autoDraw = True
+70.8554 	EXP 	text_task: autoDraw = True
+71.9015 	DATA 	Keypress: left
+71.9065 	EXP 	patch_background: autoDraw = False
+71.9065 	EXP 	patch_foreground: autoDraw = False
+71.9065 	EXP 	patch_test: autoDraw = False
+71.9065 	EXP 	text_task: autoDraw = False
+71.9065 	EXP 	text: autoDraw = True
+72.1049 	EXP 	New trial (rep=2, index=2): {'rgb_luminance': 0.5}
+72.1209 	EXP 	text: autoDraw = False
+72.1209 	EXP 	patch_background: autoDraw = True
+72.1209 	EXP 	patch_foreground: autoDraw = True
+72.1209 	EXP 	patch_test: autoDraw = True
+72.1209 	EXP 	text_task: autoDraw = True
+72.8177 	DATA 	Keypress: right
+72.8227 	EXP 	patch_background: autoDraw = False
+72.8227 	EXP 	patch_foreground: autoDraw = False
+72.8227 	EXP 	patch_test: autoDraw = False
+72.8227 	EXP 	text_task: autoDraw = False
+72.8227 	EXP 	text: autoDraw = True
+73.0210 	EXP 	New trial (rep=2, index=3): {'rgb_luminance': 0.3}
+73.0369 	EXP 	text: autoDraw = False
+73.0369 	EXP 	patch_background: autoDraw = True
+73.0369 	EXP 	patch_foreground: autoDraw = True
+73.0369 	EXP 	patch_test: autoDraw = True
+73.0369 	EXP 	text_task: autoDraw = True
+75.5265 	DATA 	Keypress: left
+75.5535 	EXP 	patch_background: autoDraw = False
+75.5535 	EXP 	patch_foreground: autoDraw = False
+75.5535 	EXP 	patch_test: autoDraw = False
+75.5535 	EXP 	text_task: autoDraw = False
+75.5535 	EXP 	text: autoDraw = True
+75.7520 	EXP 	New trial (rep=2, index=4): {'rgb_luminance': 0.55}
+75.7679 	EXP 	text: autoDraw = False
+75.7679 	EXP 	patch_background: autoDraw = True
+75.7679 	EXP 	patch_foreground: autoDraw = True
+75.7679 	EXP 	patch_test: autoDraw = True
+75.7679 	EXP 	text_task: autoDraw = True
+76.3013 	DATA 	Keypress: right
+76.3338 	EXP 	patch_background: autoDraw = False
+76.3338 	EXP 	patch_foreground: autoDraw = False
+76.3338 	EXP 	patch_test: autoDraw = False
+76.3338 	EXP 	text_task: autoDraw = False
+76.3338 	EXP 	text: autoDraw = True
+76.5180 	EXP 	New trial (rep=2, index=5): {'rgb_luminance': 0.45}
+76.5341 	EXP 	text: autoDraw = False
+76.5341 	EXP 	patch_background: autoDraw = True
+76.5341 	EXP 	patch_foreground: autoDraw = True
+76.5341 	EXP 	patch_test: autoDraw = True
+76.5341 	EXP 	text_task: autoDraw = True
+77.8465 	DATA 	Keypress: right
+77.8514 	EXP 	patch_background: autoDraw = False
+77.8514 	EXP 	patch_foreground: autoDraw = False
+77.8514 	EXP 	patch_test: autoDraw = False
+77.8514 	EXP 	text_task: autoDraw = False
+77.8514 	EXP 	text: autoDraw = True
+78.0499 	EXP 	New trial (rep=2, index=6): {'rgb_luminance': 0.6}
+78.0657 	EXP 	text: autoDraw = False
+78.0657 	EXP 	patch_background: autoDraw = True
+78.0657 	EXP 	patch_foreground: autoDraw = True
+78.0657 	EXP 	patch_test: autoDraw = True
+78.0657 	EXP 	text_task: autoDraw = True
+78.6627 	DATA 	Keypress: right
+78.6675 	EXP 	patch_background: autoDraw = False
+78.6675 	EXP 	patch_foreground: autoDraw = False
+78.6675 	EXP 	patch_test: autoDraw = False
+78.6675 	EXP 	text_task: autoDraw = False
+78.6675 	EXP 	text: autoDraw = True
+78.8657 	EXP 	New trial (rep=2, index=7): {'rgb_luminance': 0.4}
+78.8817 	EXP 	text: autoDraw = False
+78.8817 	EXP 	patch_background: autoDraw = True
+78.8817 	EXP 	patch_foreground: autoDraw = True
+78.8817 	EXP 	patch_test: autoDraw = True
+78.8817 	EXP 	text_task: autoDraw = True
+80.0947 	DATA 	Keypress: right
+80.0996 	EXP 	patch_background: autoDraw = False
+80.0996 	EXP 	patch_foreground: autoDraw = False
+80.0996 	EXP 	patch_test: autoDraw = False
+80.0996 	EXP 	text_task: autoDraw = False
+80.0996 	EXP 	text: autoDraw = True
+80.2978 	EXP 	New trial (rep=2, index=8): {'rgb_luminance': 0.7}
+80.3139 	EXP 	text: autoDraw = False
+80.3139 	EXP 	patch_background: autoDraw = True
+80.3139 	EXP 	patch_foreground: autoDraw = True
+80.3139 	EXP 	patch_test: autoDraw = True
+80.3139 	EXP 	text_task: autoDraw = True
+80.9286 	DATA 	Keypress: right
+80.9336 	EXP 	patch_background: autoDraw = False
+80.9336 	EXP 	patch_foreground: autoDraw = False
+80.9336 	EXP 	patch_test: autoDraw = False
+80.9336 	EXP 	text_task: autoDraw = False
+80.9336 	EXP 	text: autoDraw = True
+81.1304 	EXP 	New trial (rep=3, index=0): {'rgb_luminance': 0.5}
+81.1467 	EXP 	text: autoDraw = False
+81.1467 	EXP 	patch_background: autoDraw = True
+81.1467 	EXP 	patch_foreground: autoDraw = True
+81.1467 	EXP 	patch_test: autoDraw = True
+81.1467 	EXP 	text_task: autoDraw = True
+82.6592 	DATA 	Keypress: right
+82.6642 	EXP 	patch_background: autoDraw = False
+82.6642 	EXP 	patch_foreground: autoDraw = False
+82.6642 	EXP 	patch_test: autoDraw = False
+82.6642 	EXP 	text_task: autoDraw = False
+82.6642 	EXP 	text: autoDraw = True
+82.8626 	EXP 	New trial (rep=3, index=1): {'rgb_luminance': 0.9}
+82.8783 	EXP 	text: autoDraw = False
+82.8783 	EXP 	patch_background: autoDraw = True
+82.8783 	EXP 	patch_foreground: autoDraw = True
+82.8783 	EXP 	patch_test: autoDraw = True
+82.8783 	EXP 	text_task: autoDraw = True
+83.4609 	DATA 	Keypress: right
+83.4658 	EXP 	patch_background: autoDraw = False
+83.4658 	EXP 	patch_foreground: autoDraw = False
+83.4658 	EXP 	patch_test: autoDraw = False
+83.4658 	EXP 	text_task: autoDraw = False
+83.4658 	EXP 	text: autoDraw = True
+83.6616 	EXP 	New trial (rep=3, index=2): {'rgb_luminance': 0.7}
+83.6780 	EXP 	text: autoDraw = False
+83.6780 	EXP 	patch_background: autoDraw = True
+83.6780 	EXP 	patch_foreground: autoDraw = True
+83.6780 	EXP 	patch_test: autoDraw = True
+83.6780 	EXP 	text_task: autoDraw = True
+84.6907 	DATA 	Keypress: right
+84.6957 	EXP 	patch_background: autoDraw = False
+84.6957 	EXP 	patch_foreground: autoDraw = False
+84.6957 	EXP 	patch_test: autoDraw = False
+84.6957 	EXP 	text_task: autoDraw = False
+84.6957 	EXP 	text: autoDraw = True
+84.8940 	EXP 	New trial (rep=3, index=3): {'rgb_luminance': 0.45}
+84.9098 	EXP 	text: autoDraw = False
+84.9098 	EXP 	patch_background: autoDraw = True
+84.9098 	EXP 	patch_foreground: autoDraw = True
+84.9098 	EXP 	patch_test: autoDraw = True
+84.9098 	EXP 	text_task: autoDraw = True
+87.4881 	DATA 	Keypress: right
+87.4930 	EXP 	patch_background: autoDraw = False
+87.4930 	EXP 	patch_foreground: autoDraw = False
+87.4930 	EXP 	patch_test: autoDraw = False
+87.4930 	EXP 	text_task: autoDraw = False
+87.4930 	EXP 	text: autoDraw = True
+87.6915 	EXP 	New trial (rep=3, index=4): {'rgb_luminance': 0.6}
+87.7072 	EXP 	text: autoDraw = False
+87.7072 	EXP 	patch_background: autoDraw = True
+87.7072 	EXP 	patch_foreground: autoDraw = True
+87.7072 	EXP 	patch_test: autoDraw = True
+87.7072 	EXP 	text_task: autoDraw = True
+88.2372 	DATA 	Keypress: right
+88.2423 	EXP 	patch_background: autoDraw = False
+88.2423 	EXP 	patch_foreground: autoDraw = False
+88.2423 	EXP 	patch_test: autoDraw = False
+88.2423 	EXP 	text_task: autoDraw = False
+88.2423 	EXP 	text: autoDraw = True
+88.4416 	EXP 	New trial (rep=3, index=5): {'rgb_luminance': 0.1}
+88.4573 	EXP 	text: autoDraw = False
+88.4573 	EXP 	patch_background: autoDraw = True
+88.4573 	EXP 	patch_foreground: autoDraw = True
+88.4573 	EXP 	patch_test: autoDraw = True
+88.4573 	EXP 	text_task: autoDraw = True
+89.1532 	DATA 	Keypress: left
+89.1582 	EXP 	patch_background: autoDraw = False
+89.1582 	EXP 	patch_foreground: autoDraw = False
+89.1582 	EXP 	patch_test: autoDraw = False
+89.1582 	EXP 	text_task: autoDraw = False
+89.1582 	EXP 	text: autoDraw = True
+89.3566 	EXP 	New trial (rep=3, index=6): {'rgb_luminance': 0.55}
+89.3726 	EXP 	text: autoDraw = False
+89.3726 	EXP 	patch_background: autoDraw = True
+89.3726 	EXP 	patch_foreground: autoDraw = True
+89.3726 	EXP 	patch_test: autoDraw = True
+89.3726 	EXP 	text_task: autoDraw = True
+92.8000 	DATA 	Keypress: right
+92.8050 	EXP 	patch_background: autoDraw = False
+92.8050 	EXP 	patch_foreground: autoDraw = False
+92.8050 	EXP 	patch_test: autoDraw = False
+92.8050 	EXP 	text_task: autoDraw = False
+92.8050 	EXP 	text: autoDraw = True
+93.0034 	EXP 	New trial (rep=3, index=7): {'rgb_luminance': 0.4}
+93.0194 	EXP 	text: autoDraw = False
+93.0194 	EXP 	patch_background: autoDraw = True
+93.0194 	EXP 	patch_foreground: autoDraw = True
+93.0194 	EXP 	patch_test: autoDraw = True
+93.0194 	EXP 	text_task: autoDraw = True
+95.5731 	DATA 	Keypress: right
+95.6023 	EXP 	patch_background: autoDraw = False
+95.6023 	EXP 	patch_foreground: autoDraw = False
+95.6023 	EXP 	patch_test: autoDraw = False
+95.6023 	EXP 	text_task: autoDraw = False
+95.6023 	EXP 	text: autoDraw = True
+95.8009 	EXP 	New trial (rep=3, index=8): {'rgb_luminance': 0.3}
+95.8170 	EXP 	text: autoDraw = False
+95.8170 	EXP 	patch_background: autoDraw = True
+95.8170 	EXP 	patch_foreground: autoDraw = True
+95.8170 	EXP 	patch_test: autoDraw = True
+95.8170 	EXP 	text_task: autoDraw = True
+96.5176 	DATA 	Keypress: left
+96.5513 	EXP 	patch_background: autoDraw = False
+96.5513 	EXP 	patch_foreground: autoDraw = False
+96.5513 	EXP 	patch_test: autoDraw = False
+96.5513 	EXP 	text_task: autoDraw = False
+96.5513 	EXP 	text: autoDraw = True
+96.7503 	EXP 	New trial (rep=4, index=0): {'rgb_luminance': 0.45}
+96.7662 	EXP 	text: autoDraw = False
+96.7662 	EXP 	patch_background: autoDraw = True
+96.7662 	EXP 	patch_foreground: autoDraw = True
+96.7662 	EXP 	patch_test: autoDraw = True
+96.7662 	EXP 	text_task: autoDraw = True
+97.5388 	DATA 	Keypress: right
+97.5678 	EXP 	patch_background: autoDraw = False
+97.5678 	EXP 	patch_foreground: autoDraw = False
+97.5678 	EXP 	patch_test: autoDraw = False
+97.5678 	EXP 	text_task: autoDraw = False
+97.5678 	EXP 	text: autoDraw = True
+97.7659 	EXP 	New trial (rep=4, index=1): {'rgb_luminance': 0.7}
+97.7820 	EXP 	text: autoDraw = False
+97.7820 	EXP 	patch_background: autoDraw = True
+97.7820 	EXP 	patch_foreground: autoDraw = True
+97.7820 	EXP 	patch_test: autoDraw = True
+97.7820 	EXP 	text_task: autoDraw = True
+98.4954 	DATA 	Keypress: right
+98.5004 	EXP 	patch_background: autoDraw = False
+98.5004 	EXP 	patch_foreground: autoDraw = False
+98.5004 	EXP 	patch_test: autoDraw = False
+98.5004 	EXP 	text_task: autoDraw = False
+98.5004 	EXP 	text: autoDraw = True
+98.6984 	EXP 	New trial (rep=4, index=2): {'rgb_luminance': 0.3}
+98.7145 	EXP 	text: autoDraw = False
+98.7145 	EXP 	patch_background: autoDraw = True
+98.7145 	EXP 	patch_foreground: autoDraw = True
+98.7145 	EXP 	patch_test: autoDraw = True
+98.7145 	EXP 	text_task: autoDraw = True
+100.3702 	DATA 	Keypress: left
+100.3986 	EXP 	patch_background: autoDraw = False
+100.3986 	EXP 	patch_foreground: autoDraw = False
+100.3986 	EXP 	patch_test: autoDraw = False
+100.3986 	EXP 	text_task: autoDraw = False
+100.3986 	EXP 	text: autoDraw = True
+100.5969 	EXP 	New trial (rep=4, index=3): {'rgb_luminance': 0.5}
+100.6129 	EXP 	text: autoDraw = False
+100.6129 	EXP 	patch_background: autoDraw = True
+100.6129 	EXP 	patch_foreground: autoDraw = True
+100.6129 	EXP 	patch_test: autoDraw = True
+100.6129 	EXP 	text_task: autoDraw = True
+101.2521 	DATA 	Keypress: right
+101.2808 	EXP 	patch_background: autoDraw = False
+101.2808 	EXP 	patch_foreground: autoDraw = False
+101.2808 	EXP 	patch_test: autoDraw = False
+101.2808 	EXP 	text_task: autoDraw = False
+101.2808 	EXP 	text: autoDraw = True
+101.4804 	EXP 	New trial (rep=4, index=4): {'rgb_luminance': 0.1}
+101.4958 	EXP 	text: autoDraw = False
+101.4958 	EXP 	patch_background: autoDraw = True
+101.4958 	EXP 	patch_foreground: autoDraw = True
+101.4958 	EXP 	patch_test: autoDraw = True
+101.4958 	EXP 	text_task: autoDraw = True
+102.4320 	DATA 	Keypress: left
+102.4449 	EXP 	patch_background: autoDraw = False
+102.4449 	EXP 	patch_foreground: autoDraw = False
+102.4449 	EXP 	patch_test: autoDraw = False
+102.4449 	EXP 	text_task: autoDraw = False
+102.4449 	EXP 	text: autoDraw = True
+102.6293 	EXP 	New trial (rep=4, index=5): {'rgb_luminance': 0.9}
+102.6464 	EXP 	text: autoDraw = False
+102.6464 	EXP 	patch_background: autoDraw = True
+102.6464 	EXP 	patch_foreground: autoDraw = True
+102.6464 	EXP 	patch_test: autoDraw = True
+102.6464 	EXP 	text_task: autoDraw = True
+103.3787 	DATA 	Keypress: right
+103.3836 	EXP 	patch_background: autoDraw = False
+103.3836 	EXP 	patch_foreground: autoDraw = False
+103.3836 	EXP 	patch_test: autoDraw = False
+103.3836 	EXP 	text_task: autoDraw = False
+103.3836 	EXP 	text: autoDraw = True
+103.5780 	EXP 	New trial (rep=4, index=6): {'rgb_luminance': 0.6}
+103.5938 	EXP 	text: autoDraw = False
+103.5938 	EXP 	patch_background: autoDraw = True
+103.5938 	EXP 	patch_foreground: autoDraw = True
+103.5938 	EXP 	patch_test: autoDraw = True
+103.5938 	EXP 	text_task: autoDraw = True
+104.7737 	DATA 	Keypress: right
+106.6923 	DATA 	Keypress: right
+106.6978 	EXP 	patch_background: autoDraw = False
+106.6978 	EXP 	patch_foreground: autoDraw = False
+106.6978 	EXP 	patch_test: autoDraw = False
+106.6978 	EXP 	text_task: autoDraw = False
+106.6978 	EXP 	text: autoDraw = True
+106.8930 	EXP 	New trial (rep=4, index=7): {'rgb_luminance': 0.4}
+106.9094 	EXP 	text: autoDraw = False
+106.9094 	EXP 	patch_background: autoDraw = True
+106.9094 	EXP 	patch_foreground: autoDraw = True
+106.9094 	EXP 	patch_test: autoDraw = True
+106.9094 	EXP 	text_task: autoDraw = True
+108.9358 	DATA 	Keypress: left
+108.9408 	EXP 	patch_background: autoDraw = False
+108.9408 	EXP 	patch_foreground: autoDraw = False
+108.9408 	EXP 	patch_test: autoDraw = False
+108.9408 	EXP 	text_task: autoDraw = False
+108.9408 	EXP 	text: autoDraw = True
+109.1394 	EXP 	New trial (rep=4, index=8): {'rgb_luminance': 0.55}
+109.1550 	EXP 	text: autoDraw = False
+109.1550 	EXP 	patch_background: autoDraw = True
+109.1550 	EXP 	patch_foreground: autoDraw = True
+109.1550 	EXP 	patch_test: autoDraw = True
+109.1550 	EXP 	text_task: autoDraw = True
+109.8128 	DATA 	Keypress: right
+109.8396 	EXP 	patch_background: autoDraw = False
+109.8396 	EXP 	patch_foreground: autoDraw = False
+109.8396 	EXP 	patch_test: autoDraw = False
+109.8396 	EXP 	text_task: autoDraw = False
+109.8396 	EXP 	text: autoDraw = True
+110.0387 	EXP 	New trial (rep=5, index=0): {'rgb_luminance': 0.5}
+110.0544 	EXP 	text: autoDraw = False
+110.0544 	EXP 	patch_background: autoDraw = True
+110.0544 	EXP 	patch_foreground: autoDraw = True
+110.0544 	EXP 	patch_test: autoDraw = True
+110.0544 	EXP 	text_task: autoDraw = True
+110.7175 	DATA 	Keypress: right
+110.7226 	EXP 	patch_background: autoDraw = False
+110.7226 	EXP 	patch_foreground: autoDraw = False
+110.7226 	EXP 	patch_test: autoDraw = False
+110.7226 	EXP 	text_task: autoDraw = False
+110.7226 	EXP 	text: autoDraw = True
+110.9210 	EXP 	New trial (rep=5, index=1): {'rgb_luminance': 0.55}
+110.9370 	EXP 	text: autoDraw = False
+110.9370 	EXP 	patch_background: autoDraw = True
+110.9370 	EXP 	patch_foreground: autoDraw = True
+110.9370 	EXP 	patch_test: autoDraw = True
+110.9370 	EXP 	text_task: autoDraw = True
+113.0490 	DATA 	Keypress: right
+113.0721 	EXP 	patch_background: autoDraw = False
+113.0721 	EXP 	patch_foreground: autoDraw = False
+113.0721 	EXP 	patch_test: autoDraw = False
+113.0721 	EXP 	text_task: autoDraw = False
+113.0721 	EXP 	text: autoDraw = True
+113.2690 	EXP 	New trial (rep=5, index=2): {'rgb_luminance': 0.1}
+113.2849 	EXP 	text: autoDraw = False
+113.2849 	EXP 	patch_background: autoDraw = True
+113.2849 	EXP 	patch_foreground: autoDraw = True
+113.2849 	EXP 	patch_test: autoDraw = True
+113.2849 	EXP 	text_task: autoDraw = True
+113.9413 	DATA 	Keypress: left
+113.9695 	EXP 	patch_background: autoDraw = False
+113.9695 	EXP 	patch_foreground: autoDraw = False
+113.9695 	EXP 	patch_test: autoDraw = False
+113.9695 	EXP 	text_task: autoDraw = False
+113.9695 	EXP 	text: autoDraw = True
+114.1682 	EXP 	New trial (rep=5, index=3): {'rgb_luminance': 0.3}
+114.1841 	EXP 	text: autoDraw = False
+114.1841 	EXP 	patch_background: autoDraw = True
+114.1841 	EXP 	patch_foreground: autoDraw = True
+114.1841 	EXP 	patch_test: autoDraw = True
+114.1841 	EXP 	text_task: autoDraw = True
+115.1689 	DATA 	Keypress: left
+115.1831 	EXP 	patch_background: autoDraw = False
+115.1831 	EXP 	patch_foreground: autoDraw = False
+115.1831 	EXP 	patch_test: autoDraw = False
+115.1831 	EXP 	text_task: autoDraw = False
+115.1831 	EXP 	text: autoDraw = True
+115.3674 	EXP 	New trial (rep=5, index=4): {'rgb_luminance': 0.7}
+115.3830 	EXP 	text: autoDraw = False
+115.3830 	EXP 	patch_background: autoDraw = True
+115.3830 	EXP 	patch_foreground: autoDraw = True
+115.3830 	EXP 	patch_test: autoDraw = True
+115.3830 	EXP 	text_task: autoDraw = True
+115.8465 	DATA 	Keypress: right
+115.8515 	EXP 	patch_background: autoDraw = False
+115.8515 	EXP 	patch_foreground: autoDraw = False
+115.8515 	EXP 	patch_test: autoDraw = False
+115.8515 	EXP 	text_task: autoDraw = False
+115.8515 	EXP 	text: autoDraw = True
+116.0501 	EXP 	New trial (rep=5, index=5): {'rgb_luminance': 0.45}
+116.0657 	EXP 	text: autoDraw = False
+116.0657 	EXP 	patch_background: autoDraw = True
+116.0657 	EXP 	patch_foreground: autoDraw = True
+116.0657 	EXP 	patch_test: autoDraw = True
+116.0657 	EXP 	text_task: autoDraw = True
+117.4172 	DATA 	Keypress: right
+117.4312 	EXP 	patch_background: autoDraw = False
+117.4312 	EXP 	patch_foreground: autoDraw = False
+117.4312 	EXP 	patch_test: autoDraw = False
+117.4312 	EXP 	text_task: autoDraw = False
+117.4312 	EXP 	text: autoDraw = True
+117.6170 	EXP 	New trial (rep=5, index=6): {'rgb_luminance': 0.9}
+117.6324 	EXP 	text: autoDraw = False
+117.6324 	EXP 	text: autoDraw = False
+117.6324 	EXP 	patch_background: autoDraw = True
+117.6324 	EXP 	patch_foreground: autoDraw = True
+117.6324 	EXP 	patch_test: autoDraw = True
+117.6324 	EXP 	text_task: autoDraw = True
+118.1641 	DATA 	Keypress: right
+118.1991 	EXP 	patch_background: autoDraw = False
+118.1991 	EXP 	patch_foreground: autoDraw = False
+118.1991 	EXP 	patch_test: autoDraw = False
+118.1991 	EXP 	text_task: autoDraw = False
+118.1991 	EXP 	text: autoDraw = True
+118.3980 	EXP 	New trial (rep=5, index=7): {'rgb_luminance': 0.6}
+118.4138 	EXP 	text: autoDraw = False
+118.4138 	EXP 	patch_background: autoDraw = True
+118.4138 	EXP 	patch_foreground: autoDraw = True
+118.4138 	EXP 	patch_test: autoDraw = True
+118.4138 	EXP 	text_task: autoDraw = True
+119.1768 	DATA 	Keypress: right
+119.1819 	EXP 	patch_background: autoDraw = False
+119.1819 	EXP 	patch_foreground: autoDraw = False
+119.1819 	EXP 	patch_test: autoDraw = False
+119.1819 	EXP 	text_task: autoDraw = False
+119.1819 	EXP 	text: autoDraw = True
+119.3804 	EXP 	New trial (rep=5, index=8): {'rgb_luminance': 0.4}
+119.3961 	EXP 	text: autoDraw = False
+119.3961 	EXP 	patch_background: autoDraw = True
+119.3961 	EXP 	patch_foreground: autoDraw = True
+119.3961 	EXP 	patch_test: autoDraw = True
+119.3961 	EXP 	text_task: autoDraw = True
+121.0752 	DATA 	Keypress: left
+121.0802 	EXP 	patch_background: autoDraw = False
+121.0802 	EXP 	patch_foreground: autoDraw = False
+121.0802 	EXP 	patch_test: autoDraw = False
+121.0802 	EXP 	text_task: autoDraw = False
+121.0802 	EXP 	text: autoDraw = True
+121.2788 	EXP 	New trial (rep=6, index=0): {'rgb_luminance': 0.4}
+121.2945 	EXP 	text: autoDraw = False
+121.2945 	EXP 	patch_background: autoDraw = True
+121.2945 	EXP 	patch_foreground: autoDraw = True
+121.2945 	EXP 	patch_test: autoDraw = True
+121.2945 	EXP 	text_task: autoDraw = True
+123.9726 	DATA 	Keypress: left
+123.9776 	EXP 	patch_background: autoDraw = False
+123.9776 	EXP 	patch_foreground: autoDraw = False
+123.9776 	EXP 	patch_test: autoDraw = False
+123.9776 	EXP 	text_task: autoDraw = False
+123.9776 	EXP 	text: autoDraw = True
+124.1764 	EXP 	New trial (rep=6, index=1): {'rgb_luminance': 0.6}
+124.1919 	EXP 	text: autoDraw = False
+124.1919 	EXP 	patch_background: autoDraw = True
+124.1919 	EXP 	patch_foreground: autoDraw = True
+124.1919 	EXP 	patch_test: autoDraw = True
+124.1919 	EXP 	text_task: autoDraw = True
+124.7720 	DATA 	Keypress: right
+124.7770 	EXP 	patch_background: autoDraw = False
+124.7770 	EXP 	patch_foreground: autoDraw = False
+124.7770 	EXP 	patch_test: autoDraw = False
+124.7770 	EXP 	text_task: autoDraw = False
+124.7770 	EXP 	text: autoDraw = True
+124.9755 	EXP 	New trial (rep=6, index=2): {'rgb_luminance': 0.45}
+124.9914 	EXP 	text: autoDraw = False
+124.9914 	EXP 	patch_background: autoDraw = True
+124.9914 	EXP 	patch_foreground: autoDraw = True
+124.9914 	EXP 	patch_test: autoDraw = True
+124.9914 	EXP 	text_task: autoDraw = True
+125.7986 	DATA 	Keypress: right
+125.8258 	EXP 	patch_background: autoDraw = False
+125.8258 	EXP 	patch_foreground: autoDraw = False
+125.8258 	EXP 	patch_test: autoDraw = False
+125.8258 	EXP 	text_task: autoDraw = False
+125.8258 	EXP 	text: autoDraw = True
+126.0247 	EXP 	New trial (rep=6, index=3): {'rgb_luminance': 0.3}
+126.0404 	EXP 	text: autoDraw = False
+126.0404 	EXP 	patch_background: autoDraw = True
+126.0404 	EXP 	patch_foreground: autoDraw = True
+126.0404 	EXP 	patch_test: autoDraw = True
+126.0404 	EXP 	text_task: autoDraw = True
+132.5158 	DATA 	Keypress: right
+132.5208 	EXP 	patch_background: autoDraw = False
+132.5208 	EXP 	patch_foreground: autoDraw = False
+132.5208 	EXP 	patch_test: autoDraw = False
+132.5208 	EXP 	text_task: autoDraw = False
+132.5208 	EXP 	text: autoDraw = True
+132.7189 	EXP 	New trial (rep=6, index=4): {'rgb_luminance': 0.9}
+132.7351 	EXP 	text: autoDraw = False
+132.7351 	EXP 	patch_background: autoDraw = True
+132.7351 	EXP 	patch_foreground: autoDraw = True
+132.7351 	EXP 	patch_test: autoDraw = True
+132.7351 	EXP 	text_task: autoDraw = True
+133.3998 	DATA 	Keypress: right
+133.4060 	EXP 	patch_background: autoDraw = False
+133.4060 	EXP 	patch_foreground: autoDraw = False
+133.4060 	EXP 	patch_test: autoDraw = False
+133.4060 	EXP 	text_task: autoDraw = False
+133.4060 	EXP 	text: autoDraw = True
+133.6013 	EXP 	New trial (rep=6, index=5): {'rgb_luminance': 0.5}
+133.6173 	EXP 	text: autoDraw = False
+133.6173 	EXP 	patch_background: autoDraw = True
+133.6173 	EXP 	patch_foreground: autoDraw = True
+133.6173 	EXP 	patch_test: autoDraw = True
+133.6173 	EXP 	text_task: autoDraw = True
+134.5152 	DATA 	Keypress: right
+134.5202 	EXP 	patch_background: autoDraw = False
+134.5202 	EXP 	patch_foreground: autoDraw = False
+134.5202 	EXP 	patch_test: autoDraw = False
+134.5202 	EXP 	text_task: autoDraw = False
+134.5202 	EXP 	text: autoDraw = True
+134.7169 	EXP 	New trial (rep=6, index=6): {'rgb_luminance': 0.7}
+134.7330 	EXP 	text: autoDraw = False
+134.7330 	EXP 	patch_background: autoDraw = True
+134.7330 	EXP 	patch_foreground: autoDraw = True
+134.7330 	EXP 	patch_test: autoDraw = True
+134.7330 	EXP 	text_task: autoDraw = True
+135.9223 	DATA 	Keypress: right
+135.9508 	EXP 	patch_background: autoDraw = False
+135.9508 	EXP 	patch_foreground: autoDraw = False
+135.9508 	EXP 	patch_test: autoDraw = False
+135.9508 	EXP 	text_task: autoDraw = False
+135.9508 	EXP 	text: autoDraw = True
+136.1491 	EXP 	New trial (rep=6, index=7): {'rgb_luminance': 0.55}
+136.1652 	EXP 	text: autoDraw = False
+136.1652 	EXP 	patch_background: autoDraw = True
+136.1652 	EXP 	patch_foreground: autoDraw = True
+136.1652 	EXP 	patch_test: autoDraw = True
+136.1652 	EXP 	text_task: autoDraw = True
+137.4611 	DATA 	Keypress: right
+137.4661 	EXP 	patch_background: autoDraw = False
+137.4661 	EXP 	patch_foreground: autoDraw = False
+137.4661 	EXP 	patch_test: autoDraw = False
+137.4661 	EXP 	text_task: autoDraw = False
+137.4661 	EXP 	text: autoDraw = True
+137.6646 	EXP 	New trial (rep=6, index=8): {'rgb_luminance': 0.1}
+137.6805 	EXP 	text: autoDraw = False
+137.6805 	EXP 	patch_background: autoDraw = True
+137.6805 	EXP 	patch_foreground: autoDraw = True
+137.6805 	EXP 	patch_test: autoDraw = True
+137.6805 	EXP 	text_task: autoDraw = True
+138.4309 	DATA 	Keypress: left
+138.4361 	EXP 	patch_background: autoDraw = False
+138.4361 	EXP 	patch_foreground: autoDraw = False
+138.4361 	EXP 	patch_test: autoDraw = False
+138.4361 	EXP 	text_task: autoDraw = False
+138.4361 	EXP 	text: autoDraw = True
+138.6303 	EXP 	New trial (rep=7, index=0): {'rgb_luminance': 0.7}
+138.6463 	EXP 	text: autoDraw = False
+138.6463 	EXP 	patch_background: autoDraw = True
+138.6463 	EXP 	patch_foreground: autoDraw = True
+138.6463 	EXP 	patch_test: autoDraw = True
+138.6463 	EXP 	text_task: autoDraw = True
+139.3261 	DATA 	Keypress: right
+139.3312 	EXP 	patch_background: autoDraw = False
+139.3312 	EXP 	patch_foreground: autoDraw = False
+139.3312 	EXP 	patch_test: autoDraw = False
+139.3312 	EXP 	text_task: autoDraw = False
+139.3312 	EXP 	text: autoDraw = True
+139.5296 	EXP 	New trial (rep=7, index=1): {'rgb_luminance': 0.6}
+139.5456 	EXP 	text: autoDraw = False
+139.5456 	EXP 	patch_background: autoDraw = True
+139.5456 	EXP 	patch_foreground: autoDraw = True
+139.5456 	EXP 	patch_test: autoDraw = True
+139.5456 	EXP 	text_task: autoDraw = True
+141.5908 	DATA 	Keypress: right
+141.5961 	EXP 	patch_background: autoDraw = False
+141.5961 	EXP 	patch_foreground: autoDraw = False
+141.5961 	EXP 	patch_test: autoDraw = False
+141.5961 	EXP 	text_task: autoDraw = False
+141.5961 	EXP 	text: autoDraw = True
+141.7942 	EXP 	New trial (rep=7, index=2): {'rgb_luminance': 0.9}
+141.8101 	EXP 	text: autoDraw = False
+141.8101 	EXP 	patch_background: autoDraw = True
+141.8101 	EXP 	patch_foreground: autoDraw = True
+141.8101 	EXP 	patch_test: autoDraw = True
+141.8101 	EXP 	text_task: autoDraw = True
+142.5534 	DATA 	Keypress: right
+142.5812 	EXP 	patch_background: autoDraw = False
+142.5812 	EXP 	patch_foreground: autoDraw = False
+142.5812 	EXP 	patch_test: autoDraw = False
+142.5812 	EXP 	text_task: autoDraw = False
+142.5812 	EXP 	text: autoDraw = True
+142.7769 	EXP 	New trial (rep=7, index=3): {'rgb_luminance': 0.5}
+142.7928 	EXP 	text: autoDraw = False
+142.7928 	EXP 	patch_background: autoDraw = True
+142.7928 	EXP 	patch_foreground: autoDraw = True
+142.7928 	EXP 	patch_test: autoDraw = True
+142.7928 	EXP 	text_task: autoDraw = True
+144.2217 	DATA 	Keypress: right
+144.2267 	EXP 	patch_background: autoDraw = False
+144.2267 	EXP 	patch_foreground: autoDraw = False
+144.2267 	EXP 	patch_test: autoDraw = False
+144.2267 	EXP 	text_task: autoDraw = False
+144.2267 	EXP 	text: autoDraw = True
+144.4253 	EXP 	New trial (rep=7, index=4): {'rgb_luminance': 0.55}
+144.4411 	EXP 	text: autoDraw = False
+144.4411 	EXP 	patch_background: autoDraw = True
+144.4411 	EXP 	patch_foreground: autoDraw = True
+144.4411 	EXP 	patch_test: autoDraw = True
+144.4411 	EXP 	text_task: autoDraw = True
+145.0543 	DATA 	Keypress: right
+145.0592 	EXP 	patch_background: autoDraw = False
+145.0592 	EXP 	patch_foreground: autoDraw = False
+145.0592 	EXP 	patch_test: autoDraw = False
+145.0592 	EXP 	text_task: autoDraw = False
+145.0592 	EXP 	text: autoDraw = True
+145.2581 	EXP 	New trial (rep=7, index=5): {'rgb_luminance': 0.45}
+145.2737 	EXP 	text: autoDraw = False
+145.2737 	EXP 	patch_background: autoDraw = True
+145.2737 	EXP 	patch_foreground: autoDraw = True
+145.2737 	EXP 	patch_test: autoDraw = True
+145.2737 	EXP 	text_task: autoDraw = True
+146.8027 	DATA 	Keypress: right
+146.8076 	EXP 	patch_background: autoDraw = False
+146.8076 	EXP 	patch_foreground: autoDraw = False
+146.8076 	EXP 	patch_test: autoDraw = False
+146.8076 	EXP 	text_task: autoDraw = False
+146.8076 	EXP 	text: autoDraw = True
+147.0063 	EXP 	New trial (rep=7, index=6): {'rgb_luminance': 0.4}
+147.0221 	EXP 	text: autoDraw = False
+147.0221 	EXP 	patch_background: autoDraw = True
+147.0221 	EXP 	patch_foreground: autoDraw = True
+147.0221 	EXP 	patch_test: autoDraw = True
+147.0221 	EXP 	text_task: autoDraw = True
+149.2341 	DATA 	Keypress: left
+149.2391 	EXP 	patch_background: autoDraw = False
+149.2391 	EXP 	patch_foreground: autoDraw = False
+149.2391 	EXP 	patch_test: autoDraw = False
+149.2391 	EXP 	text_task: autoDraw = False
+149.2391 	EXP 	text: autoDraw = True
+149.4377 	EXP 	New trial (rep=7, index=7): {'rgb_luminance': 0.3}
+149.4539 	EXP 	text: autoDraw = False
+149.4539 	EXP 	patch_background: autoDraw = True
+149.4539 	EXP 	patch_foreground: autoDraw = True
+149.4539 	EXP 	patch_test: autoDraw = True
+149.4539 	EXP 	text_task: autoDraw = True
+151.0588 	DATA 	Keypress: left
+151.0870 	EXP 	patch_background: autoDraw = False
+151.0870 	EXP 	patch_foreground: autoDraw = False
+151.0870 	EXP 	patch_test: autoDraw = False
+151.0870 	EXP 	text_task: autoDraw = False
+151.0870 	EXP 	text: autoDraw = True
+151.2861 	EXP 	New trial (rep=7, index=8): {'rgb_luminance': 0.1}
+151.3017 	EXP 	text: autoDraw = False
+151.3017 	EXP 	patch_background: autoDraw = True
+151.3017 	EXP 	patch_foreground: autoDraw = True
+151.3017 	EXP 	patch_test: autoDraw = True
+151.3017 	EXP 	text_task: autoDraw = True
+151.9098 	DATA 	Keypress: left
+151.9364 	EXP 	patch_background: autoDraw = False
+151.9364 	EXP 	patch_foreground: autoDraw = False
+151.9364 	EXP 	patch_test: autoDraw = False
+151.9364 	EXP 	text_task: autoDraw = False
+151.9364 	EXP 	text: autoDraw = True
+152.1353 	EXP 	New trial (rep=8, index=0): {'rgb_luminance': 0.45}
+152.1513 	EXP 	text: autoDraw = False
+152.1513 	EXP 	patch_background: autoDraw = True
+152.1513 	EXP 	patch_foreground: autoDraw = True
+152.1513 	EXP 	patch_test: autoDraw = True
+152.1513 	EXP 	text_task: autoDraw = True
+153.0475 	DATA 	Keypress: right
+153.0527 	EXP 	patch_background: autoDraw = False
+153.0527 	EXP 	patch_foreground: autoDraw = False
+153.0527 	EXP 	patch_test: autoDraw = False
+153.0527 	EXP 	text_task: autoDraw = False
+153.0527 	EXP 	text: autoDraw = True
+153.2513 	EXP 	New trial (rep=8, index=1): {'rgb_luminance': 0.4}
+153.2671 	EXP 	text: autoDraw = False
+153.2671 	EXP 	patch_background: autoDraw = True
+153.2671 	EXP 	patch_foreground: autoDraw = True
+153.2671 	EXP 	patch_test: autoDraw = True
+153.2671 	EXP 	text_task: autoDraw = True
+154.4998 	DATA 	Keypress: right
+154.5341 	EXP 	patch_background: autoDraw = False
+154.5341 	EXP 	patch_foreground: autoDraw = False
+154.5341 	EXP 	patch_test: autoDraw = False
+154.5341 	EXP 	text_task: autoDraw = False
+154.5341 	EXP 	text: autoDraw = True
+154.7331 	EXP 	New trial (rep=8, index=2): {'rgb_luminance': 0.5}
+154.7490 	EXP 	text: autoDraw = False
+154.7490 	EXP 	patch_background: autoDraw = True
+154.7490 	EXP 	patch_foreground: autoDraw = True
+154.7490 	EXP 	patch_test: autoDraw = True
+154.7490 	EXP 	text_task: autoDraw = True
+157.0443 	DATA 	Keypress: right
+157.0491 	EXP 	patch_background: autoDraw = False
+157.0491 	EXP 	patch_foreground: autoDraw = False
+157.0491 	EXP 	patch_test: autoDraw = False
+157.0491 	EXP 	text_task: autoDraw = False
+157.0491 	EXP 	text: autoDraw = True
+157.2476 	EXP 	New trial (rep=8, index=3): {'rgb_luminance': 0.7}
+157.2637 	EXP 	text: autoDraw = False
+157.2637 	EXP 	patch_background: autoDraw = True
+157.2637 	EXP 	patch_foreground: autoDraw = True
+157.2637 	EXP 	patch_test: autoDraw = True
+157.2637 	EXP 	text_task: autoDraw = True
+157.8767 	DATA 	Keypress: right
+157.8819 	EXP 	patch_background: autoDraw = False
+157.8819 	EXP 	patch_foreground: autoDraw = False
+157.8819 	EXP 	patch_test: autoDraw = False
+157.8819 	EXP 	text_task: autoDraw = False
+157.8819 	EXP 	text: autoDraw = True
+158.0802 	EXP 	New trial (rep=8, index=4): {'rgb_luminance': 0.6}
+158.0959 	EXP 	text: autoDraw = False
+158.0959 	EXP 	patch_background: autoDraw = True
+158.0959 	EXP 	patch_foreground: autoDraw = True
+158.0959 	EXP 	patch_test: autoDraw = True
+158.0959 	EXP 	text_task: autoDraw = True
+158.7868 	DATA 	Keypress: right
+158.8167 	EXP 	patch_background: autoDraw = False
+158.8167 	EXP 	patch_foreground: autoDraw = False
+158.8167 	EXP 	patch_test: autoDraw = False
+158.8167 	EXP 	text_task: autoDraw = False
+158.8167 	EXP 	text: autoDraw = True
+159.0126 	EXP 	New trial (rep=8, index=5): {'rgb_luminance': 0.55}
+159.0286 	EXP 	text: autoDraw = False
+159.0286 	EXP 	patch_background: autoDraw = True
+159.0286 	EXP 	patch_foreground: autoDraw = True
+159.0286 	EXP 	patch_test: autoDraw = True
+159.0286 	EXP 	text_task: autoDraw = True
+160.2912 	DATA 	Keypress: right
+160.2962 	EXP 	patch_background: autoDraw = False
+160.2962 	EXP 	patch_foreground: autoDraw = False
+160.2962 	EXP 	patch_test: autoDraw = False
+160.2962 	EXP 	text_task: autoDraw = False
+160.2962 	EXP 	text: autoDraw = True
+160.4948 	EXP 	New trial (rep=8, index=6): {'rgb_luminance': 0.1}
+160.5107 	EXP 	text: autoDraw = False
+160.5107 	EXP 	patch_background: autoDraw = True
+160.5107 	EXP 	patch_foreground: autoDraw = True
+160.5107 	EXP 	patch_test: autoDraw = True
+160.5107 	EXP 	text_task: autoDraw = True
+161.1573 	DATA 	Keypress: left
+161.1623 	EXP 	patch_background: autoDraw = False
+161.1623 	EXP 	patch_foreground: autoDraw = False
+161.1623 	EXP 	patch_test: autoDraw = False
+161.1623 	EXP 	text_task: autoDraw = False
+161.1623 	EXP 	text: autoDraw = True
+161.3606 	EXP 	New trial (rep=8, index=7): {'rgb_luminance': 0.3}
+161.3765 	EXP 	text: autoDraw = False
+161.3765 	EXP 	patch_background: autoDraw = True
+161.3765 	EXP 	patch_foreground: autoDraw = True
+161.3765 	EXP 	patch_test: autoDraw = True
+161.3765 	EXP 	text_task: autoDraw = True
+166.7188 	DATA 	Keypress: left
+166.7237 	EXP 	patch_background: autoDraw = False
+166.7237 	EXP 	patch_foreground: autoDraw = False
+166.7237 	EXP 	patch_test: autoDraw = False
+166.7237 	EXP 	text_task: autoDraw = False
+166.7237 	EXP 	text: autoDraw = True
+166.9227 	EXP 	New trial (rep=8, index=8): {'rgb_luminance': 0.9}
+166.9382 	EXP 	text: autoDraw = False
+166.9382 	EXP 	patch_background: autoDraw = True
+166.9382 	EXP 	patch_foreground: autoDraw = True
+166.9382 	EXP 	patch_test: autoDraw = True
+166.9382 	EXP 	text_task: autoDraw = True
+167.7404 	DATA 	Keypress: right
+167.7540 	EXP 	patch_background: autoDraw = False
+167.7540 	EXP 	patch_foreground: autoDraw = False
+167.7540 	EXP 	patch_test: autoDraw = False
+167.7540 	EXP 	text_task: autoDraw = False
+167.7540 	EXP 	text: autoDraw = True
+167.9399 	EXP 	New trial (rep=9, index=0): {'rgb_luminance': 0.55}
+167.9545 	EXP 	text: autoDraw = False
+167.9545 	EXP 	text: autoDraw = False
+167.9545 	EXP 	patch_background: autoDraw = True
+167.9545 	EXP 	patch_foreground: autoDraw = True
+167.9545 	EXP 	patch_test: autoDraw = True
+167.9545 	EXP 	text_task: autoDraw = True
+169.9329 	DATA 	Keypress: right
+169.9379 	EXP 	patch_background: autoDraw = False
+169.9379 	EXP 	patch_foreground: autoDraw = False
+169.9379 	EXP 	patch_test: autoDraw = False
+169.9379 	EXP 	text_task: autoDraw = False
+169.9379 	EXP 	text: autoDraw = True
+170.1362 	EXP 	New trial (rep=9, index=1): {'rgb_luminance': 0.7}
+170.1523 	EXP 	text: autoDraw = False
+170.1523 	EXP 	patch_background: autoDraw = True
+170.1523 	EXP 	patch_foreground: autoDraw = True
+170.1523 	EXP 	patch_test: autoDraw = True
+170.1523 	EXP 	text_task: autoDraw = True
+171.0484 	DATA 	Keypress: right
+171.0534 	EXP 	patch_background: autoDraw = False
+171.0534 	EXP 	patch_foreground: autoDraw = False
+171.0534 	EXP 	patch_test: autoDraw = False
+171.0534 	EXP 	text_task: autoDraw = False
+171.0534 	EXP 	text: autoDraw = True
+171.2518 	EXP 	New trial (rep=9, index=2): {'rgb_luminance': 0.5}
+171.2679 	EXP 	text: autoDraw = False
+171.2679 	EXP 	patch_background: autoDraw = True
+171.2679 	EXP 	patch_foreground: autoDraw = True
+171.2679 	EXP 	patch_test: autoDraw = True
+171.2679 	EXP 	text_task: autoDraw = True
+174.9287 	DATA 	Keypress: right
+174.9338 	EXP 	patch_background: autoDraw = False
+174.9338 	EXP 	patch_foreground: autoDraw = False
+174.9338 	EXP 	patch_test: autoDraw = False
+174.9338 	EXP 	text_task: autoDraw = False
+174.9338 	EXP 	text: autoDraw = True
+175.1317 	EXP 	New trial (rep=9, index=3): {'rgb_luminance': 0.3}
+175.1477 	EXP 	text: autoDraw = False
+175.1477 	EXP 	patch_background: autoDraw = True
+175.1477 	EXP 	patch_foreground: autoDraw = True
+175.1477 	EXP 	patch_test: autoDraw = True
+175.1477 	EXP 	text_task: autoDraw = True
+175.8277 	DATA 	Keypress: left
+175.8326 	EXP 	patch_background: autoDraw = False
+175.8326 	EXP 	patch_foreground: autoDraw = False
+175.8326 	EXP 	patch_test: autoDraw = False
+175.8326 	EXP 	text_task: autoDraw = False
+175.8326 	EXP 	text: autoDraw = True
+176.0311 	EXP 	New trial (rep=9, index=4): {'rgb_luminance': 0.45}
+176.0471 	EXP 	text: autoDraw = False
+176.0471 	EXP 	patch_background: autoDraw = True
+176.0471 	EXP 	patch_foreground: autoDraw = True
+176.0471 	EXP 	patch_test: autoDraw = True
+176.0471 	EXP 	text_task: autoDraw = True
+177.3928 	DATA 	Keypress: right
+177.3978 	EXP 	patch_background: autoDraw = False
+177.3978 	EXP 	patch_foreground: autoDraw = False
+177.3978 	EXP 	patch_test: autoDraw = False
+177.3978 	EXP 	text_task: autoDraw = False
+177.3978 	EXP 	text: autoDraw = True
+177.5964 	EXP 	New trial (rep=9, index=5): {'rgb_luminance': 0.4}
+177.6121 	EXP 	text: autoDraw = False
+177.6121 	EXP 	patch_background: autoDraw = True
+177.6121 	EXP 	patch_foreground: autoDraw = True
+177.6121 	EXP 	patch_test: autoDraw = True
+177.6121 	EXP 	text_task: autoDraw = True
+178.4983 	DATA 	Keypress: left
+178.5116 	EXP 	patch_background: autoDraw = False
+178.5116 	EXP 	patch_foreground: autoDraw = False
+178.5116 	EXP 	patch_test: autoDraw = False
+178.5116 	EXP 	text_task: autoDraw = False
+178.5116 	EXP 	text: autoDraw = True
+178.6978 	EXP 	New trial (rep=9, index=6): {'rgb_luminance': 0.6}
+178.7123 	EXP 	text: autoDraw = False
+178.7123 	EXP 	text: autoDraw = False
+178.7123 	EXP 	patch_background: autoDraw = True
+178.7123 	EXP 	patch_foreground: autoDraw = True
+178.7123 	EXP 	patch_test: autoDraw = True
+178.7123 	EXP 	text_task: autoDraw = True
+179.3577 	DATA 	Keypress: right
+179.3628 	EXP 	patch_background: autoDraw = False
+179.3628 	EXP 	patch_foreground: autoDraw = False
+179.3628 	EXP 	patch_test: autoDraw = False
+179.3628 	EXP 	text_task: autoDraw = False
+179.3628 	EXP 	text: autoDraw = True
+179.5615 	EXP 	New trial (rep=9, index=7): {'rgb_luminance': 0.9}
+179.5773 	EXP 	text: autoDraw = False
+179.5773 	EXP 	patch_background: autoDraw = True
+179.5773 	EXP 	patch_foreground: autoDraw = True
+179.5773 	EXP 	patch_test: autoDraw = True
+179.5773 	EXP 	text_task: autoDraw = True
+180.1169 	DATA 	Keypress: right
+180.1451 	EXP 	patch_background: autoDraw = False
+180.1451 	EXP 	patch_foreground: autoDraw = False
+180.1451 	EXP 	patch_test: autoDraw = False
+180.1451 	EXP 	text_task: autoDraw = False
+180.1451 	EXP 	text: autoDraw = True
+180.3439 	EXP 	New trial (rep=9, index=8): {'rgb_luminance': 0.1}
+180.3599 	EXP 	text: autoDraw = False
+180.3599 	EXP 	patch_background: autoDraw = True
+180.3599 	EXP 	patch_foreground: autoDraw = True
+180.3599 	EXP 	patch_test: autoDraw = True
+180.3599 	EXP 	text_task: autoDraw = True
+180.9729 	DATA 	Keypress: left
+180.9779 	EXP 	patch_background: autoDraw = False
+180.9779 	EXP 	patch_foreground: autoDraw = False
+180.9779 	EXP 	patch_test: autoDraw = False
+180.9779 	EXP 	text_task: autoDraw = False
+180.9779 	EXP 	text: autoDraw = True
+181.1766 	EXP 	New trial (rep=10, index=0): {'rgb_luminance': 0.55}
+181.1924 	EXP 	text: autoDraw = False
+181.1924 	EXP 	patch_background: autoDraw = True
+181.1924 	EXP 	patch_foreground: autoDraw = True
+181.1924 	EXP 	patch_test: autoDraw = True
+181.1924 	EXP 	text_task: autoDraw = True
+182.0221 	DATA 	Keypress: right
+182.0273 	EXP 	patch_background: autoDraw = False
+182.0273 	EXP 	patch_foreground: autoDraw = False
+182.0273 	EXP 	patch_test: autoDraw = False
+182.0273 	EXP 	text_task: autoDraw = False
+182.0273 	EXP 	text: autoDraw = True
+182.2255 	EXP 	New trial (rep=10, index=1): {'rgb_luminance': 0.1}
+182.2414 	EXP 	text: autoDraw = False
+182.2414 	EXP 	patch_background: autoDraw = True
+182.2414 	EXP 	patch_foreground: autoDraw = True
+182.2414 	EXP 	patch_test: autoDraw = True
+182.2414 	EXP 	text_task: autoDraw = True
+183.4089 	DATA 	Keypress: left
+183.4235 	EXP 	patch_background: autoDraw = False
+183.4235 	EXP 	patch_foreground: autoDraw = False
+183.4235 	EXP 	patch_test: autoDraw = False
+183.4235 	EXP 	text_task: autoDraw = False
+183.4235 	EXP 	text: autoDraw = True
+183.6078 	EXP 	New trial (rep=10, index=2): {'rgb_luminance': 0.3}
+183.6236 	EXP 	text: autoDraw = False
+183.6236 	EXP 	patch_background: autoDraw = True
+183.6236 	EXP 	patch_foreground: autoDraw = True
+183.6236 	EXP 	patch_test: autoDraw = True
+183.6236 	EXP 	text_task: autoDraw = True
+185.4692 	DATA 	Keypress: left
+185.4742 	EXP 	patch_background: autoDraw = False
+185.4742 	EXP 	patch_foreground: autoDraw = False
+185.4742 	EXP 	patch_test: autoDraw = False
+185.4742 	EXP 	text_task: autoDraw = False
+185.4742 	EXP 	text: autoDraw = True
+185.6729 	EXP 	New trial (rep=10, index=3): {'rgb_luminance': 0.5}
+185.6886 	EXP 	text: autoDraw = False
+185.6886 	EXP 	patch_background: autoDraw = True
+185.6886 	EXP 	patch_foreground: autoDraw = True
+185.6886 	EXP 	patch_test: autoDraw = True
+185.6886 	EXP 	text_task: autoDraw = True
+186.5516 	DATA 	Keypress: right
+186.5566 	EXP 	patch_background: autoDraw = False
+186.5566 	EXP 	patch_foreground: autoDraw = False
+186.5566 	EXP 	patch_test: autoDraw = False
+186.5566 	EXP 	text_task: autoDraw = False
+186.5566 	EXP 	text: autoDraw = True
+186.7551 	EXP 	New trial (rep=10, index=4): {'rgb_luminance': 0.7}
+186.7707 	EXP 	text: autoDraw = False
+186.7707 	EXP 	patch_background: autoDraw = True
+186.7707 	EXP 	patch_foreground: autoDraw = True
+186.7707 	EXP 	patch_test: autoDraw = True
+186.7707 	EXP 	text_task: autoDraw = True
+187.4007 	DATA 	Keypress: right
+187.4058 	EXP 	patch_background: autoDraw = False
+187.4058 	EXP 	patch_foreground: autoDraw = False
+187.4058 	EXP 	patch_test: autoDraw = False
+187.4058 	EXP 	text_task: autoDraw = False
+187.4058 	EXP 	text: autoDraw = True
+187.6046 	EXP 	New trial (rep=10, index=5): {'rgb_luminance': 0.9}
+187.6202 	EXP 	text: autoDraw = False
+187.6202 	EXP 	patch_background: autoDraw = True
+187.6202 	EXP 	patch_foreground: autoDraw = True
+187.6202 	EXP 	patch_test: autoDraw = True
+187.6202 	EXP 	text_task: autoDraw = True
+188.2815 	DATA 	Keypress: right
+188.3058 	EXP 	patch_background: autoDraw = False
+188.3058 	EXP 	patch_foreground: autoDraw = False
+188.3058 	EXP 	patch_test: autoDraw = False
+188.3058 	EXP 	text_task: autoDraw = False
+188.3058 	EXP 	text: autoDraw = True
+188.5053 	EXP 	New trial (rep=10, index=6): {'rgb_luminance': 0.6}
+188.5206 	EXP 	text: autoDraw = False
+188.5206 	EXP 	patch_background: autoDraw = True
+188.5206 	EXP 	patch_foreground: autoDraw = True
+188.5206 	EXP 	patch_test: autoDraw = True
+188.5206 	EXP 	text_task: autoDraw = True
+189.4491 	DATA 	Keypress: right
+189.4546 	EXP 	patch_background: autoDraw = False
+189.4546 	EXP 	patch_foreground: autoDraw = False
+189.4546 	EXP 	patch_test: autoDraw = False
+189.4546 	EXP 	text_task: autoDraw = False
+189.4546 	EXP 	text: autoDraw = True
+189.6527 	EXP 	New trial (rep=10, index=7): {'rgb_luminance': 0.4}
+189.6684 	EXP 	text: autoDraw = False
+189.6684 	EXP 	patch_background: autoDraw = True
+189.6684 	EXP 	patch_foreground: autoDraw = True
+189.6684 	EXP 	patch_test: autoDraw = True
+189.6684 	EXP 	text_task: autoDraw = True
+191.2973 	DATA 	Keypress: left
+191.3022 	EXP 	patch_background: autoDraw = False
+191.3022 	EXP 	patch_foreground: autoDraw = False
+191.3022 	EXP 	patch_test: autoDraw = False
+191.3022 	EXP 	text_task: autoDraw = False
+191.3022 	EXP 	text: autoDraw = True
+191.5011 	EXP 	New trial (rep=10, index=8): {'rgb_luminance': 0.45}
+191.5168 	EXP 	text: autoDraw = False
+191.5168 	EXP 	patch_background: autoDraw = True
+191.5168 	EXP 	patch_foreground: autoDraw = True
+191.5168 	EXP 	patch_test: autoDraw = True
+191.5168 	EXP 	text_task: autoDraw = True
+192.5463 	DATA 	Keypress: right
+192.5513 	EXP 	patch_background: autoDraw = False
+192.5513 	EXP 	patch_foreground: autoDraw = False
+192.5513 	EXP 	patch_test: autoDraw = False
+192.5513 	EXP 	text_task: autoDraw = False
+192.5513 	EXP 	text: autoDraw = True
+192.7498 	EXP 	New trial (rep=11, index=0): {'rgb_luminance': 0.5}
+192.7655 	EXP 	text: autoDraw = False
+192.7655 	EXP 	patch_background: autoDraw = True
+192.7655 	EXP 	patch_foreground: autoDraw = True
+192.7655 	EXP 	patch_test: autoDraw = True
+192.7655 	EXP 	text_task: autoDraw = True
+193.3185 	DATA 	Keypress: right
+193.3317 	EXP 	patch_background: autoDraw = False
+193.3317 	EXP 	patch_foreground: autoDraw = False
+193.3317 	EXP 	patch_test: autoDraw = False
+193.3317 	EXP 	text_task: autoDraw = False
+193.3317 	EXP 	text: autoDraw = True
+193.5184 	EXP 	New trial (rep=11, index=1): {'rgb_luminance': 0.3}
+193.5326 	EXP 	text: autoDraw = False
+193.5326 	EXP 	patch_background: autoDraw = True
+193.5326 	EXP 	patch_foreground: autoDraw = True
+193.5326 	EXP 	patch_test: autoDraw = True
+193.5326 	EXP 	text_task: autoDraw = True
+194.2447 	DATA 	Keypress: left
+194.2496 	EXP 	patch_background: autoDraw = False
+194.2496 	EXP 	patch_foreground: autoDraw = False
+194.2496 	EXP 	patch_test: autoDraw = False
+194.2496 	EXP 	text_task: autoDraw = False
+194.2496 	EXP 	text: autoDraw = True
+194.4491 	EXP 	New trial (rep=11, index=2): {'rgb_luminance': 0.9}
+194.4646 	EXP 	text: autoDraw = False
+194.4646 	EXP 	patch_background: autoDraw = True
+194.4646 	EXP 	patch_foreground: autoDraw = True
+194.4646 	EXP 	patch_test: autoDraw = True
+194.4646 	EXP 	text_task: autoDraw = True
+195.0442 	DATA 	Keypress: right
+195.0493 	EXP 	patch_background: autoDraw = False
+195.0493 	EXP 	patch_foreground: autoDraw = False
+195.0493 	EXP 	patch_test: autoDraw = False
+195.0493 	EXP 	text_task: autoDraw = False
+195.0493 	EXP 	text: autoDraw = True
+195.2479 	EXP 	New trial (rep=11, index=3): {'rgb_luminance': 0.7}
+195.2637 	EXP 	text: autoDraw = False
+195.2637 	EXP 	patch_background: autoDraw = True
+195.2637 	EXP 	patch_foreground: autoDraw = True
+195.2637 	EXP 	patch_test: autoDraw = True
+195.2637 	EXP 	text_task: autoDraw = True
+196.7425 	DATA 	Keypress: right
+196.7474 	EXP 	patch_background: autoDraw = False
+196.7474 	EXP 	patch_foreground: autoDraw = False
+196.7474 	EXP 	patch_test: autoDraw = False
+196.7474 	EXP 	text_task: autoDraw = False
+196.7474 	EXP 	text: autoDraw = True
+196.9466 	EXP 	New trial (rep=11, index=4): {'rgb_luminance': 0.55}
+196.9619 	EXP 	text: autoDraw = False
+196.9619 	EXP 	patch_background: autoDraw = True
+196.9619 	EXP 	patch_foreground: autoDraw = True
+196.9619 	EXP 	patch_test: autoDraw = True
+196.9619 	EXP 	text_task: autoDraw = True
+198.0530 	DATA 	Keypress: right
+198.0795 	EXP 	patch_background: autoDraw = False
+198.0795 	EXP 	patch_foreground: autoDraw = False
+198.0795 	EXP 	patch_test: autoDraw = False
+198.0795 	EXP 	text_task: autoDraw = False
+198.0795 	EXP 	text: autoDraw = True
+198.2782 	EXP 	New trial (rep=11, index=5): {'rgb_luminance': 0.45}
+198.2940 	EXP 	text: autoDraw = False
+198.2940 	EXP 	patch_background: autoDraw = True
+198.2940 	EXP 	patch_foreground: autoDraw = True
+198.2940 	EXP 	patch_test: autoDraw = True
+198.2940 	EXP 	text_task: autoDraw = True
+200.0400 	DATA 	Keypress: right
+200.0451 	EXP 	patch_background: autoDraw = False
+200.0451 	EXP 	patch_foreground: autoDraw = False
+200.0451 	EXP 	patch_test: autoDraw = False
+200.0451 	EXP 	text_task: autoDraw = False
+200.0451 	EXP 	text: autoDraw = True
+200.2437 	EXP 	New trial (rep=11, index=6): {'rgb_luminance': 0.4}
+200.2596 	EXP 	text: autoDraw = False
+200.2596 	EXP 	patch_background: autoDraw = True
+200.2596 	EXP 	patch_foreground: autoDraw = True
+200.2596 	EXP 	patch_test: autoDraw = True
+200.2596 	EXP 	text_task: autoDraw = True
+201.7155 	DATA 	Keypress: left
+201.7430 	EXP 	patch_background: autoDraw = False
+201.7430 	EXP 	patch_foreground: autoDraw = False
+201.7430 	EXP 	patch_test: autoDraw = False
+201.7430 	EXP 	text_task: autoDraw = False
+201.7430 	EXP 	text: autoDraw = True
+201.9422 	EXP 	New trial (rep=11, index=7): {'rgb_luminance': 0.1}
+201.9579 	EXP 	text: autoDraw = False
+201.9579 	EXP 	patch_background: autoDraw = True
+201.9579 	EXP 	patch_foreground: autoDraw = True
+201.9579 	EXP 	patch_test: autoDraw = True
+201.9579 	EXP 	text_task: autoDraw = True
+202.6708 	DATA 	Keypress: left
+202.6760 	EXP 	patch_background: autoDraw = False
+202.6760 	EXP 	patch_foreground: autoDraw = False
+202.6760 	EXP 	patch_test: autoDraw = False
+202.6760 	EXP 	text_task: autoDraw = False
+202.6760 	EXP 	text: autoDraw = True
+202.8745 	EXP 	New trial (rep=11, index=8): {'rgb_luminance': 0.6}
+202.8904 	EXP 	text: autoDraw = False
+202.8904 	EXP 	patch_background: autoDraw = True
+202.8904 	EXP 	patch_foreground: autoDraw = True
+202.8904 	EXP 	patch_test: autoDraw = True
+202.8904 	EXP 	text_task: autoDraw = True
+203.4366 	DATA 	Keypress: right
+203.4416 	EXP 	patch_background: autoDraw = False
+203.4416 	EXP 	patch_foreground: autoDraw = False
+203.4416 	EXP 	patch_test: autoDraw = False
+203.4416 	EXP 	text_task: autoDraw = False
+203.4416 	EXP 	text: autoDraw = True
+203.6404 	EXP 	New trial (rep=12, index=0): {'rgb_luminance': 0.9}
+203.6560 	EXP 	text: autoDraw = False
+203.6560 	EXP 	patch_background: autoDraw = True
+203.6560 	EXP 	patch_foreground: autoDraw = True
+203.6560 	EXP 	patch_test: autoDraw = True
+203.6560 	EXP 	text_task: autoDraw = True
+204.2140 	DATA 	Keypress: right
+204.2409 	EXP 	patch_background: autoDraw = False
+204.2409 	EXP 	patch_foreground: autoDraw = False
+204.2409 	EXP 	patch_test: autoDraw = False
+204.2409 	EXP 	text_task: autoDraw = False
+204.2409 	EXP 	text: autoDraw = True
+204.4403 	EXP 	New trial (rep=12, index=1): {'rgb_luminance': 0.55}
+204.4560 	EXP 	text: autoDraw = False
+204.4560 	EXP 	patch_background: autoDraw = True
+204.4560 	EXP 	patch_foreground: autoDraw = True
+204.4560 	EXP 	patch_test: autoDraw = True
+204.4560 	EXP 	text_task: autoDraw = True
+205.0006 	DATA 	Keypress: right
+205.0238 	EXP 	patch_background: autoDraw = False
+205.0238 	EXP 	patch_foreground: autoDraw = False
+205.0238 	EXP 	patch_test: autoDraw = False
+205.0238 	EXP 	text_task: autoDraw = False
+205.0238 	EXP 	text: autoDraw = True
+205.2232 	EXP 	New trial (rep=12, index=2): {'rgb_luminance': 0.1}
+205.2384 	EXP 	text: autoDraw = False
+205.2384 	EXP 	patch_background: autoDraw = True
+205.2384 	EXP 	patch_foreground: autoDraw = True
+205.2384 	EXP 	patch_test: autoDraw = True
+205.2384 	EXP 	text_task: autoDraw = True
+205.7681 	DATA 	Keypress: left
+205.7731 	EXP 	patch_background: autoDraw = False
+205.7731 	EXP 	patch_foreground: autoDraw = False
+205.7731 	EXP 	patch_test: autoDraw = False
+205.7731 	EXP 	text_task: autoDraw = False
+205.7731 	EXP 	text: autoDraw = True
+205.9715 	EXP 	New trial (rep=12, index=3): {'rgb_luminance': 0.7}
+205.9873 	EXP 	text: autoDraw = False
+205.9873 	EXP 	patch_background: autoDraw = True
+205.9873 	EXP 	patch_foreground: autoDraw = True
+205.9873 	EXP 	patch_test: autoDraw = True
+205.9873 	EXP 	text_task: autoDraw = True
+206.4896 	DATA 	Keypress: right
+206.5035 	EXP 	patch_background: autoDraw = False
+206.5035 	EXP 	patch_foreground: autoDraw = False
+206.5035 	EXP 	patch_test: autoDraw = False
+206.5035 	EXP 	text_task: autoDraw = False
+206.5035 	EXP 	text: autoDraw = True
+206.6893 	EXP 	New trial (rep=12, index=4): {'rgb_luminance': 0.4}
+206.7043 	EXP 	text: autoDraw = False
+206.7043 	EXP 	text: autoDraw = False
+206.7043 	EXP 	patch_background: autoDraw = True
+206.7043 	EXP 	patch_foreground: autoDraw = True
+206.7043 	EXP 	patch_test: autoDraw = True
+206.7043 	EXP 	text_task: autoDraw = True
+208.0161 	DATA 	Keypress: right
+208.0209 	EXP 	patch_background: autoDraw = False
+208.0209 	EXP 	patch_foreground: autoDraw = False
+208.0209 	EXP 	patch_test: autoDraw = False
+208.0209 	EXP 	text_task: autoDraw = False
+208.0209 	EXP 	text: autoDraw = True
+208.2195 	EXP 	New trial (rep=12, index=5): {'rgb_luminance': 0.6}
+208.2353 	EXP 	text: autoDraw = False
+208.2353 	EXP 	patch_background: autoDraw = True
+208.2353 	EXP 	patch_foreground: autoDraw = True
+208.2353 	EXP 	patch_test: autoDraw = True
+208.2353 	EXP 	text_task: autoDraw = True
+208.7990 	DATA 	Keypress: right
+208.8040 	EXP 	patch_background: autoDraw = False
+208.8040 	EXP 	patch_foreground: autoDraw = False
+208.8040 	EXP 	patch_test: autoDraw = False
+208.8040 	EXP 	text_task: autoDraw = False
+208.8040 	EXP 	text: autoDraw = True
+209.0025 	EXP 	New trial (rep=12, index=6): {'rgb_luminance': 0.5}
+209.0181 	EXP 	text: autoDraw = False
+209.0181 	EXP 	patch_background: autoDraw = True
+209.0181 	EXP 	patch_foreground: autoDraw = True
+209.0181 	EXP 	patch_test: autoDraw = True
+209.0181 	EXP 	text_task: autoDraw = True
+210.1312 	DATA 	Keypress: right
+210.1362 	EXP 	patch_background: autoDraw = False
+210.1362 	EXP 	patch_foreground: autoDraw = False
+210.1362 	EXP 	patch_test: autoDraw = False
+210.1362 	EXP 	text_task: autoDraw = False
+210.1362 	EXP 	text: autoDraw = True
+210.3345 	EXP 	New trial (rep=12, index=7): {'rgb_luminance': 0.3}
+210.3504 	EXP 	text: autoDraw = False
+210.3504 	EXP 	patch_background: autoDraw = True
+210.3504 	EXP 	patch_foreground: autoDraw = True
+210.3504 	EXP 	patch_test: autoDraw = True
+210.3504 	EXP 	text_task: autoDraw = True
+211.7296 	DATA 	Keypress: left
+211.7346 	EXP 	patch_background: autoDraw = False
+211.7346 	EXP 	patch_foreground: autoDraw = False
+211.7346 	EXP 	patch_test: autoDraw = False
+211.7346 	EXP 	text_task: autoDraw = False
+211.7346 	EXP 	text: autoDraw = True
+211.9334 	EXP 	New trial (rep=12, index=8): {'rgb_luminance': 0.45}
+211.9490 	EXP 	text: autoDraw = False
+211.9490 	EXP 	patch_background: autoDraw = True
+211.9490 	EXP 	patch_foreground: autoDraw = True
+211.9490 	EXP 	patch_test: autoDraw = True
+211.9490 	EXP 	text_task: autoDraw = True
+212.5683 	DATA 	Keypress: right
+212.5815 	EXP 	patch_background: autoDraw = False
+212.5815 	EXP 	patch_foreground: autoDraw = False
+212.5815 	EXP 	patch_test: autoDraw = False
+212.5815 	EXP 	text_task: autoDraw = False
+212.5815 	EXP 	text: autoDraw = True
+212.7659 	EXP 	New trial (rep=13, index=0): {'rgb_luminance': 0.1}
+212.7815 	EXP 	text: autoDraw = False
+212.7815 	EXP 	patch_background: autoDraw = True
+212.7815 	EXP 	patch_foreground: autoDraw = True
+212.7815 	EXP 	patch_test: autoDraw = True
+212.7815 	EXP 	text_task: autoDraw = True
+213.4281 	DATA 	Keypress: left
+213.4331 	EXP 	patch_background: autoDraw = False
+213.4331 	EXP 	patch_foreground: autoDraw = False
+213.4331 	EXP 	patch_test: autoDraw = False
+213.4331 	EXP 	text_task: autoDraw = False
+213.4331 	EXP 	text: autoDraw = True
+213.6316 	EXP 	New trial (rep=13, index=1): {'rgb_luminance': 0.5}
+213.6474 	EXP 	text: autoDraw = False
+213.6474 	EXP 	patch_background: autoDraw = True
+213.6474 	EXP 	patch_foreground: autoDraw = True
+213.6474 	EXP 	patch_test: autoDraw = True
+213.6474 	EXP 	text_task: autoDraw = True
+214.2771 	DATA 	Keypress: right
+214.2821 	EXP 	patch_background: autoDraw = False
+214.2821 	EXP 	patch_foreground: autoDraw = False
+214.2821 	EXP 	patch_test: autoDraw = False
+214.2821 	EXP 	text_task: autoDraw = False
+214.2821 	EXP 	text: autoDraw = True
+214.4813 	EXP 	New trial (rep=13, index=2): {'rgb_luminance': 0.45}
+214.4969 	EXP 	text: autoDraw = False
+214.4969 	EXP 	patch_background: autoDraw = True
+214.4969 	EXP 	patch_foreground: autoDraw = True
+214.4969 	EXP 	patch_test: autoDraw = True
+214.4969 	EXP 	text_task: autoDraw = True
+215.1153 	DATA 	Keypress: right
+215.1294 	EXP 	patch_background: autoDraw = False
+215.1294 	EXP 	patch_foreground: autoDraw = False
+215.1294 	EXP 	patch_test: autoDraw = False
+215.1294 	EXP 	text_task: autoDraw = False
+215.1294 	EXP 	text: autoDraw = True
+215.3137 	EXP 	New trial (rep=13, index=3): {'rgb_luminance': 0.3}
+215.3296 	EXP 	text: autoDraw = False
+215.3296 	EXP 	patch_background: autoDraw = True
+215.3296 	EXP 	patch_foreground: autoDraw = True
+215.3296 	EXP 	patch_test: autoDraw = True
+215.3296 	EXP 	text_task: autoDraw = True
+216.6453 	DATA 	Keypress: right
+216.6795 	EXP 	patch_background: autoDraw = False
+216.6795 	EXP 	patch_foreground: autoDraw = False
+216.6795 	EXP 	patch_test: autoDraw = False
+216.6795 	EXP 	text_task: autoDraw = False
+216.6795 	EXP 	text: autoDraw = True
+216.8790 	EXP 	New trial (rep=13, index=4): {'rgb_luminance': 0.4}
+216.8945 	EXP 	text: autoDraw = False
+216.8945 	EXP 	patch_background: autoDraw = True
+216.8945 	EXP 	patch_foreground: autoDraw = True
+216.8945 	EXP 	patch_test: autoDraw = True
+216.8945 	EXP 	text_task: autoDraw = True
+217.4579 	DATA 	Keypress: right
+217.4629 	EXP 	patch_background: autoDraw = False
+217.4629 	EXP 	patch_foreground: autoDraw = False
+217.4629 	EXP 	patch_test: autoDraw = False
+217.4629 	EXP 	text_task: autoDraw = False
+217.4629 	EXP 	text: autoDraw = True
+217.6613 	EXP 	New trial (rep=13, index=5): {'rgb_luminance': 0.6}
+217.6772 	EXP 	text: autoDraw = False
+217.6772 	EXP 	patch_background: autoDraw = True
+217.6772 	EXP 	patch_foreground: autoDraw = True
+217.6772 	EXP 	patch_test: autoDraw = True
+217.6772 	EXP 	text_task: autoDraw = True
+218.2270 	DATA 	Keypress: right
+218.2319 	EXP 	patch_background: autoDraw = False
+218.2319 	EXP 	patch_foreground: autoDraw = False
+218.2319 	EXP 	patch_test: autoDraw = False
+218.2319 	EXP 	text_task: autoDraw = False
+218.2319 	EXP 	text: autoDraw = True
+218.4290 	EXP 	New trial (rep=13, index=6): {'rgb_luminance': 0.9}
+218.4454 	EXP 	text: autoDraw = False
+218.4454 	EXP 	patch_background: autoDraw = True
+218.4454 	EXP 	patch_foreground: autoDraw = True
+218.4454 	EXP 	patch_test: autoDraw = True
+218.4454 	EXP 	text_task: autoDraw = True
+218.9733 	DATA 	Keypress: right
+218.9782 	EXP 	patch_background: autoDraw = False
+218.9782 	EXP 	patch_foreground: autoDraw = False
+218.9782 	EXP 	patch_test: autoDraw = False
+218.9782 	EXP 	text_task: autoDraw = False
+218.9782 	EXP 	text: autoDraw = True
+219.1767 	EXP 	New trial (rep=13, index=7): {'rgb_luminance': 0.7}
+219.1926 	EXP 	text: autoDraw = False
+219.1926 	EXP 	patch_background: autoDraw = True
+219.1926 	EXP 	patch_foreground: autoDraw = True
+219.1926 	EXP 	patch_test: autoDraw = True
+219.1926 	EXP 	text_task: autoDraw = True
+219.6114 	DATA 	Keypress: right
+219.6256 	EXP 	patch_background: autoDraw = False
+219.6256 	EXP 	patch_foreground: autoDraw = False
+219.6256 	EXP 	patch_test: autoDraw = False
+219.6256 	EXP 	text_task: autoDraw = False
+219.6256 	EXP 	text: autoDraw = True
+219.8113 	EXP 	New trial (rep=13, index=8): {'rgb_luminance': 0.55}
+219.8259 	EXP 	text: autoDraw = False
+219.8259 	EXP 	text: autoDraw = False
+219.8259 	EXP 	patch_background: autoDraw = True
+219.8259 	EXP 	patch_foreground: autoDraw = True
+219.8259 	EXP 	patch_test: autoDraw = True
+219.8259 	EXP 	text_task: autoDraw = True
+220.5312 	DATA 	Keypress: right
+220.5599 	EXP 	patch_background: autoDraw = False
+220.5599 	EXP 	patch_foreground: autoDraw = False
+220.5599 	EXP 	patch_test: autoDraw = False
+220.5599 	EXP 	text_task: autoDraw = False
+220.5599 	EXP 	text: autoDraw = True
+220.7589 	EXP 	New trial (rep=14, index=0): {'rgb_luminance': 0.5}
+220.7747 	EXP 	text: autoDraw = False
+220.7747 	EXP 	patch_background: autoDraw = True
+220.7747 	EXP 	patch_foreground: autoDraw = True
+220.7747 	EXP 	patch_test: autoDraw = True
+220.7747 	EXP 	text_task: autoDraw = True
+222.7865 	DATA 	Keypress: right
+222.7915 	EXP 	patch_background: autoDraw = False
+222.7915 	EXP 	patch_foreground: autoDraw = False
+222.7915 	EXP 	patch_test: autoDraw = False
+222.7915 	EXP 	text_task: autoDraw = False
+222.7915 	EXP 	text: autoDraw = True
+222.9900 	EXP 	New trial (rep=14, index=1): {'rgb_luminance': 0.6}
+223.0059 	EXP 	text: autoDraw = False
+223.0059 	EXP 	patch_background: autoDraw = True
+223.0059 	EXP 	patch_foreground: autoDraw = True
+223.0059 	EXP 	patch_test: autoDraw = True
+223.0059 	EXP 	text_task: autoDraw = True
+223.5696 	DATA 	Keypress: right
+223.5745 	EXP 	patch_background: autoDraw = False
+223.5745 	EXP 	patch_foreground: autoDraw = False
+223.5745 	EXP 	patch_test: autoDraw = False
+223.5745 	EXP 	text_task: autoDraw = False
+223.5745 	EXP 	text: autoDraw = True
+223.7728 	EXP 	New trial (rep=14, index=2): {'rgb_luminance': 0.45}
+223.7890 	EXP 	text: autoDraw = False
+223.7890 	EXP 	patch_background: autoDraw = True
+223.7890 	EXP 	patch_foreground: autoDraw = True
+223.7890 	EXP 	patch_test: autoDraw = True
+223.7890 	EXP 	text_task: autoDraw = True
+225.0478 	DATA 	Keypress: right
+225.0729 	EXP 	patch_background: autoDraw = False
+225.0729 	EXP 	patch_foreground: autoDraw = False
+225.0729 	EXP 	patch_test: autoDraw = False
+225.0729 	EXP 	text_task: autoDraw = False
+225.0729 	EXP 	text: autoDraw = True
+225.2723 	EXP 	New trial (rep=14, index=3): {'rgb_luminance': 0.1}
+225.2876 	EXP 	text: autoDraw = False
+225.2876 	EXP 	patch_background: autoDraw = True
+225.2876 	EXP 	patch_foreground: autoDraw = True
+225.2876 	EXP 	patch_test: autoDraw = True
+225.2876 	EXP 	text_task: autoDraw = True
+226.0058 	DATA 	Keypress: left
+226.0201 	EXP 	patch_background: autoDraw = False
+226.0201 	EXP 	patch_foreground: autoDraw = False
+226.0201 	EXP 	patch_test: autoDraw = False
+226.0201 	EXP 	text_task: autoDraw = False
+226.0201 	EXP 	text: autoDraw = True
+226.2055 	EXP 	New trial (rep=14, index=4): {'rgb_luminance': 0.55}
+226.2208 	EXP 	text: autoDraw = False
+226.2208 	EXP 	patch_background: autoDraw = True
+226.2208 	EXP 	patch_foreground: autoDraw = True
+226.2208 	EXP 	patch_test: autoDraw = True
+226.2208 	EXP 	text_task: autoDraw = True
+226.8330 	DATA 	Keypress: right
+226.8379 	EXP 	patch_background: autoDraw = False
+226.8379 	EXP 	patch_foreground: autoDraw = False
+226.8379 	EXP 	patch_test: autoDraw = False
+226.8379 	EXP 	text_task: autoDraw = False
+226.8379 	EXP 	text: autoDraw = True
+227.0366 	EXP 	New trial (rep=14, index=5): {'rgb_luminance': 0.7}
+227.0524 	EXP 	text: autoDraw = False
+227.0524 	EXP 	patch_background: autoDraw = True
+227.0524 	EXP 	patch_foreground: autoDraw = True
+227.0524 	EXP 	patch_test: autoDraw = True
+227.0524 	EXP 	text_task: autoDraw = True
+227.5823 	DATA 	Keypress: right
+227.5874 	EXP 	patch_background: autoDraw = False
+227.5874 	EXP 	patch_foreground: autoDraw = False
+227.5874 	EXP 	patch_test: autoDraw = False
+227.5874 	EXP 	text_task: autoDraw = False
+227.5874 	EXP 	text: autoDraw = True
+227.7859 	EXP 	New trial (rep=14, index=6): {'rgb_luminance': 0.9}
+227.8017 	EXP 	text: autoDraw = False
+227.8017 	EXP 	patch_background: autoDraw = True
+227.8017 	EXP 	patch_foreground: autoDraw = True
+227.8017 	EXP 	patch_test: autoDraw = True
+227.8017 	EXP 	text_task: autoDraw = True
+228.3085 	DATA 	Keypress: right
+228.3367 	EXP 	patch_background: autoDraw = False
+228.3367 	EXP 	patch_foreground: autoDraw = False
+228.3367 	EXP 	patch_test: autoDraw = False
+228.3367 	EXP 	text_task: autoDraw = False
+228.3367 	EXP 	text: autoDraw = True
+228.5351 	EXP 	New trial (rep=14, index=7): {'rgb_luminance': 0.4}
+228.5510 	EXP 	text: autoDraw = False
+228.5510 	EXP 	patch_background: autoDraw = True
+228.5510 	EXP 	patch_foreground: autoDraw = True
+228.5510 	EXP 	patch_test: autoDraw = True
+228.5510 	EXP 	text_task: autoDraw = True
+230.5132 	DATA 	Keypress: right
+230.5184 	EXP 	patch_background: autoDraw = False
+230.5184 	EXP 	patch_foreground: autoDraw = False
+230.5184 	EXP 	patch_test: autoDraw = False
+230.5184 	EXP 	text_task: autoDraw = False
+230.5184 	EXP 	text: autoDraw = True
+230.7168 	EXP 	New trial (rep=14, index=8): {'rgb_luminance': 0.3}
+230.7327 	EXP 	text: autoDraw = False
+230.7327 	EXP 	patch_background: autoDraw = True
+230.7327 	EXP 	patch_foreground: autoDraw = True
+230.7327 	EXP 	patch_test: autoDraw = True
+230.7327 	EXP 	text_task: autoDraw = True
+231.2793 	DATA 	Keypress: left
+231.2844 	EXP 	patch_background: autoDraw = False
+231.2844 	EXP 	patch_foreground: autoDraw = False
+231.2844 	EXP 	patch_test: autoDraw = False
+231.2844 	EXP 	text_task: autoDraw = False
+231.2844 	EXP 	text: autoDraw = True
+231.4831 	EXP 	New trial (rep=15, index=0): {'rgb_luminance': 0.45}
+231.4989 	EXP 	text: autoDraw = False
+231.4989 	EXP 	patch_background: autoDraw = True
+231.4989 	EXP 	patch_foreground: autoDraw = True
+231.4989 	EXP 	patch_test: autoDraw = True
+231.4989 	EXP 	text_task: autoDraw = True
+232.2116 	DATA 	Keypress: right
+232.2165 	EXP 	patch_background: autoDraw = False
+232.2165 	EXP 	patch_foreground: autoDraw = False
+232.2165 	EXP 	patch_test: autoDraw = False
+232.2165 	EXP 	text_task: autoDraw = False
+232.2165 	EXP 	text: autoDraw = True
+232.4151 	EXP 	New trial (rep=15, index=1): {'rgb_luminance': 0.6}
+232.4310 	EXP 	text: autoDraw = False
+232.4310 	EXP 	patch_background: autoDraw = True
+232.4310 	EXP 	patch_foreground: autoDraw = True
+232.4310 	EXP 	patch_test: autoDraw = True
+232.4310 	EXP 	text_task: autoDraw = True
+233.1108 	DATA 	Keypress: right
+233.1158 	EXP 	patch_background: autoDraw = False
+233.1158 	EXP 	patch_foreground: autoDraw = False
+233.1158 	EXP 	patch_test: autoDraw = False
+233.1158 	EXP 	text_task: autoDraw = False
+233.1158 	EXP 	text: autoDraw = True
+233.3143 	EXP 	New trial (rep=15, index=2): {'rgb_luminance': 0.5}
+233.3302 	EXP 	text: autoDraw = False
+233.3302 	EXP 	patch_background: autoDraw = True
+233.3302 	EXP 	patch_foreground: autoDraw = True
+233.3302 	EXP 	patch_test: autoDraw = True
+233.3302 	EXP 	text_task: autoDraw = True
+233.9650 	DATA 	Keypress: right
+233.9796 	EXP 	patch_background: autoDraw = False
+233.9796 	EXP 	patch_foreground: autoDraw = False
+233.9796 	EXP 	patch_test: autoDraw = False
+233.9796 	EXP 	text_task: autoDraw = False
+233.9796 	EXP 	text: autoDraw = True
+234.1639 	EXP 	New trial (rep=15, index=3): {'rgb_luminance': 0.1}
+234.1796 	EXP 	text: autoDraw = False
+234.1796 	EXP 	patch_background: autoDraw = True
+234.1796 	EXP 	patch_foreground: autoDraw = True
+234.1796 	EXP 	patch_test: autoDraw = True
+234.1796 	EXP 	text_task: autoDraw = True
+234.6930 	DATA 	Keypress: left
+234.6979 	EXP 	patch_background: autoDraw = False
+234.6979 	EXP 	patch_foreground: autoDraw = False
+234.6979 	EXP 	patch_test: autoDraw = False
+234.6979 	EXP 	text_task: autoDraw = False
+234.6979 	EXP 	text: autoDraw = True
+234.8967 	EXP 	New trial (rep=15, index=4): {'rgb_luminance': 0.7}
+234.9125 	EXP 	text: autoDraw = False
+234.9125 	EXP 	patch_background: autoDraw = True
+234.9125 	EXP 	patch_foreground: autoDraw = True
+234.9125 	EXP 	patch_test: autoDraw = True
+234.9125 	EXP 	text_task: autoDraw = True
+235.3922 	DATA 	Keypress: right
+235.3972 	EXP 	patch_background: autoDraw = False
+235.3972 	EXP 	patch_foreground: autoDraw = False
+235.3972 	EXP 	patch_test: autoDraw = False
+235.3972 	EXP 	text_task: autoDraw = False
+235.3972 	EXP 	text: autoDraw = True
+235.5963 	EXP 	New trial (rep=15, index=5): {'rgb_luminance': 0.3}
+235.6118 	EXP 	text: autoDraw = False
+235.6118 	EXP 	patch_background: autoDraw = True
+235.6118 	EXP 	patch_foreground: autoDraw = True
+235.6118 	EXP 	patch_test: autoDraw = True
+235.6118 	EXP 	text_task: autoDraw = True
+239.1722 	DATA 	Keypress: right
+239.1772 	EXP 	patch_background: autoDraw = False
+239.1772 	EXP 	patch_foreground: autoDraw = False
+239.1772 	EXP 	patch_test: autoDraw = False
+239.1772 	EXP 	text_task: autoDraw = False
+239.1772 	EXP 	text: autoDraw = True
+239.3760 	EXP 	New trial (rep=15, index=6): {'rgb_luminance': 0.4}
+239.3918 	EXP 	text: autoDraw = False
+239.3918 	EXP 	patch_background: autoDraw = True
+239.3918 	EXP 	patch_foreground: autoDraw = True
+239.3918 	EXP 	patch_test: autoDraw = True
+239.3918 	EXP 	text_task: autoDraw = True
+243.9685 	DATA 	Keypress: right
+243.9735 	EXP 	patch_background: autoDraw = False
+243.9735 	EXP 	patch_foreground: autoDraw = False
+243.9735 	EXP 	patch_test: autoDraw = False
+243.9735 	EXP 	text_task: autoDraw = False
+243.9735 	EXP 	text: autoDraw = True
+244.1720 	EXP 	New trial (rep=15, index=7): {'rgb_luminance': 0.55}
+244.1875 	EXP 	text: autoDraw = False
+244.1875 	EXP 	patch_background: autoDraw = True
+244.1875 	EXP 	patch_foreground: autoDraw = True
+244.1875 	EXP 	patch_test: autoDraw = True
+244.1875 	EXP 	text_task: autoDraw = True
+244.7672 	DATA 	Keypress: right
+244.7725 	EXP 	patch_background: autoDraw = False
+244.7725 	EXP 	patch_foreground: autoDraw = False
+244.7725 	EXP 	patch_test: autoDraw = False
+244.7725 	EXP 	text_task: autoDraw = False
+244.7725 	EXP 	text: autoDraw = True
+244.9714 	EXP 	New trial (rep=15, index=8): {'rgb_luminance': 0.9}
+244.9869 	EXP 	text: autoDraw = False
+244.9869 	EXP 	patch_background: autoDraw = True
+244.9869 	EXP 	patch_foreground: autoDraw = True
+244.9869 	EXP 	patch_test: autoDraw = True
+244.9869 	EXP 	text_task: autoDraw = True
+245.5495 	DATA 	Keypress: right
+245.5547 	EXP 	patch_background: autoDraw = False
+245.5547 	EXP 	patch_foreground: autoDraw = False
+245.5547 	EXP 	patch_test: autoDraw = False
+245.5547 	EXP 	text_task: autoDraw = False
+245.5547 	EXP 	text: autoDraw = True
+245.7535 	EXP 	New trial (rep=16, index=0): {'rgb_luminance': 0.4}
+245.7694 	EXP 	text: autoDraw = False
+245.7694 	EXP 	patch_background: autoDraw = True
+245.7694 	EXP 	patch_foreground: autoDraw = True
+245.7694 	EXP 	patch_test: autoDraw = True
+245.7694 	EXP 	text_task: autoDraw = True
+246.4674 	DATA 	Keypress: right
+246.4725 	EXP 	patch_background: autoDraw = False
+246.4725 	EXP 	patch_foreground: autoDraw = False
+246.4725 	EXP 	patch_test: autoDraw = False
+246.4725 	EXP 	text_task: autoDraw = False
+246.4725 	EXP 	text: autoDraw = True
+246.6696 	EXP 	New trial (rep=16, index=1): {'rgb_luminance': 0.9}
+246.6869 	EXP 	text: autoDraw = False
+246.6869 	EXP 	patch_background: autoDraw = True
+246.6869 	EXP 	patch_foreground: autoDraw = True
+246.6869 	EXP 	patch_test: autoDraw = True
+246.6869 	EXP 	text_task: autoDraw = True
+247.1819 	DATA 	Keypress: right
+247.1869 	EXP 	patch_background: autoDraw = False
+247.1869 	EXP 	patch_foreground: autoDraw = False
+247.1869 	EXP 	patch_test: autoDraw = False
+247.1869 	EXP 	text_task: autoDraw = False
+247.1869 	EXP 	text: autoDraw = True
+247.3858 	EXP 	New trial (rep=16, index=2): {'rgb_luminance': 0.3}
+247.4025 	EXP 	text: autoDraw = False
+247.4025 	EXP 	patch_background: autoDraw = True
+247.4025 	EXP 	patch_foreground: autoDraw = True
+247.4025 	EXP 	patch_test: autoDraw = True
+247.4025 	EXP 	text_task: autoDraw = True
+248.6849 	DATA 	Keypress: right
+248.6900 	EXP 	patch_background: autoDraw = False
+248.6900 	EXP 	patch_foreground: autoDraw = False
+248.6900 	EXP 	patch_test: autoDraw = False
+248.6900 	EXP 	text_task: autoDraw = False
+248.6900 	EXP 	text: autoDraw = True
+248.8855 	EXP 	New trial (rep=16, index=3): {'rgb_luminance': 0.1}
+248.9024 	EXP 	text: autoDraw = False
+248.9024 	EXP 	patch_background: autoDraw = True
+248.9024 	EXP 	patch_foreground: autoDraw = True
+248.9024 	EXP 	patch_test: autoDraw = True
+248.9024 	EXP 	text_task: autoDraw = True
+249.4319 	DATA 	Keypress: left
+249.4369 	EXP 	patch_background: autoDraw = False
+249.4369 	EXP 	patch_foreground: autoDraw = False
+249.4369 	EXP 	patch_test: autoDraw = False
+249.4369 	EXP 	text_task: autoDraw = False
+249.4369 	EXP 	text: autoDraw = True
+249.6335 	EXP 	New trial (rep=16, index=4): {'rgb_luminance': 0.5}
+249.6495 	EXP 	text: autoDraw = False
+249.6495 	EXP 	patch_background: autoDraw = True
+249.6495 	EXP 	patch_foreground: autoDraw = True
+249.6495 	EXP 	patch_test: autoDraw = True
+249.6495 	EXP 	text_task: autoDraw = True
+250.2635 	DATA 	Keypress: right
+250.2684 	EXP 	patch_background: autoDraw = False
+250.2684 	EXP 	patch_foreground: autoDraw = False
+250.2684 	EXP 	patch_test: autoDraw = False
+250.2684 	EXP 	text_task: autoDraw = False
+250.2684 	EXP 	text: autoDraw = True
+250.4664 	EXP 	New trial (rep=16, index=5): {'rgb_luminance': 0.6}
+250.4822 	EXP 	text: autoDraw = False
+250.4822 	EXP 	patch_background: autoDraw = True
+250.4822 	EXP 	patch_foreground: autoDraw = True
+250.4822 	EXP 	patch_test: autoDraw = True
+250.4822 	EXP 	text_task: autoDraw = True
+251.1291 	DATA 	Keypress: right
+251.1343 	EXP 	patch_background: autoDraw = False
+251.1343 	EXP 	patch_foreground: autoDraw = False
+251.1343 	EXP 	patch_test: autoDraw = False
+251.1343 	EXP 	text_task: autoDraw = False
+251.1343 	EXP 	text: autoDraw = True
+251.3323 	EXP 	New trial (rep=16, index=6): {'rgb_luminance': 0.45}
+251.3483 	EXP 	text: autoDraw = False
+251.3483 	EXP 	patch_background: autoDraw = True
+251.3483 	EXP 	patch_foreground: autoDraw = True
+251.3483 	EXP 	patch_test: autoDraw = True
+251.3483 	EXP 	text_task: autoDraw = True
+251.9612 	DATA 	Keypress: right
+251.9662 	EXP 	patch_background: autoDraw = False
+251.9662 	EXP 	patch_foreground: autoDraw = False
+251.9662 	EXP 	patch_test: autoDraw = False
+251.9662 	EXP 	text_task: autoDraw = False
+251.9662 	EXP 	text: autoDraw = True
+252.1646 	EXP 	New trial (rep=16, index=7): {'rgb_luminance': 0.55}
+252.1807 	EXP 	text: autoDraw = False
+252.1807 	EXP 	patch_background: autoDraw = True
+252.1807 	EXP 	patch_foreground: autoDraw = True
+252.1807 	EXP 	patch_test: autoDraw = True
+252.1807 	EXP 	text_task: autoDraw = True
+252.8548 	DATA 	Keypress: right
+252.8819 	EXP 	patch_background: autoDraw = False
+252.8819 	EXP 	patch_foreground: autoDraw = False
+252.8819 	EXP 	patch_test: autoDraw = False
+252.8819 	EXP 	text_task: autoDraw = False
+252.8819 	EXP 	text: autoDraw = True
+253.0805 	EXP 	New trial (rep=16, index=8): {'rgb_luminance': 0.7}
+253.0965 	EXP 	text: autoDraw = False
+253.0965 	EXP 	patch_background: autoDraw = True
+253.0965 	EXP 	patch_foreground: autoDraw = True
+253.0965 	EXP 	patch_test: autoDraw = True
+253.0965 	EXP 	text_task: autoDraw = True
+253.7765 	DATA 	Keypress: right
+253.7814 	EXP 	patch_background: autoDraw = False
+253.7814 	EXP 	patch_foreground: autoDraw = False
+253.7814 	EXP 	patch_test: autoDraw = False
+253.7814 	EXP 	text_task: autoDraw = False
+253.7814 	EXP 	text: autoDraw = True
+253.9800 	EXP 	New trial (rep=17, index=0): {'rgb_luminance': 0.5}
+253.9958 	EXP 	text: autoDraw = False
+253.9958 	EXP 	patch_background: autoDraw = True
+253.9958 	EXP 	patch_foreground: autoDraw = True
+253.9958 	EXP 	patch_test: autoDraw = True
+253.9958 	EXP 	text_task: autoDraw = True
+254.8348 	DATA 	Keypress: right
+254.8639 	EXP 	patch_background: autoDraw = False
+254.8639 	EXP 	patch_foreground: autoDraw = False
+254.8639 	EXP 	patch_test: autoDraw = False
+254.8639 	EXP 	text_task: autoDraw = False
+254.8639 	EXP 	text: autoDraw = True
+255.0623 	EXP 	New trial (rep=17, index=1): {'rgb_luminance': 0.1}
+255.0781 	EXP 	text: autoDraw = False
+255.0781 	EXP 	patch_background: autoDraw = True
+255.0781 	EXP 	patch_foreground: autoDraw = True
+255.0781 	EXP 	patch_test: autoDraw = True
+255.0781 	EXP 	text_task: autoDraw = True
+255.6668 	DATA 	Keypress: left
+255.6960 	EXP 	patch_background: autoDraw = False
+255.6960 	EXP 	patch_foreground: autoDraw = False
+255.6960 	EXP 	patch_test: autoDraw = False
+255.6960 	EXP 	text_task: autoDraw = False
+255.6960 	EXP 	text: autoDraw = True
+255.8813 	EXP 	New trial (rep=17, index=2): {'rgb_luminance': 0.55}
+255.8966 	EXP 	text: autoDraw = False
+255.8966 	EXP 	text: autoDraw = False
+255.8966 	EXP 	patch_background: autoDraw = True
+255.8966 	EXP 	patch_foreground: autoDraw = True
+255.8966 	EXP 	patch_test: autoDraw = True
+255.8966 	EXP 	text_task: autoDraw = True
+256.7921 	DATA 	Keypress: right
+256.7974 	EXP 	patch_background: autoDraw = False
+256.7974 	EXP 	patch_foreground: autoDraw = False
+256.7974 	EXP 	patch_test: autoDraw = False
+256.7974 	EXP 	text_task: autoDraw = False
+256.7974 	EXP 	text: autoDraw = True
+256.9940 	EXP 	New trial (rep=17, index=3): {'rgb_luminance': 0.6}
+257.0099 	EXP 	text: autoDraw = False
+257.0099 	EXP 	patch_background: autoDraw = True
+257.0099 	EXP 	patch_foreground: autoDraw = True
+257.0099 	EXP 	patch_test: autoDraw = True
+257.0099 	EXP 	text_task: autoDraw = True
+257.6897 	DATA 	Keypress: right
+257.6947 	EXP 	patch_background: autoDraw = False
+257.6947 	EXP 	patch_foreground: autoDraw = False
+257.6947 	EXP 	patch_test: autoDraw = False
+257.6947 	EXP 	text_task: autoDraw = False
+257.6947 	EXP 	text: autoDraw = True
+257.8931 	EXP 	New trial (rep=17, index=4): {'rgb_luminance': 0.7}
+257.9090 	EXP 	text: autoDraw = False
+257.9090 	EXP 	patch_background: autoDraw = True
+257.9090 	EXP 	patch_foreground: autoDraw = True
+257.9090 	EXP 	patch_test: autoDraw = True
+257.9090 	EXP 	text_task: autoDraw = True
+258.4061 	DATA 	Keypress: right
+258.4111 	EXP 	patch_background: autoDraw = False
+258.4111 	EXP 	patch_foreground: autoDraw = False
+258.4111 	EXP 	patch_test: autoDraw = False
+258.4111 	EXP 	text_task: autoDraw = False
+258.4111 	EXP 	text: autoDraw = True
+258.6098 	EXP 	New trial (rep=17, index=5): {'rgb_luminance': 0.45}
+258.6254 	EXP 	text: autoDraw = False
+258.6254 	EXP 	patch_background: autoDraw = True
+258.6254 	EXP 	patch_foreground: autoDraw = True
+258.6254 	EXP 	patch_test: autoDraw = True
+258.6254 	EXP 	text_task: autoDraw = True
+259.2530 	DATA 	Keypress: right
+259.2768 	EXP 	patch_background: autoDraw = False
+259.2768 	EXP 	patch_foreground: autoDraw = False
+259.2768 	EXP 	patch_test: autoDraw = False
+259.2768 	EXP 	text_task: autoDraw = False
+259.2768 	EXP 	text: autoDraw = True
+259.4750 	EXP 	New trial (rep=17, index=6): {'rgb_luminance': 0.4}
+259.4909 	EXP 	text: autoDraw = False
+259.4909 	EXP 	patch_background: autoDraw = True
+259.4909 	EXP 	patch_foreground: autoDraw = True
+259.4909 	EXP 	patch_test: autoDraw = True
+259.4909 	EXP 	text_task: autoDraw = True
+260.6535 	DATA 	Keypress: right
+260.6586 	EXP 	patch_background: autoDraw = False
+260.6586 	EXP 	patch_foreground: autoDraw = False
+260.6586 	EXP 	patch_test: autoDraw = False
+260.6586 	EXP 	text_task: autoDraw = False
+260.6586 	EXP 	text: autoDraw = True
+260.8570 	EXP 	New trial (rep=17, index=7): {'rgb_luminance': 0.9}
+260.8731 	EXP 	text: autoDraw = False
+260.8731 	EXP 	patch_background: autoDraw = True
+260.8731 	EXP 	patch_foreground: autoDraw = True
+260.8731 	EXP 	patch_test: autoDraw = True
+260.8731 	EXP 	text_task: autoDraw = True
+261.3999 	DATA 	Keypress: right
+261.4244 	EXP 	patch_background: autoDraw = False
+261.4244 	EXP 	patch_foreground: autoDraw = False
+261.4244 	EXP 	patch_test: autoDraw = False
+261.4244 	EXP 	text_task: autoDraw = False
+261.4244 	EXP 	text: autoDraw = True
+261.6231 	EXP 	New trial (rep=17, index=8): {'rgb_luminance': 0.3}
+261.6390 	EXP 	text: autoDraw = False
+261.6390 	EXP 	patch_background: autoDraw = True
+261.6390 	EXP 	patch_foreground: autoDraw = True
+261.6390 	EXP 	patch_test: autoDraw = True
+261.6390 	EXP 	text_task: autoDraw = True
+262.1741 	DATA 	Keypress: left
+262.1883 	EXP 	patch_background: autoDraw = False
+262.1883 	EXP 	patch_foreground: autoDraw = False
+262.1883 	EXP 	patch_test: autoDraw = False
+262.1883 	EXP 	text_task: autoDraw = False
+262.1883 	EXP 	text: autoDraw = True
+262.3726 	EXP 	New trial (rep=18, index=0): {'rgb_luminance': 0.45}
+262.3883 	EXP 	text: autoDraw = False
+262.3883 	EXP 	patch_background: autoDraw = True
+262.3883 	EXP 	patch_foreground: autoDraw = True
+262.3883 	EXP 	patch_test: autoDraw = True
+262.3883 	EXP 	text_task: autoDraw = True
+263.9672 	DATA 	Keypress: right
+263.9722 	EXP 	patch_background: autoDraw = False
+263.9722 	EXP 	patch_foreground: autoDraw = False
+263.9722 	EXP 	patch_test: autoDraw = False
+263.9722 	EXP 	text_task: autoDraw = False
+263.9722 	EXP 	text: autoDraw = True
+264.1711 	EXP 	New trial (rep=18, index=1): {'rgb_luminance': 0.1}
+264.1867 	EXP 	text: autoDraw = False
+264.1867 	EXP 	patch_background: autoDraw = True
+264.1867 	EXP 	patch_foreground: autoDraw = True
+264.1867 	EXP 	patch_test: autoDraw = True
+264.1867 	EXP 	text_task: autoDraw = True
+264.9171 	DATA 	Keypress: left
+264.9221 	EXP 	patch_background: autoDraw = False
+264.9221 	EXP 	patch_foreground: autoDraw = False
+264.9221 	EXP 	patch_test: autoDraw = False
+264.9221 	EXP 	text_task: autoDraw = False
+264.9221 	EXP 	text: autoDraw = True
+265.1199 	EXP 	New trial (rep=18, index=2): {'rgb_luminance': 0.4}
+265.1366 	EXP 	text: autoDraw = False
+265.1366 	EXP 	patch_background: autoDraw = True
+265.1366 	EXP 	patch_foreground: autoDraw = True
+265.1366 	EXP 	patch_test: autoDraw = True
+265.1366 	EXP 	text_task: autoDraw = True
+265.7162 	DATA 	Keypress: right
+265.7212 	EXP 	patch_background: autoDraw = False
+265.7212 	EXP 	patch_foreground: autoDraw = False
+265.7212 	EXP 	patch_test: autoDraw = False
+265.7212 	EXP 	text_task: autoDraw = False
+265.7212 	EXP 	text: autoDraw = True
+265.9194 	EXP 	New trial (rep=18, index=3): {'rgb_luminance': 0.9}
+265.9356 	EXP 	text: autoDraw = False
+265.9356 	EXP 	patch_background: autoDraw = True
+265.9356 	EXP 	patch_foreground: autoDraw = True
+265.9356 	EXP 	patch_test: autoDraw = True
+265.9356 	EXP 	text_task: autoDraw = True
+266.4321 	DATA 	Keypress: right
+266.4374 	EXP 	patch_background: autoDraw = False
+266.4374 	EXP 	patch_foreground: autoDraw = False
+266.4374 	EXP 	patch_test: autoDraw = False
+266.4374 	EXP 	text_task: autoDraw = False
+266.4374 	EXP 	text: autoDraw = True
+266.6353 	EXP 	New trial (rep=18, index=4): {'rgb_luminance': 0.7}
+266.6513 	EXP 	text: autoDraw = False
+266.6513 	EXP 	patch_background: autoDraw = True
+266.6513 	EXP 	patch_foreground: autoDraw = True
+266.6513 	EXP 	patch_test: autoDraw = True
+266.6513 	EXP 	text_task: autoDraw = True
+267.1140 	DATA 	Keypress: right
+267.1383 	EXP 	patch_background: autoDraw = False
+267.1383 	EXP 	patch_foreground: autoDraw = False
+267.1383 	EXP 	patch_test: autoDraw = False
+267.1383 	EXP 	text_task: autoDraw = False
+267.1383 	EXP 	text: autoDraw = True
+267.3347 	EXP 	New trial (rep=18, index=5): {'rgb_luminance': 0.55}
+267.3507 	EXP 	text: autoDraw = False
+267.3507 	EXP 	patch_background: autoDraw = True
+267.3507 	EXP 	patch_foreground: autoDraw = True
+267.3507 	EXP 	patch_test: autoDraw = True
+267.3507 	EXP 	text_task: autoDraw = True
+267.7476 	DATA 	Keypress: right
+267.7526 	EXP 	patch_background: autoDraw = False
+267.7526 	EXP 	patch_foreground: autoDraw = False
+267.7526 	EXP 	patch_test: autoDraw = False
+267.7526 	EXP 	text_task: autoDraw = False
+267.7526 	EXP 	text: autoDraw = True
+267.9511 	EXP 	New trial (rep=18, index=6): {'rgb_luminance': 0.3}
+267.9671 	EXP 	text: autoDraw = False
+267.9671 	EXP 	patch_background: autoDraw = True
+267.9671 	EXP 	patch_foreground: autoDraw = True
+267.9671 	EXP 	patch_test: autoDraw = True
+267.9671 	EXP 	text_task: autoDraw = True
+268.5700 	DATA 	Keypress: left
+268.5828 	EXP 	patch_background: autoDraw = False
+268.5828 	EXP 	patch_foreground: autoDraw = False
+268.5828 	EXP 	patch_test: autoDraw = False
+268.5828 	EXP 	text_task: autoDraw = False
+268.5828 	EXP 	text: autoDraw = True
+268.7689 	EXP 	New trial (rep=18, index=7): {'rgb_luminance': 0.6}
+268.7836 	EXP 	text: autoDraw = False
+268.7836 	EXP 	text: autoDraw = False
+268.7836 	EXP 	patch_background: autoDraw = True
+268.7836 	EXP 	patch_foreground: autoDraw = True
+268.7836 	EXP 	patch_test: autoDraw = True
+268.7836 	EXP 	text_task: autoDraw = True
+269.6960 	DATA 	Keypress: right
+269.7010 	EXP 	patch_background: autoDraw = False
+269.7010 	EXP 	patch_foreground: autoDraw = False
+269.7010 	EXP 	patch_test: autoDraw = False
+269.7010 	EXP 	text_task: autoDraw = False
+269.7010 	EXP 	text: autoDraw = True
+269.8991 	EXP 	New trial (rep=18, index=8): {'rgb_luminance': 0.5}
+269.9153 	EXP 	text: autoDraw = False
+269.9153 	EXP 	patch_background: autoDraw = True
+269.9153 	EXP 	patch_foreground: autoDraw = True
+269.9153 	EXP 	patch_test: autoDraw = True
+269.9153 	EXP 	text_task: autoDraw = True
+270.4812 	DATA 	Keypress: right
+270.4863 	EXP 	patch_background: autoDraw = False
+270.4863 	EXP 	patch_foreground: autoDraw = False
+270.4863 	EXP 	patch_test: autoDraw = False
+270.4863 	EXP 	text_task: autoDraw = False
+270.4863 	EXP 	text: autoDraw = True
+270.6825 	EXP 	New trial (rep=19, index=0): {'rgb_luminance': 0.3}
+270.6983 	EXP 	text: autoDraw = False
+270.6983 	EXP 	patch_background: autoDraw = True
+270.6983 	EXP 	patch_foreground: autoDraw = True
+270.6983 	EXP 	patch_test: autoDraw = True
+270.6983 	EXP 	text_task: autoDraw = True
+272.4780 	DATA 	Keypress: right
+272.4828 	EXP 	patch_background: autoDraw = False
+272.4828 	EXP 	patch_foreground: autoDraw = False
+272.4828 	EXP 	patch_test: autoDraw = False
+272.4828 	EXP 	text_task: autoDraw = False
+272.4828 	EXP 	text: autoDraw = True
+272.6804 	EXP 	New trial (rep=19, index=1): {'rgb_luminance': 0.7}
+272.6962 	EXP 	text: autoDraw = False
+272.6962 	EXP 	patch_background: autoDraw = True
+272.6962 	EXP 	patch_foreground: autoDraw = True
+272.6962 	EXP 	patch_test: autoDraw = True
+272.6962 	EXP 	text_task: autoDraw = True
+273.2093 	DATA 	Keypress: right
+273.2143 	EXP 	patch_background: autoDraw = False
+273.2143 	EXP 	patch_foreground: autoDraw = False
+273.2143 	EXP 	patch_test: autoDraw = False
+273.2143 	EXP 	text_task: autoDraw = False
+273.2143 	EXP 	text: autoDraw = True
+273.4129 	EXP 	New trial (rep=19, index=2): {'rgb_luminance': 0.9}
+273.4288 	EXP 	text: autoDraw = False
+273.4288 	EXP 	patch_background: autoDraw = True
+273.4288 	EXP 	patch_foreground: autoDraw = True
+273.4288 	EXP 	patch_test: autoDraw = True
+273.4288 	EXP 	text_task: autoDraw = True
+273.8922 	DATA 	Keypress: right
+273.8975 	EXP 	patch_background: autoDraw = False
+273.8975 	EXP 	patch_foreground: autoDraw = False
+273.8975 	EXP 	patch_test: autoDraw = False
+273.8975 	EXP 	text_task: autoDraw = False
+273.8975 	EXP 	text: autoDraw = True
+274.0954 	EXP 	New trial (rep=19, index=3): {'rgb_luminance': 0.1}
+274.1115 	EXP 	text: autoDraw = False
+274.1115 	EXP 	patch_background: autoDraw = True
+274.1115 	EXP 	patch_foreground: autoDraw = True
+274.1115 	EXP 	patch_test: autoDraw = True
+274.1115 	EXP 	text_task: autoDraw = True
+274.6751 	DATA 	Keypress: left
+274.6801 	EXP 	patch_background: autoDraw = False
+274.6801 	EXP 	patch_foreground: autoDraw = False
+274.6801 	EXP 	patch_test: autoDraw = False
+274.6801 	EXP 	text_task: autoDraw = False
+274.6801 	EXP 	text: autoDraw = True
+274.8670 	EXP 	New trial (rep=19, index=4): {'rgb_luminance': 0.55}
+274.8804 	EXP 	text: autoDraw = False
+274.8804 	EXP 	text: autoDraw = False
+274.8804 	EXP 	patch_background: autoDraw = True
+274.8804 	EXP 	patch_foreground: autoDraw = True
+274.8804 	EXP 	patch_test: autoDraw = True
+274.8804 	EXP 	text_task: autoDraw = True
+275.9142 	DATA 	Keypress: right
+275.9266 	EXP 	patch_background: autoDraw = False
+275.9266 	EXP 	patch_foreground: autoDraw = False
+275.9266 	EXP 	patch_test: autoDraw = False
+275.9266 	EXP 	text_task: autoDraw = False
+275.9266 	EXP 	text: autoDraw = True
+276.1122 	EXP 	New trial (rep=19, index=5): {'rgb_luminance': 0.5}
+276.1274 	EXP 	text: autoDraw = False
+276.1274 	EXP 	text: autoDraw = False
+276.1274 	EXP 	patch_background: autoDraw = True
+276.1274 	EXP 	patch_foreground: autoDraw = True
+276.1274 	EXP 	patch_test: autoDraw = True
+276.1274 	EXP 	text_task: autoDraw = True
+277.7048 	DATA 	Keypress: right
+277.7298 	EXP 	patch_background: autoDraw = False
+277.7298 	EXP 	patch_foreground: autoDraw = False
+277.7298 	EXP 	patch_test: autoDraw = False
+277.7298 	EXP 	text_task: autoDraw = False
+277.7298 	EXP 	text: autoDraw = True
+277.9254 	EXP 	New trial (rep=19, index=6): {'rgb_luminance': 0.4}
+277.9412 	EXP 	text: autoDraw = False
+277.9412 	EXP 	patch_background: autoDraw = True
+277.9412 	EXP 	patch_foreground: autoDraw = True
+277.9412 	EXP 	patch_test: autoDraw = True
+277.9412 	EXP 	text_task: autoDraw = True
+279.4372 	DATA 	Keypress: right
+279.4421 	EXP 	patch_background: autoDraw = False
+279.4421 	EXP 	patch_foreground: autoDraw = False
+279.4421 	EXP 	patch_test: autoDraw = False
+279.4421 	EXP 	text_task: autoDraw = False
+279.4421 	EXP 	text: autoDraw = True
+279.6406 	EXP 	New trial (rep=19, index=7): {'rgb_luminance': 0.6}
+279.6568 	EXP 	text: autoDraw = False
+279.6568 	EXP 	patch_background: autoDraw = True
+279.6568 	EXP 	patch_foreground: autoDraw = True
+279.6568 	EXP 	patch_test: autoDraw = True
+279.6568 	EXP 	text_task: autoDraw = True
+280.2126 	DATA 	Keypress: right
+280.2412 	EXP 	patch_background: autoDraw = False
+280.2412 	EXP 	patch_foreground: autoDraw = False
+280.2412 	EXP 	patch_test: autoDraw = False
+280.2412 	EXP 	text_task: autoDraw = False
+280.2412 	EXP 	text: autoDraw = True
+280.4399 	EXP 	New trial (rep=19, index=8): {'rgb_luminance': 0.45}
+280.4563 	EXP 	text: autoDraw = False
+280.4563 	EXP 	patch_background: autoDraw = True
+280.4563 	EXP 	patch_foreground: autoDraw = True
+280.4563 	EXP 	patch_test: autoDraw = True
+280.4563 	EXP 	text_task: autoDraw = True
+283.5853 	DATA 	Keypress: right
+283.5904 	EXP 	patch_background: autoDraw = False
+283.5904 	EXP 	patch_foreground: autoDraw = False
+283.5904 	EXP 	patch_test: autoDraw = False
+283.5904 	EXP 	text_task: autoDraw = False
+283.5904 	EXP 	text: autoDraw = True
+283.7871 	EXP 	New trial (rep=20, index=0): {'rgb_luminance': 0.3}
+283.8029 	EXP 	text: autoDraw = False
+283.8029 	EXP 	patch_background: autoDraw = True
+283.8029 	EXP 	patch_foreground: autoDraw = True
+283.8029 	EXP 	patch_test: autoDraw = True
+283.8029 	EXP 	text_task: autoDraw = True
+285.0583 	DATA 	Keypress: right
+285.0873 	EXP 	patch_background: autoDraw = False
+285.0873 	EXP 	patch_foreground: autoDraw = False
+285.0873 	EXP 	patch_test: autoDraw = False
+285.0873 	EXP 	text_task: autoDraw = False
+285.0873 	EXP 	text: autoDraw = True
+285.2857 	EXP 	New trial (rep=20, index=1): {'rgb_luminance': 0.5}
+285.3017 	EXP 	text: autoDraw = False
+285.3017 	EXP 	patch_background: autoDraw = True
+285.3017 	EXP 	patch_foreground: autoDraw = True
+285.3017 	EXP 	patch_test: autoDraw = True
+285.3017 	EXP 	text_task: autoDraw = True
+285.9240 	DATA 	Keypress: right
+285.9530 	EXP 	patch_background: autoDraw = False
+285.9530 	EXP 	patch_foreground: autoDraw = False
+285.9530 	EXP 	patch_test: autoDraw = False
+285.9530 	EXP 	text_task: autoDraw = False
+285.9530 	EXP 	text: autoDraw = True
+286.1515 	EXP 	New trial (rep=20, index=2): {'rgb_luminance': 0.4}
+286.1678 	EXP 	text: autoDraw = False
+286.1678 	EXP 	patch_background: autoDraw = True
+286.1678 	EXP 	patch_foreground: autoDraw = True
+286.1678 	EXP 	patch_test: autoDraw = True
+286.1678 	EXP 	text_task: autoDraw = True
+287.5132 	DATA 	Keypress: right
+287.5373 	EXP 	patch_background: autoDraw = False
+287.5373 	EXP 	patch_foreground: autoDraw = False
+287.5373 	EXP 	patch_test: autoDraw = False
+287.5373 	EXP 	text_task: autoDraw = False
+287.5373 	EXP 	text: autoDraw = True
+287.7336 	EXP 	New trial (rep=20, index=3): {'rgb_luminance': 0.45}
+287.7497 	EXP 	text: autoDraw = False
+287.7497 	EXP 	patch_background: autoDraw = True
+287.7497 	EXP 	patch_foreground: autoDraw = True
+287.7497 	EXP 	patch_test: autoDraw = True
+287.7497 	EXP 	text_task: autoDraw = True
+288.2797 	DATA 	Keypress: right
+288.2847 	EXP 	patch_background: autoDraw = False
+288.2847 	EXP 	patch_foreground: autoDraw = False
+288.2847 	EXP 	patch_test: autoDraw = False
+288.2847 	EXP 	text_task: autoDraw = False
+288.2847 	EXP 	text: autoDraw = True
+288.4832 	EXP 	New trial (rep=20, index=4): {'rgb_luminance': 0.6}
+288.4999 	EXP 	text: autoDraw = False
+288.4999 	EXP 	patch_background: autoDraw = True
+288.4999 	EXP 	patch_foreground: autoDraw = True
+288.4999 	EXP 	patch_test: autoDraw = True
+288.4999 	EXP 	text_task: autoDraw = True
+289.0128 	DATA 	Keypress: right
+289.0177 	EXP 	patch_background: autoDraw = False
+289.0177 	EXP 	patch_foreground: autoDraw = False
+289.0177 	EXP 	patch_test: autoDraw = False
+289.0177 	EXP 	text_task: autoDraw = False
+289.0177 	EXP 	text: autoDraw = True
+289.2159 	EXP 	New trial (rep=20, index=5): {'rgb_luminance': 0.7}
+289.2319 	EXP 	text: autoDraw = False
+289.2319 	EXP 	patch_background: autoDraw = True
+289.2319 	EXP 	patch_foreground: autoDraw = True
+289.2319 	EXP 	patch_test: autoDraw = True
+289.2319 	EXP 	text_task: autoDraw = True
+289.7617 	DATA 	Keypress: right
+289.7667 	EXP 	patch_background: autoDraw = False
+289.7667 	EXP 	patch_foreground: autoDraw = False
+289.7667 	EXP 	patch_test: autoDraw = False
+289.7667 	EXP 	text_task: autoDraw = False
+289.7667 	EXP 	text: autoDraw = True
+289.9652 	EXP 	New trial (rep=20, index=6): {'rgb_luminance': 0.55}
+289.9811 	EXP 	text: autoDraw = False
+289.9811 	EXP 	patch_background: autoDraw = True
+289.9811 	EXP 	patch_foreground: autoDraw = True
+289.9811 	EXP 	patch_test: autoDraw = True
+289.9811 	EXP 	text_task: autoDraw = True
+290.8576 	DATA 	Keypress: right
+290.8820 	EXP 	patch_background: autoDraw = False
+290.8820 	EXP 	patch_foreground: autoDraw = False
+290.8820 	EXP 	patch_test: autoDraw = False
+290.8820 	EXP 	text_task: autoDraw = False
+290.8820 	EXP 	text: autoDraw = True
+291.0808 	EXP 	New trial (rep=20, index=7): {'rgb_luminance': 0.9}
+291.0972 	EXP 	text: autoDraw = False
+291.0972 	EXP 	patch_background: autoDraw = True
+291.0972 	EXP 	patch_foreground: autoDraw = True
+291.0972 	EXP 	patch_test: autoDraw = True
+291.0972 	EXP 	text_task: autoDraw = True
+291.6769 	DATA 	Keypress: right
+291.6820 	EXP 	patch_background: autoDraw = False
+291.6820 	EXP 	patch_foreground: autoDraw = False
+291.6820 	EXP 	patch_test: autoDraw = False
+291.6820 	EXP 	text_task: autoDraw = False
+291.6820 	EXP 	text: autoDraw = True
+291.8800 	EXP 	New trial (rep=20, index=8): {'rgb_luminance': 0.1}
+291.8961 	EXP 	text: autoDraw = False
+291.8961 	EXP 	patch_background: autoDraw = True
+291.8961 	EXP 	patch_foreground: autoDraw = True
+291.8961 	EXP 	patch_test: autoDraw = True
+291.8961 	EXP 	text_task: autoDraw = True
+292.6120 	DATA 	Keypress: left
+292.6171 	EXP 	patch_background: autoDraw = False
+292.6171 	EXP 	patch_foreground: autoDraw = False
+292.6171 	EXP 	patch_test: autoDraw = False
+292.6171 	EXP 	text_task: autoDraw = False
+292.6171 	EXP 	text: autoDraw = True
+292.8126 	EXP 	New trial (rep=21, index=0): {'rgb_luminance': 0.55}
+292.8288 	EXP 	text: autoDraw = False
+292.8288 	EXP 	patch_background: autoDraw = True
+292.8288 	EXP 	patch_foreground: autoDraw = True
+292.8288 	EXP 	patch_test: autoDraw = True
+292.8288 	EXP 	text_task: autoDraw = True
+293.2721 	DATA 	Keypress: right
+293.2967 	EXP 	patch_background: autoDraw = False
+293.2967 	EXP 	patch_foreground: autoDraw = False
+293.2967 	EXP 	patch_test: autoDraw = False
+293.2967 	EXP 	text_task: autoDraw = False
+293.2967 	EXP 	text: autoDraw = True
+293.4963 	EXP 	New trial (rep=21, index=1): {'rgb_luminance': 0.1}
+293.5118 	EXP 	text: autoDraw = False
+293.5118 	EXP 	patch_background: autoDraw = True
+293.5118 	EXP 	patch_foreground: autoDraw = True
+293.5118 	EXP 	patch_test: autoDraw = True
+293.5118 	EXP 	text_task: autoDraw = True
+293.9887 	DATA 	Keypress: left
+294.0143 	EXP 	patch_background: autoDraw = False
+294.0143 	EXP 	patch_foreground: autoDraw = False
+294.0143 	EXP 	patch_test: autoDraw = False
+294.0143 	EXP 	text_task: autoDraw = False
+294.0143 	EXP 	text: autoDraw = True
+294.2114 	EXP 	New trial (rep=21, index=2): {'rgb_luminance': 0.4}
+294.2273 	EXP 	text: autoDraw = False
+294.2273 	EXP 	patch_background: autoDraw = True
+294.2273 	EXP 	patch_foreground: autoDraw = True
+294.2273 	EXP 	patch_test: autoDraw = True
+294.2273 	EXP 	text_task: autoDraw = True
+294.7976 	DATA 	Keypress: right
+294.8097 	EXP 	patch_background: autoDraw = False
+294.8097 	EXP 	patch_foreground: autoDraw = False
+294.8097 	EXP 	patch_test: autoDraw = False
+294.8097 	EXP 	text_task: autoDraw = False
+294.8097 	EXP 	text: autoDraw = True
+294.9959 	EXP 	New trial (rep=21, index=3): {'rgb_luminance': 0.7}
+295.0108 	EXP 	text: autoDraw = False
+295.0108 	EXP 	text: autoDraw = False
+295.0108 	EXP 	patch_background: autoDraw = True
+295.0108 	EXP 	patch_foreground: autoDraw = True
+295.0108 	EXP 	patch_test: autoDraw = True
+295.0108 	EXP 	text_task: autoDraw = True
+295.4908 	DATA 	Keypress: right
+295.4959 	EXP 	patch_background: autoDraw = False
+295.4959 	EXP 	patch_foreground: autoDraw = False
+295.4959 	EXP 	patch_test: autoDraw = False
+295.4959 	EXP 	text_task: autoDraw = False
+295.4959 	EXP 	text: autoDraw = True
+295.6934 	EXP 	New trial (rep=21, index=4): {'rgb_luminance': 0.3}
+295.7094 	EXP 	text: autoDraw = False
+295.7094 	EXP 	patch_background: autoDraw = True
+295.7094 	EXP 	patch_foreground: autoDraw = True
+295.7094 	EXP 	patch_test: autoDraw = True
+295.7094 	EXP 	text_task: autoDraw = True
+297.1621 	DATA 	Keypress: right
+297.1744 	EXP 	patch_background: autoDraw = False
+297.1744 	EXP 	patch_foreground: autoDraw = False
+297.1744 	EXP 	patch_test: autoDraw = False
+297.1744 	EXP 	text_task: autoDraw = False
+297.1744 	EXP 	text: autoDraw = True
+297.3606 	EXP 	New trial (rep=21, index=5): {'rgb_luminance': 0.9}
+297.3756 	EXP 	text: autoDraw = False
+297.3756 	EXP 	text: autoDraw = False
+297.3756 	EXP 	patch_background: autoDraw = True
+297.3756 	EXP 	patch_foreground: autoDraw = True
+297.3756 	EXP 	patch_test: autoDraw = True
+297.3756 	EXP 	text_task: autoDraw = True
+297.9044 	DATA 	Keypress: right
+297.9097 	EXP 	patch_background: autoDraw = False
+297.9097 	EXP 	patch_foreground: autoDraw = False
+297.9097 	EXP 	patch_test: autoDraw = False
+297.9097 	EXP 	text_task: autoDraw = False
+297.9097 	EXP 	text: autoDraw = True
+298.1083 	EXP 	New trial (rep=21, index=6): {'rgb_luminance': 0.5}
+298.1242 	EXP 	text: autoDraw = False
+298.1242 	EXP 	patch_background: autoDraw = True
+298.1242 	EXP 	patch_foreground: autoDraw = True
+298.1242 	EXP 	patch_test: autoDraw = True
+298.1242 	EXP 	text_task: autoDraw = True
+298.9462 	DATA 	Keypress: right
+298.9751 	EXP 	patch_background: autoDraw = False
+298.9751 	EXP 	patch_foreground: autoDraw = False
+298.9751 	EXP 	patch_test: autoDraw = False
+298.9751 	EXP 	text_task: autoDraw = False
+298.9751 	EXP 	text: autoDraw = True
+299.1737 	EXP 	New trial (rep=21, index=7): {'rgb_luminance': 0.45}
+299.1897 	EXP 	text: autoDraw = False
+299.1897 	EXP 	patch_background: autoDraw = True
+299.1897 	EXP 	patch_foreground: autoDraw = True
+299.1897 	EXP 	patch_test: autoDraw = True
+299.1897 	EXP 	text_task: autoDraw = True
+300.9780 	DATA 	Keypress: right
+301.0066 	EXP 	patch_background: autoDraw = False
+301.0066 	EXP 	patch_foreground: autoDraw = False
+301.0066 	EXP 	patch_test: autoDraw = False
+301.0066 	EXP 	text_task: autoDraw = False
+301.0066 	EXP 	text: autoDraw = True
+301.2052 	EXP 	New trial (rep=21, index=8): {'rgb_luminance': 0.6}
+301.2212 	EXP 	text: autoDraw = False
+301.2212 	EXP 	patch_background: autoDraw = True
+301.2212 	EXP 	patch_foreground: autoDraw = True
+301.2212 	EXP 	patch_test: autoDraw = True
+301.2212 	EXP 	text_task: autoDraw = True
+301.7171 	DATA 	Keypress: right
+301.7421 	EXP 	patch_background: autoDraw = False
+301.7421 	EXP 	patch_foreground: autoDraw = False
+301.7421 	EXP 	patch_test: autoDraw = False
+301.7421 	EXP 	text_task: autoDraw = False
+301.7421 	EXP 	text: autoDraw = True
+301.9378 	EXP 	New trial (rep=22, index=0): {'rgb_luminance': 0.5}
+301.9539 	EXP 	text: autoDraw = False
+301.9539 	EXP 	patch_background: autoDraw = True
+301.9539 	EXP 	patch_foreground: autoDraw = True
+301.9539 	EXP 	patch_test: autoDraw = True
+301.9539 	EXP 	text_task: autoDraw = True
+302.4838 	DATA 	Keypress: right
+302.4889 	EXP 	patch_background: autoDraw = False
+302.4889 	EXP 	patch_foreground: autoDraw = False
+302.4889 	EXP 	patch_test: autoDraw = False
+302.4889 	EXP 	text_task: autoDraw = False
+302.4889 	EXP 	text: autoDraw = True
+302.6875 	EXP 	New trial (rep=22, index=1): {'rgb_luminance': 0.4}
+302.7036 	EXP 	text: autoDraw = False
+302.7036 	EXP 	patch_background: autoDraw = True
+302.7036 	EXP 	patch_foreground: autoDraw = True
+302.7036 	EXP 	patch_test: autoDraw = True
+302.7036 	EXP 	text_task: autoDraw = True
+303.2182 	DATA 	Keypress: right
+303.2234 	EXP 	patch_background: autoDraw = False
+303.2234 	EXP 	patch_foreground: autoDraw = False
+303.2234 	EXP 	patch_test: autoDraw = False
+303.2234 	EXP 	text_task: autoDraw = False
+303.2234 	EXP 	text: autoDraw = True
+303.4203 	EXP 	New trial (rep=22, index=2): {'rgb_luminance': 0.7}
+303.4362 	EXP 	text: autoDraw = False
+303.4362 	EXP 	patch_background: autoDraw = True
+303.4362 	EXP 	patch_foreground: autoDraw = True
+303.4362 	EXP 	patch_test: autoDraw = True
+303.4362 	EXP 	text_task: autoDraw = True
+303.9827 	DATA 	Keypress: right
+303.9877 	EXP 	patch_background: autoDraw = False
+303.9877 	EXP 	patch_foreground: autoDraw = False
+303.9877 	EXP 	patch_test: autoDraw = False
+303.9877 	EXP 	text_task: autoDraw = False
+303.9877 	EXP 	text: autoDraw = True
+304.1859 	EXP 	New trial (rep=22, index=3): {'rgb_luminance': 0.55}
+304.2017 	EXP 	text: autoDraw = False
+304.2017 	EXP 	patch_background: autoDraw = True
+304.2017 	EXP 	patch_foreground: autoDraw = True
+304.2017 	EXP 	patch_test: autoDraw = True
+304.2017 	EXP 	text_task: autoDraw = True
+304.7813 	DATA 	Keypress: right
+304.7864 	EXP 	patch_background: autoDraw = False
+304.7864 	EXP 	patch_foreground: autoDraw = False
+304.7864 	EXP 	patch_test: autoDraw = False
+304.7864 	EXP 	text_task: autoDraw = False
+304.7864 	EXP 	text: autoDraw = True
+304.9852 	EXP 	New trial (rep=22, index=4): {'rgb_luminance': 0.1}
+305.0011 	EXP 	text: autoDraw = False
+305.0011 	EXP 	patch_background: autoDraw = True
+305.0011 	EXP 	patch_foreground: autoDraw = True
+305.0011 	EXP 	patch_test: autoDraw = True
+305.0011 	EXP 	text_task: autoDraw = True
+305.5974 	DATA 	Keypress: left
+305.6024 	EXP 	patch_background: autoDraw = False
+305.6024 	EXP 	patch_foreground: autoDraw = False
+305.6024 	EXP 	patch_test: autoDraw = False
+305.6024 	EXP 	text_task: autoDraw = False
+305.6024 	EXP 	text: autoDraw = True
+305.8011 	EXP 	New trial (rep=22, index=5): {'rgb_luminance': 0.3}
+305.8170 	EXP 	text: autoDraw = False
+305.8170 	EXP 	patch_background: autoDraw = True
+305.8170 	EXP 	patch_foreground: autoDraw = True
+305.8170 	EXP 	patch_test: autoDraw = True
+305.8170 	EXP 	text_task: autoDraw = True
+308.2509 	DATA 	Keypress: left
+308.2649 	EXP 	patch_background: autoDraw = False
+308.2649 	EXP 	patch_foreground: autoDraw = False
+308.2649 	EXP 	patch_test: autoDraw = False
+308.2649 	EXP 	text_task: autoDraw = False
+308.2649 	EXP 	text: autoDraw = True
+308.4491 	EXP 	New trial (rep=22, index=6): {'rgb_luminance': 0.45}
+308.4651 	EXP 	text: autoDraw = False
+308.4651 	EXP 	patch_background: autoDraw = True
+308.4651 	EXP 	patch_foreground: autoDraw = True
+308.4651 	EXP 	patch_test: autoDraw = True
+308.4651 	EXP 	text_task: autoDraw = True
+308.9281 	DATA 	Keypress: right
+308.9329 	EXP 	patch_background: autoDraw = False
+308.9329 	EXP 	patch_foreground: autoDraw = False
+308.9329 	EXP 	patch_test: autoDraw = False
+308.9329 	EXP 	text_task: autoDraw = False
+308.9329 	EXP 	text: autoDraw = True
+309.1316 	EXP 	New trial (rep=22, index=7): {'rgb_luminance': 0.9}
+309.1474 	EXP 	text: autoDraw = False
+309.1474 	EXP 	patch_background: autoDraw = True
+309.1474 	EXP 	patch_foreground: autoDraw = True
+309.1474 	EXP 	patch_test: autoDraw = True
+309.1474 	EXP 	text_task: autoDraw = True
+309.6602 	DATA 	Keypress: right
+309.6652 	EXP 	patch_background: autoDraw = False
+309.6652 	EXP 	patch_foreground: autoDraw = False
+309.6652 	EXP 	patch_test: autoDraw = False
+309.6652 	EXP 	text_task: autoDraw = False
+309.6652 	EXP 	text: autoDraw = True
+309.8647 	EXP 	New trial (rep=22, index=8): {'rgb_luminance': 0.6}
+309.8804 	EXP 	text: autoDraw = False
+309.8804 	EXP 	patch_background: autoDraw = True
+309.8804 	EXP 	patch_foreground: autoDraw = True
+309.8804 	EXP 	patch_test: autoDraw = True
+309.8804 	EXP 	text_task: autoDraw = True
+310.5102 	DATA 	Keypress: right
+310.5153 	EXP 	patch_background: autoDraw = False
+310.5153 	EXP 	patch_foreground: autoDraw = False
+310.5153 	EXP 	patch_test: autoDraw = False
+310.5153 	EXP 	text_task: autoDraw = False
+310.5153 	EXP 	text: autoDraw = True
+310.7138 	EXP 	New trial (rep=23, index=0): {'rgb_luminance': 0.4}
+310.7294 	EXP 	text: autoDraw = False
+310.7294 	EXP 	patch_background: autoDraw = True
+310.7294 	EXP 	patch_foreground: autoDraw = True
+310.7294 	EXP 	patch_test: autoDraw = True
+310.7294 	EXP 	text_task: autoDraw = True
+312.2419 	DATA 	Keypress: right
+312.2470 	EXP 	patch_background: autoDraw = False
+312.2470 	EXP 	patch_foreground: autoDraw = False
+312.2470 	EXP 	patch_test: autoDraw = False
+312.2470 	EXP 	text_task: autoDraw = False
+312.2470 	EXP 	text: autoDraw = True
+312.4456 	EXP 	New trial (rep=23, index=1): {'rgb_luminance': 0.55}
+312.4619 	EXP 	text: autoDraw = False
+312.4619 	EXP 	patch_background: autoDraw = True
+312.4619 	EXP 	patch_foreground: autoDraw = True
+312.4619 	EXP 	patch_test: autoDraw = True
+312.4619 	EXP 	text_task: autoDraw = True
+312.9918 	DATA 	Keypress: right
+312.9969 	EXP 	patch_background: autoDraw = False
+312.9969 	EXP 	patch_foreground: autoDraw = False
+312.9969 	EXP 	patch_test: autoDraw = False
+312.9969 	EXP 	text_task: autoDraw = False
+312.9969 	EXP 	text: autoDraw = True
+313.1953 	EXP 	New trial (rep=23, index=2): {'rgb_luminance': 0.7}
+313.2109 	EXP 	text: autoDraw = False
+313.2109 	EXP 	patch_background: autoDraw = True
+313.2109 	EXP 	patch_foreground: autoDraw = True
+313.2109 	EXP 	patch_test: autoDraw = True
+313.2109 	EXP 	text_task: autoDraw = True
+313.6569 	DATA 	Keypress: right
+313.6809 	EXP 	patch_background: autoDraw = False
+313.6809 	EXP 	patch_foreground: autoDraw = False
+313.6809 	EXP 	patch_test: autoDraw = False
+313.6809 	EXP 	text_task: autoDraw = False
+313.6809 	EXP 	text: autoDraw = True
+313.8775 	EXP 	New trial (rep=23, index=3): {'rgb_luminance': 0.3}
+313.8934 	EXP 	text: autoDraw = False
+313.8934 	EXP 	patch_background: autoDraw = True
+313.8934 	EXP 	patch_foreground: autoDraw = True
+313.8934 	EXP 	patch_test: autoDraw = True
+313.8934 	EXP 	text_task: autoDraw = True
+314.3233 	DATA 	Keypress: right
+314.3285 	EXP 	patch_background: autoDraw = False
+314.3285 	EXP 	patch_foreground: autoDraw = False
+314.3285 	EXP 	patch_test: autoDraw = False
+314.3285 	EXP 	text_task: autoDraw = False
+314.3285 	EXP 	text: autoDraw = True
+314.5268 	EXP 	New trial (rep=23, index=4): {'rgb_luminance': 0.6}
+314.5426 	EXP 	text: autoDraw = False
+314.5426 	EXP 	patch_background: autoDraw = True
+314.5426 	EXP 	patch_foreground: autoDraw = True
+314.5426 	EXP 	patch_test: autoDraw = True
+314.5426 	EXP 	text_task: autoDraw = True
+315.0054 	DATA 	Keypress: right
+315.0104 	EXP 	patch_background: autoDraw = False
+315.0104 	EXP 	patch_foreground: autoDraw = False
+315.0104 	EXP 	patch_test: autoDraw = False
+315.0104 	EXP 	text_task: autoDraw = False
+315.0104 	EXP 	text: autoDraw = True
+315.2096 	EXP 	New trial (rep=23, index=5): {'rgb_luminance': 0.1}
+315.2254 	EXP 	text: autoDraw = False
+315.2254 	EXP 	patch_background: autoDraw = True
+315.2254 	EXP 	patch_foreground: autoDraw = True
+315.2254 	EXP 	patch_test: autoDraw = True
+315.2254 	EXP 	text_task: autoDraw = True
+317.5874 	DATA 	Keypress: left
+317.5925 	EXP 	patch_background: autoDraw = False
+317.5925 	EXP 	patch_foreground: autoDraw = False
+317.5925 	EXP 	patch_test: autoDraw = False
+317.5925 	EXP 	text_task: autoDraw = False
+317.5925 	EXP 	text: autoDraw = True
+317.7908 	EXP 	New trial (rep=23, index=6): {'rgb_luminance': 0.5}
+317.8069 	EXP 	text: autoDraw = False
+317.8069 	EXP 	patch_background: autoDraw = True
+317.8069 	EXP 	patch_foreground: autoDraw = True
+317.8069 	EXP 	patch_test: autoDraw = True
+317.8069 	EXP 	text_task: autoDraw = True
+318.1801 	DATA 	Keypress: right
+318.2081 	EXP 	patch_background: autoDraw = False
+318.2081 	EXP 	patch_foreground: autoDraw = False
+318.2081 	EXP 	patch_test: autoDraw = False
+318.2081 	EXP 	text_task: autoDraw = False
+318.2081 	EXP 	text: autoDraw = True
+318.4072 	EXP 	New trial (rep=23, index=7): {'rgb_luminance': 0.45}
+318.4230 	EXP 	text: autoDraw = False
+318.4230 	EXP 	patch_background: autoDraw = True
+318.4230 	EXP 	patch_foreground: autoDraw = True
+318.4230 	EXP 	patch_test: autoDraw = True
+318.4230 	EXP 	text_task: autoDraw = True
+318.9198 	DATA 	Keypress: right
+318.9250 	EXP 	patch_background: autoDraw = False
+318.9250 	EXP 	patch_foreground: autoDraw = False
+318.9250 	EXP 	patch_test: autoDraw = False
+318.9250 	EXP 	text_task: autoDraw = False
+318.9250 	EXP 	text: autoDraw = True
+319.1234 	EXP 	New trial (rep=23, index=8): {'rgb_luminance': 0.9}
+319.1389 	EXP 	text: autoDraw = False
+319.1389 	EXP 	patch_background: autoDraw = True
+319.1389 	EXP 	patch_foreground: autoDraw = True
+319.1389 	EXP 	patch_test: autoDraw = True
+319.1389 	EXP 	text_task: autoDraw = True
+319.5687 	DATA 	Keypress: right
+319.5737 	EXP 	patch_background: autoDraw = False
+319.5737 	EXP 	patch_foreground: autoDraw = False
+319.5737 	EXP 	patch_test: autoDraw = False
+319.5737 	EXP 	text_task: autoDraw = False
+319.5737 	EXP 	text: autoDraw = True
+319.7723 	EXP 	New trial (rep=24, index=0): {'rgb_luminance': 0.3}
+319.7880 	EXP 	text: autoDraw = False
+319.7880 	EXP 	patch_background: autoDraw = True
+319.7880 	EXP 	patch_foreground: autoDraw = True
+319.7880 	EXP 	patch_test: autoDraw = True
+319.7880 	EXP 	text_task: autoDraw = True
+320.1516 	DATA 	Keypress: right
+320.1566 	EXP 	patch_background: autoDraw = False
+320.1566 	EXP 	patch_foreground: autoDraw = False
+320.1566 	EXP 	patch_test: autoDraw = False
+320.1566 	EXP 	text_task: autoDraw = False
+320.1566 	EXP 	text: autoDraw = True
+320.3551 	EXP 	New trial (rep=24, index=1): {'rgb_luminance': 0.45}
+320.3708 	EXP 	text: autoDraw = False
+320.3708 	EXP 	patch_background: autoDraw = True
+320.3708 	EXP 	patch_foreground: autoDraw = True
+320.3708 	EXP 	patch_test: autoDraw = True
+320.3708 	EXP 	text_task: autoDraw = True
+320.8044 	DATA 	Keypress: right
+320.8416 	EXP 	patch_background: autoDraw = False
+320.8416 	EXP 	patch_foreground: autoDraw = False
+320.8416 	EXP 	patch_test: autoDraw = False
+320.8416 	EXP 	text_task: autoDraw = False
+320.8416 	EXP 	text: autoDraw = True
+321.0380 	EXP 	New trial (rep=24, index=2): {'rgb_luminance': 0.5}
+321.0539 	EXP 	text: autoDraw = False
+321.0539 	EXP 	patch_background: autoDraw = True
+321.0539 	EXP 	patch_foreground: autoDraw = True
+321.0539 	EXP 	patch_test: autoDraw = True
+321.0539 	EXP 	text_task: autoDraw = True
+321.5340 	DATA 	Keypress: right
+321.5390 	EXP 	patch_background: autoDraw = False
+321.5390 	EXP 	patch_foreground: autoDraw = False
+321.5390 	EXP 	patch_test: autoDraw = False
+321.5390 	EXP 	text_task: autoDraw = False
+321.5390 	EXP 	text: autoDraw = True
+321.7371 	EXP 	New trial (rep=24, index=3): {'rgb_luminance': 0.6}
+321.7543 	EXP 	text: autoDraw = False
+321.7543 	EXP 	patch_background: autoDraw = True
+321.7543 	EXP 	patch_foreground: autoDraw = True
+321.7543 	EXP 	patch_test: autoDraw = True
+321.7543 	EXP 	text_task: autoDraw = True
+322.2002 	DATA 	Keypress: right
+322.2052 	EXP 	patch_background: autoDraw = False
+322.2052 	EXP 	patch_foreground: autoDraw = False
+322.2052 	EXP 	patch_test: autoDraw = False
+322.2052 	EXP 	text_task: autoDraw = False
+322.2052 	EXP 	text: autoDraw = True
+322.4035 	EXP 	New trial (rep=24, index=4): {'rgb_luminance': 0.9}
+322.4198 	EXP 	text: autoDraw = False
+322.4198 	EXP 	patch_background: autoDraw = True
+322.4198 	EXP 	patch_foreground: autoDraw = True
+322.4198 	EXP 	patch_test: autoDraw = True
+322.4198 	EXP 	text_task: autoDraw = True
+322.8660 	DATA 	Keypress: right
+322.8714 	EXP 	patch_background: autoDraw = False
+322.8714 	EXP 	patch_foreground: autoDraw = False
+322.8714 	EXP 	patch_test: autoDraw = False
+322.8714 	EXP 	text_task: autoDraw = False
+322.8714 	EXP 	text: autoDraw = True
+323.0698 	EXP 	New trial (rep=24, index=5): {'rgb_luminance': 0.55}
+323.0856 	EXP 	text: autoDraw = False
+323.0856 	EXP 	patch_background: autoDraw = True
+323.0856 	EXP 	patch_foreground: autoDraw = True
+323.0856 	EXP 	patch_test: autoDraw = True
+323.0856 	EXP 	text_task: autoDraw = True
+323.6223 	DATA 	Keypress: right
+323.6350 	EXP 	patch_background: autoDraw = False
+323.6350 	EXP 	patch_foreground: autoDraw = False
+323.6350 	EXP 	patch_test: autoDraw = False
+323.6350 	EXP 	text_task: autoDraw = False
+323.6350 	EXP 	text: autoDraw = True
+323.8210 	EXP 	New trial (rep=24, index=6): {'rgb_luminance': 0.1}
+323.8359 	EXP 	text: autoDraw = False
+323.8359 	EXP 	text: autoDraw = False
+323.8359 	EXP 	patch_background: autoDraw = True
+323.8359 	EXP 	patch_foreground: autoDraw = True
+323.8359 	EXP 	patch_test: autoDraw = True
+323.8359 	EXP 	text_task: autoDraw = True
+325.2472 	DATA 	Keypress: left
+325.2523 	EXP 	patch_background: autoDraw = False
+325.2523 	EXP 	patch_foreground: autoDraw = False
+325.2523 	EXP 	patch_test: autoDraw = False
+325.2523 	EXP 	text_task: autoDraw = False
+325.2523 	EXP 	text: autoDraw = True
+325.4507 	EXP 	New trial (rep=24, index=7): {'rgb_luminance': 0.4}
+325.4677 	EXP 	text: autoDraw = False
+325.4677 	EXP 	patch_background: autoDraw = True
+325.4677 	EXP 	patch_foreground: autoDraw = True
+325.4677 	EXP 	patch_test: autoDraw = True
+325.4677 	EXP 	text_task: autoDraw = True
+326.1637 	DATA 	Keypress: right
+326.1687 	EXP 	patch_background: autoDraw = False
+326.1687 	EXP 	patch_foreground: autoDraw = False
+326.1687 	EXP 	patch_test: autoDraw = False
+326.1687 	EXP 	text_task: autoDraw = False
+326.1687 	EXP 	text: autoDraw = True
+326.3665 	EXP 	New trial (rep=24, index=8): {'rgb_luminance': 0.7}
+326.3835 	EXP 	text: autoDraw = False
+326.3835 	EXP 	patch_background: autoDraw = True
+326.3835 	EXP 	patch_foreground: autoDraw = True
+326.3835 	EXP 	patch_test: autoDraw = True
+326.3835 	EXP 	text_task: autoDraw = True
+326.8649 	DATA 	Keypress: right
+326.8697 	EXP 	patch_background: autoDraw = False
+326.8697 	EXP 	patch_foreground: autoDraw = False
+326.8697 	EXP 	patch_test: autoDraw = False
+326.8697 	EXP 	text_task: autoDraw = False
+326.8697 	EXP 	text: autoDraw = True
+327.0664 	EXP 	New trial (rep=25, index=0): {'rgb_luminance': 0.1}
+327.0822 	EXP 	text: autoDraw = False
+327.0822 	EXP 	patch_background: autoDraw = True
+327.0822 	EXP 	patch_foreground: autoDraw = True
+327.0822 	EXP 	patch_test: autoDraw = True
+327.0822 	EXP 	text_task: autoDraw = True
+330.5264 	DATA 	Keypress: right
+330.5314 	EXP 	patch_background: autoDraw = False
+330.5314 	EXP 	patch_foreground: autoDraw = False
+330.5314 	EXP 	patch_test: autoDraw = False
+330.5314 	EXP 	text_task: autoDraw = False
+330.5314 	EXP 	text: autoDraw = True
+330.7297 	EXP 	New trial (rep=25, index=1): {'rgb_luminance': 0.7}
+330.7457 	EXP 	text: autoDraw = False
+330.7457 	EXP 	patch_background: autoDraw = True
+330.7457 	EXP 	patch_foreground: autoDraw = True
+330.7457 	EXP 	patch_test: autoDraw = True
+330.7457 	EXP 	text_task: autoDraw = True
+331.1758 	DATA 	Keypress: right
+331.1807 	EXP 	patch_background: autoDraw = False
+331.1807 	EXP 	patch_foreground: autoDraw = False
+331.1807 	EXP 	patch_test: autoDraw = False
+331.1807 	EXP 	text_task: autoDraw = False
+331.1807 	EXP 	text: autoDraw = True
+331.3789 	EXP 	New trial (rep=25, index=2): {'rgb_luminance': 0.9}
+331.3950 	EXP 	text: autoDraw = False
+331.3950 	EXP 	patch_background: autoDraw = True
+331.3950 	EXP 	patch_foreground: autoDraw = True
+331.3950 	EXP 	patch_test: autoDraw = True
+331.3950 	EXP 	text_task: autoDraw = True
+331.7927 	DATA 	Keypress: right
+331.7977 	EXP 	patch_background: autoDraw = False
+331.7977 	EXP 	patch_foreground: autoDraw = False
+331.7977 	EXP 	patch_test: autoDraw = False
+331.7977 	EXP 	text_task: autoDraw = False
+331.7977 	EXP 	text: autoDraw = True
+331.9950 	EXP 	New trial (rep=25, index=3): {'rgb_luminance': 0.5}
+332.0111 	EXP 	text: autoDraw = False
+332.0111 	EXP 	patch_background: autoDraw = True
+332.0111 	EXP 	patch_foreground: autoDraw = True
+332.0111 	EXP 	patch_test: autoDraw = True
+332.0111 	EXP 	text_task: autoDraw = True
+332.6911 	DATA 	Keypress: right
+332.6962 	EXP 	patch_background: autoDraw = False
+332.6962 	EXP 	patch_foreground: autoDraw = False
+332.6962 	EXP 	patch_test: autoDraw = False
+332.6962 	EXP 	text_task: autoDraw = False
+332.6962 	EXP 	text: autoDraw = True
+332.8943 	EXP 	New trial (rep=25, index=4): {'rgb_luminance': 0.4}
+332.9103 	EXP 	text: autoDraw = False
+332.9103 	EXP 	patch_background: autoDraw = True
+332.9103 	EXP 	patch_foreground: autoDraw = True
+332.9103 	EXP 	patch_test: autoDraw = True
+332.9103 	EXP 	text_task: autoDraw = True
+333.6405 	DATA 	Keypress: right
+333.6456 	EXP 	patch_background: autoDraw = False
+333.6456 	EXP 	patch_foreground: autoDraw = False
+333.6456 	EXP 	patch_test: autoDraw = False
+333.6456 	EXP 	text_task: autoDraw = False
+333.6456 	EXP 	text: autoDraw = True
+333.8434 	EXP 	New trial (rep=25, index=5): {'rgb_luminance': 0.6}
+333.8595 	EXP 	text: autoDraw = False
+333.8595 	EXP 	patch_background: autoDraw = True
+333.8595 	EXP 	patch_foreground: autoDraw = True
+333.8595 	EXP 	patch_test: autoDraw = True
+333.8595 	EXP 	text_task: autoDraw = True
+334.6228 	DATA 	Keypress: right
+334.6280 	EXP 	patch_background: autoDraw = False
+334.6280 	EXP 	patch_foreground: autoDraw = False
+334.6280 	EXP 	patch_test: autoDraw = False
+334.6280 	EXP 	text_task: autoDraw = False
+334.6280 	EXP 	text: autoDraw = True
+334.8259 	EXP 	New trial (rep=25, index=6): {'rgb_luminance': 0.3}
+334.8416 	EXP 	text: autoDraw = False
+334.8416 	EXP 	patch_background: autoDraw = True
+334.8416 	EXP 	patch_foreground: autoDraw = True
+334.8416 	EXP 	patch_test: autoDraw = True
+334.8416 	EXP 	text_task: autoDraw = True
+336.1197 	DATA 	Keypress: right
+336.1428 	EXP 	patch_background: autoDraw = False
+336.1428 	EXP 	patch_foreground: autoDraw = False
+336.1428 	EXP 	patch_test: autoDraw = False
+336.1428 	EXP 	text_task: autoDraw = False
+336.1428 	EXP 	text: autoDraw = True
+336.3413 	EXP 	New trial (rep=25, index=7): {'rgb_luminance': 0.45}
+336.3568 	EXP 	text: autoDraw = False
+336.3568 	EXP 	patch_background: autoDraw = True
+336.3568 	EXP 	patch_foreground: autoDraw = True
+336.3568 	EXP 	patch_test: autoDraw = True
+336.3568 	EXP 	text_task: autoDraw = True
+336.9035 	DATA 	Keypress: right
+336.9088 	EXP 	patch_background: autoDraw = False
+336.9088 	EXP 	patch_foreground: autoDraw = False
+336.9088 	EXP 	patch_test: autoDraw = False
+336.9088 	EXP 	text_task: autoDraw = False
+336.9088 	EXP 	text: autoDraw = True
+337.1071 	EXP 	New trial (rep=25, index=8): {'rgb_luminance': 0.55}
+337.1231 	EXP 	text: autoDraw = False
+337.1231 	EXP 	patch_background: autoDraw = True
+337.1231 	EXP 	patch_foreground: autoDraw = True
+337.1231 	EXP 	patch_test: autoDraw = True
+337.1231 	EXP 	text_task: autoDraw = True
+337.6864 	DATA 	Keypress: right
+337.6915 	EXP 	patch_background: autoDraw = False
+337.6915 	EXP 	patch_foreground: autoDraw = False
+337.6915 	EXP 	patch_test: autoDraw = False
+337.6915 	EXP 	text_task: autoDraw = False
+337.6915 	EXP 	text: autoDraw = True
+337.8899 	EXP 	New trial (rep=26, index=0): {'rgb_luminance': 0.7}
+337.9057 	EXP 	text: autoDraw = False
+337.9057 	EXP 	patch_background: autoDraw = True
+337.9057 	EXP 	patch_foreground: autoDraw = True
+337.9057 	EXP 	patch_test: autoDraw = True
+337.9057 	EXP 	text_task: autoDraw = True
+338.4065 	DATA 	Keypress: right
+338.4290 	EXP 	patch_background: autoDraw = False
+338.4290 	EXP 	patch_foreground: autoDraw = False
+338.4290 	EXP 	patch_test: autoDraw = False
+338.4290 	EXP 	text_task: autoDraw = False
+338.4290 	EXP 	text: autoDraw = True
+338.6235 	EXP 	New trial (rep=26, index=1): {'rgb_luminance': 0.3}
+338.6409 	EXP 	text: autoDraw = False
+338.6409 	EXP 	patch_background: autoDraw = True
+338.6409 	EXP 	patch_foreground: autoDraw = True
+338.6409 	EXP 	patch_test: autoDraw = True
+338.6409 	EXP 	text_task: autoDraw = True
+339.2850 	DATA 	Keypress: right
+339.2904 	EXP 	patch_background: autoDraw = False
+339.2904 	EXP 	patch_foreground: autoDraw = False
+339.2904 	EXP 	patch_test: autoDraw = False
+339.2904 	EXP 	text_task: autoDraw = False
+339.2904 	EXP 	text: autoDraw = True
+339.4895 	EXP 	New trial (rep=26, index=2): {'rgb_luminance': 0.9}
+339.5054 	EXP 	text: autoDraw = False
+339.5054 	EXP 	patch_background: autoDraw = True
+339.5054 	EXP 	patch_foreground: autoDraw = True
+339.5054 	EXP 	patch_test: autoDraw = True
+339.5054 	EXP 	text_task: autoDraw = True
+340.0010 	DATA 	Keypress: right
+340.0059 	EXP 	patch_background: autoDraw = False
+340.0059 	EXP 	patch_foreground: autoDraw = False
+340.0059 	EXP 	patch_test: autoDraw = False
+340.0059 	EXP 	text_task: autoDraw = False
+340.0059 	EXP 	text: autoDraw = True
+340.2046 	EXP 	New trial (rep=26, index=3): {'rgb_luminance': 0.4}
+340.2202 	EXP 	text: autoDraw = False
+340.2202 	EXP 	patch_background: autoDraw = True
+340.2202 	EXP 	patch_foreground: autoDraw = True
+340.2202 	EXP 	patch_test: autoDraw = True
+340.2202 	EXP 	text_task: autoDraw = True
+340.7836 	DATA 	Keypress: right
+340.7886 	EXP 	patch_background: autoDraw = False
+340.7886 	EXP 	patch_foreground: autoDraw = False
+340.7886 	EXP 	patch_test: autoDraw = False
+340.7886 	EXP 	text_task: autoDraw = False
+340.7886 	EXP 	text: autoDraw = True
+340.9874 	EXP 	New trial (rep=26, index=4): {'rgb_luminance': 0.6}
+341.0031 	EXP 	text: autoDraw = False
+341.0031 	EXP 	patch_background: autoDraw = True
+341.0031 	EXP 	patch_foreground: autoDraw = True
+341.0031 	EXP 	patch_test: autoDraw = True
+341.0031 	EXP 	text_task: autoDraw = True
+341.4452 	DATA 	Keypress: right
+341.4713 	EXP 	patch_background: autoDraw = False
+341.4713 	EXP 	patch_foreground: autoDraw = False
+341.4713 	EXP 	patch_test: autoDraw = False
+341.4713 	EXP 	text_task: autoDraw = False
+341.4713 	EXP 	text: autoDraw = True
+341.6698 	EXP 	New trial (rep=26, index=5): {'rgb_luminance': 0.5}
+341.6856 	EXP 	text: autoDraw = False
+341.6856 	EXP 	patch_background: autoDraw = True
+341.6856 	EXP 	patch_foreground: autoDraw = True
+341.6856 	EXP 	patch_test: autoDraw = True
+341.6856 	EXP 	text_task: autoDraw = True
+342.1160 	DATA 	Keypress: right
+342.1211 	EXP 	patch_background: autoDraw = False
+342.1211 	EXP 	patch_foreground: autoDraw = False
+342.1211 	EXP 	patch_test: autoDraw = False
+342.1211 	EXP 	text_task: autoDraw = False
+342.1211 	EXP 	text: autoDraw = True
+342.3194 	EXP 	New trial (rep=26, index=6): {'rgb_luminance': 0.45}
+342.3351 	EXP 	text: autoDraw = False
+342.3351 	EXP 	patch_background: autoDraw = True
+342.3351 	EXP 	patch_foreground: autoDraw = True
+342.3351 	EXP 	patch_test: autoDraw = True
+342.3351 	EXP 	text_task: autoDraw = True
+343.4921 	DATA 	Keypress: right
+343.5195 	EXP 	patch_background: autoDraw = False
+343.5195 	EXP 	patch_foreground: autoDraw = False
+343.5195 	EXP 	patch_test: autoDraw = False
+343.5195 	EXP 	text_task: autoDraw = False
+343.5195 	EXP 	text: autoDraw = True
+343.7184 	EXP 	New trial (rep=26, index=7): {'rgb_luminance': 0.1}
+343.7342 	EXP 	text: autoDraw = False
+343.7342 	EXP 	patch_background: autoDraw = True
+343.7342 	EXP 	patch_foreground: autoDraw = True
+343.7342 	EXP 	patch_test: autoDraw = True
+343.7342 	EXP 	text_task: autoDraw = True
+344.9134 	DATA 	Keypress: left
+344.9186 	EXP 	patch_background: autoDraw = False
+344.9186 	EXP 	patch_foreground: autoDraw = False
+344.9186 	EXP 	patch_test: autoDraw = False
+344.9186 	EXP 	text_task: autoDraw = False
+344.9186 	EXP 	text: autoDraw = True
+345.1169 	EXP 	New trial (rep=26, index=8): {'rgb_luminance': 0.55}
+345.1326 	EXP 	text: autoDraw = False
+345.1326 	EXP 	patch_background: autoDraw = True
+345.1326 	EXP 	patch_foreground: autoDraw = True
+345.1326 	EXP 	patch_test: autoDraw = True
+345.1326 	EXP 	text_task: autoDraw = True
+345.6127 	DATA 	Keypress: right
+345.6177 	EXP 	patch_background: autoDraw = False
+345.6177 	EXP 	patch_foreground: autoDraw = False
+345.6177 	EXP 	patch_test: autoDraw = False
+345.6177 	EXP 	text_task: autoDraw = False
+345.6177 	EXP 	text: autoDraw = True
+345.8166 	EXP 	New trial (rep=27, index=0): {'rgb_luminance': 0.4}
+345.8327 	EXP 	text: autoDraw = False
+345.8327 	EXP 	patch_background: autoDraw = True
+345.8327 	EXP 	patch_foreground: autoDraw = True
+345.8327 	EXP 	patch_test: autoDraw = True
+345.8327 	EXP 	text_task: autoDraw = True
+346.4619 	DATA 	Keypress: right
+346.4669 	EXP 	patch_background: autoDraw = False
+346.4669 	EXP 	patch_foreground: autoDraw = False
+346.4669 	EXP 	patch_test: autoDraw = False
+346.4669 	EXP 	text_task: autoDraw = False
+346.4669 	EXP 	text: autoDraw = True
+346.6655 	EXP 	New trial (rep=27, index=1): {'rgb_luminance': 0.9}
+346.6815 	EXP 	text: autoDraw = False
+346.6815 	EXP 	patch_background: autoDraw = True
+346.6815 	EXP 	patch_foreground: autoDraw = True
+346.6815 	EXP 	patch_test: autoDraw = True
+346.6815 	EXP 	text_task: autoDraw = True
+347.1382 	DATA 	Keypress: right
+347.1661 	EXP 	patch_background: autoDraw = False
+347.1661 	EXP 	patch_foreground: autoDraw = False
+347.1661 	EXP 	patch_test: autoDraw = False
+347.1661 	EXP 	text_task: autoDraw = False
+347.1661 	EXP 	text: autoDraw = True
+347.3515 	EXP 	New trial (rep=27, index=2): {'rgb_luminance': 0.45}
+347.3677 	EXP 	text: autoDraw = False
+347.3677 	EXP 	text: autoDraw = False
+347.3677 	EXP 	patch_background: autoDraw = True
+347.3677 	EXP 	patch_foreground: autoDraw = True
+347.3677 	EXP 	patch_test: autoDraw = True
+347.3677 	EXP 	text_task: autoDraw = True
+348.1275 	DATA 	Keypress: right
+348.1325 	EXP 	patch_background: autoDraw = False
+348.1325 	EXP 	patch_foreground: autoDraw = False
+348.1325 	EXP 	patch_test: autoDraw = False
+348.1325 	EXP 	text_task: autoDraw = False
+348.1325 	EXP 	text: autoDraw = True
+348.3309 	EXP 	New trial (rep=27, index=3): {'rgb_luminance': 0.55}
+348.3470 	EXP 	text: autoDraw = False
+348.3470 	EXP 	patch_background: autoDraw = True
+348.3470 	EXP 	patch_foreground: autoDraw = True
+348.3470 	EXP 	patch_test: autoDraw = True
+348.3470 	EXP 	text_task: autoDraw = True
+348.7727 	DATA 	Keypress: right
+348.8014 	EXP 	patch_background: autoDraw = False
+348.8014 	EXP 	patch_foreground: autoDraw = False
+348.8014 	EXP 	patch_test: autoDraw = False
+348.8014 	EXP 	text_task: autoDraw = False
+348.8014 	EXP 	text: autoDraw = True
+348.9972 	EXP 	New trial (rep=27, index=4): {'rgb_luminance': 0.1}
+349.0128 	EXP 	text: autoDraw = False
+349.0128 	EXP 	patch_background: autoDraw = True
+349.0128 	EXP 	patch_foreground: autoDraw = True
+349.0128 	EXP 	patch_test: autoDraw = True
+349.0128 	EXP 	text_task: autoDraw = True
+350.0353 	DATA 	Keypress: left
+350.0634 	EXP 	patch_background: autoDraw = False
+350.0634 	EXP 	patch_foreground: autoDraw = False
+350.0634 	EXP 	patch_test: autoDraw = False
+350.0634 	EXP 	text_task: autoDraw = False
+350.0634 	EXP 	text: autoDraw = True
+350.2626 	EXP 	New trial (rep=27, index=5): {'rgb_luminance': 0.7}
+350.2781 	EXP 	text: autoDraw = False
+350.2781 	EXP 	patch_background: autoDraw = True
+350.2781 	EXP 	patch_foreground: autoDraw = True
+350.2781 	EXP 	patch_test: autoDraw = True
+350.2781 	EXP 	text_task: autoDraw = True
+350.7087 	DATA 	Keypress: right
+350.7137 	EXP 	patch_background: autoDraw = False
+350.7137 	EXP 	patch_foreground: autoDraw = False
+350.7137 	EXP 	patch_test: autoDraw = False
+350.7137 	EXP 	text_task: autoDraw = False
+350.7137 	EXP 	text: autoDraw = True
+350.9122 	EXP 	New trial (rep=27, index=6): {'rgb_luminance': 0.6}
+350.9284 	EXP 	text: autoDraw = False
+350.9284 	EXP 	patch_background: autoDraw = True
+350.9284 	EXP 	patch_foreground: autoDraw = True
+350.9284 	EXP 	patch_test: autoDraw = True
+350.9284 	EXP 	text_task: autoDraw = True
+351.4077 	DATA 	Keypress: right
+351.4126 	EXP 	patch_background: autoDraw = False
+351.4126 	EXP 	patch_foreground: autoDraw = False
+351.4126 	EXP 	patch_test: autoDraw = False
+351.4126 	EXP 	text_task: autoDraw = False
+351.4126 	EXP 	text: autoDraw = True
+351.6113 	EXP 	New trial (rep=27, index=7): {'rgb_luminance': 0.5}
+351.6271 	EXP 	text: autoDraw = False
+351.6271 	EXP 	patch_background: autoDraw = True
+351.6271 	EXP 	patch_foreground: autoDraw = True
+351.6271 	EXP 	patch_test: autoDraw = True
+351.6271 	EXP 	text_task: autoDraw = True
+352.0676 	DATA 	Keypress: right
+352.0951 	EXP 	patch_background: autoDraw = False
+352.0951 	EXP 	patch_foreground: autoDraw = False
+352.0951 	EXP 	patch_test: autoDraw = False
+352.0951 	EXP 	text_task: autoDraw = False
+352.0951 	EXP 	text: autoDraw = True
+352.2942 	EXP 	New trial (rep=27, index=8): {'rgb_luminance': 0.3}
+352.3099 	EXP 	text: autoDraw = False
+352.3099 	EXP 	patch_background: autoDraw = True
+352.3099 	EXP 	patch_foreground: autoDraw = True
+352.3099 	EXP 	patch_test: autoDraw = True
+352.3099 	EXP 	text_task: autoDraw = True
+352.7286 	DATA 	Keypress: right
+352.7427 	EXP 	patch_background: autoDraw = False
+352.7427 	EXP 	patch_foreground: autoDraw = False
+352.7427 	EXP 	patch_test: autoDraw = False
+352.7427 	EXP 	text_task: autoDraw = False
+352.7427 	EXP 	text: autoDraw = True
+352.9270 	EXP 	New trial (rep=28, index=0): {'rgb_luminance': 0.5}
+352.9426 	EXP 	text: autoDraw = False
+352.9426 	EXP 	patch_background: autoDraw = True
+352.9426 	EXP 	patch_foreground: autoDraw = True
+352.9426 	EXP 	patch_test: autoDraw = True
+352.9426 	EXP 	text_task: autoDraw = True
+353.6392 	DATA 	Keypress: right
+353.6442 	EXP 	patch_background: autoDraw = False
+353.6442 	EXP 	patch_foreground: autoDraw = False
+353.6442 	EXP 	patch_test: autoDraw = False
+353.6442 	EXP 	text_task: autoDraw = False
+353.6442 	EXP 	text: autoDraw = True
+353.8428 	EXP 	New trial (rep=28, index=1): {'rgb_luminance': 0.1}
+353.8586 	EXP 	text: autoDraw = False
+353.8586 	EXP 	patch_background: autoDraw = True
+353.8586 	EXP 	patch_foreground: autoDraw = True
+353.8586 	EXP 	patch_test: autoDraw = True
+353.8586 	EXP 	text_task: autoDraw = True
+354.3104 	DATA 	Keypress: right
+354.3249 	EXP 	patch_background: autoDraw = False
+354.3249 	EXP 	patch_foreground: autoDraw = False
+354.3249 	EXP 	patch_test: autoDraw = False
+354.3249 	EXP 	text_task: autoDraw = False
+354.3249 	EXP 	text: autoDraw = True
+354.5092 	EXP 	New trial (rep=28, index=2): {'rgb_luminance': 0.6}
+354.5248 	EXP 	text: autoDraw = False
+354.5248 	EXP 	patch_background: autoDraw = True
+354.5248 	EXP 	patch_foreground: autoDraw = True
+354.5248 	EXP 	patch_test: autoDraw = True
+354.5248 	EXP 	text_task: autoDraw = True
+354.9645 	DATA 	Keypress: right
+354.9932 	EXP 	patch_background: autoDraw = False
+354.9932 	EXP 	patch_foreground: autoDraw = False
+354.9932 	EXP 	patch_test: autoDraw = False
+354.9932 	EXP 	text_task: autoDraw = False
+354.9932 	EXP 	text: autoDraw = True
+355.1917 	EXP 	New trial (rep=28, index=3): {'rgb_luminance': 0.55}
+355.2073 	EXP 	text: autoDraw = False
+355.2073 	EXP 	patch_background: autoDraw = True
+355.2073 	EXP 	patch_foreground: autoDraw = True
+355.2073 	EXP 	patch_test: autoDraw = True
+355.2073 	EXP 	text_task: autoDraw = True
+355.6378 	DATA 	Keypress: right
+355.6427 	EXP 	patch_background: autoDraw = False
+355.6427 	EXP 	patch_foreground: autoDraw = False
+355.6427 	EXP 	patch_test: autoDraw = False
+355.6427 	EXP 	text_task: autoDraw = False
+355.6427 	EXP 	text: autoDraw = True
+355.8409 	EXP 	New trial (rep=28, index=4): {'rgb_luminance': 0.45}
+355.8567 	EXP 	text: autoDraw = False
+355.8567 	EXP 	patch_background: autoDraw = True
+355.8567 	EXP 	patch_foreground: autoDraw = True
+355.8567 	EXP 	patch_test: autoDraw = True
+355.8567 	EXP 	text_task: autoDraw = True
+356.2868 	DATA 	Keypress: right
+356.2918 	EXP 	patch_background: autoDraw = False
+356.2918 	EXP 	patch_foreground: autoDraw = False
+356.2918 	EXP 	patch_test: autoDraw = False
+356.2918 	EXP 	text_task: autoDraw = False
+356.2918 	EXP 	text: autoDraw = True
+356.4908 	EXP 	New trial (rep=28, index=5): {'rgb_luminance': 0.9}
+356.5065 	EXP 	text: autoDraw = False
+356.5065 	EXP 	patch_background: autoDraw = True
+356.5065 	EXP 	patch_foreground: autoDraw = True
+356.5065 	EXP 	patch_test: autoDraw = True
+356.5065 	EXP 	text_task: autoDraw = True
+356.9681 	DATA 	Keypress: right
+356.9910 	EXP 	patch_background: autoDraw = False
+356.9910 	EXP 	patch_foreground: autoDraw = False
+356.9910 	EXP 	patch_test: autoDraw = False
+356.9910 	EXP 	text_task: autoDraw = False
+356.9910 	EXP 	text: autoDraw = True
+357.1902 	EXP 	New trial (rep=28, index=6): {'rgb_luminance': 0.4}
+357.2057 	EXP 	text: autoDraw = False
+357.2057 	EXP 	patch_background: autoDraw = True
+357.2057 	EXP 	patch_foreground: autoDraw = True
+357.2057 	EXP 	patch_test: autoDraw = True
+357.2057 	EXP 	text_task: autoDraw = True
+358.0356 	DATA 	Keypress: right
+358.0408 	EXP 	patch_background: autoDraw = False
+358.0408 	EXP 	patch_foreground: autoDraw = False
+358.0408 	EXP 	patch_test: autoDraw = False
+358.0408 	EXP 	text_task: autoDraw = False
+358.0408 	EXP 	text: autoDraw = True
+358.2389 	EXP 	New trial (rep=28, index=7): {'rgb_luminance': 0.3}
+358.2547 	EXP 	text: autoDraw = False
+358.2547 	EXP 	patch_background: autoDraw = True
+358.2547 	EXP 	patch_foreground: autoDraw = True
+358.2547 	EXP 	patch_test: autoDraw = True
+358.2547 	EXP 	text_task: autoDraw = True
+359.8275 	DATA 	Keypress: right
+359.8554 	EXP 	patch_background: autoDraw = False
+359.8554 	EXP 	patch_foreground: autoDraw = False
+359.8554 	EXP 	patch_test: autoDraw = False
+359.8554 	EXP 	text_task: autoDraw = False
+359.8554 	EXP 	text: autoDraw = True
+360.0540 	EXP 	New trial (rep=28, index=8): {'rgb_luminance': 0.7}
+360.0699 	EXP 	text: autoDraw = False
+360.0699 	EXP 	patch_background: autoDraw = True
+360.0699 	EXP 	patch_foreground: autoDraw = True
+360.0699 	EXP 	patch_test: autoDraw = True
+360.0699 	EXP 	text_task: autoDraw = True
+360.7100 	DATA 	Keypress: right
+360.7381 	EXP 	patch_background: autoDraw = False
+360.7381 	EXP 	patch_foreground: autoDraw = False
+360.7381 	EXP 	patch_test: autoDraw = False
+360.7381 	EXP 	text_task: autoDraw = False
+360.7381 	EXP 	text: autoDraw = True
+360.9367 	EXP 	New trial (rep=29, index=0): {'rgb_luminance': 0.7}
+360.9525 	EXP 	text: autoDraw = False
+360.9525 	EXP 	patch_background: autoDraw = True
+360.9525 	EXP 	patch_foreground: autoDraw = True
+360.9525 	EXP 	patch_test: autoDraw = True
+360.9525 	EXP 	text_task: autoDraw = True
+361.4489 	DATA 	Keypress: right
+361.4540 	EXP 	patch_background: autoDraw = False
+361.4540 	EXP 	patch_foreground: autoDraw = False
+361.4540 	EXP 	patch_test: autoDraw = False
+361.4540 	EXP 	text_task: autoDraw = False
+361.4540 	EXP 	text: autoDraw = True
+361.6526 	EXP 	New trial (rep=29, index=1): {'rgb_luminance': 0.55}
+361.6683 	EXP 	text: autoDraw = False
+361.6683 	EXP 	patch_background: autoDraw = True
+361.6683 	EXP 	patch_foreground: autoDraw = True
+361.6683 	EXP 	patch_test: autoDraw = True
+361.6683 	EXP 	text_task: autoDraw = True
+362.3082 	DATA 	Keypress: right
+362.3363 	EXP 	patch_background: autoDraw = False
+362.3363 	EXP 	patch_foreground: autoDraw = False
+362.3363 	EXP 	patch_test: autoDraw = False
+362.3363 	EXP 	text_task: autoDraw = False
+362.3363 	EXP 	text: autoDraw = True
+362.5349 	EXP 	New trial (rep=29, index=2): {'rgb_luminance': 0.5}
+362.5509 	EXP 	text: autoDraw = False
+362.5509 	EXP 	patch_background: autoDraw = True
+362.5509 	EXP 	patch_foreground: autoDraw = True
+362.5509 	EXP 	patch_test: autoDraw = True
+362.5509 	EXP 	text_task: autoDraw = True
+363.4476 	DATA 	Keypress: right
+363.4708 	EXP 	patch_background: autoDraw = False
+363.4708 	EXP 	patch_foreground: autoDraw = False
+363.4708 	EXP 	patch_test: autoDraw = False
+363.4708 	EXP 	text_task: autoDraw = False
+363.4708 	EXP 	text: autoDraw = True
+363.6674 	EXP 	New trial (rep=29, index=3): {'rgb_luminance': 0.6}
+363.6833 	EXP 	text: autoDraw = False
+363.6833 	EXP 	patch_background: autoDraw = True
+363.6833 	EXP 	patch_foreground: autoDraw = True
+363.6833 	EXP 	patch_test: autoDraw = True
+363.6833 	EXP 	text_task: autoDraw = True
+364.1467 	DATA 	Keypress: right
+364.1517 	EXP 	patch_background: autoDraw = False
+364.1517 	EXP 	patch_foreground: autoDraw = False
+364.1517 	EXP 	patch_test: autoDraw = False
+364.1517 	EXP 	text_task: autoDraw = False
+364.1517 	EXP 	text: autoDraw = True
+364.3503 	EXP 	New trial (rep=29, index=4): {'rgb_luminance': 0.9}
+364.3660 	EXP 	text: autoDraw = False
+364.3660 	EXP 	patch_background: autoDraw = True
+364.3660 	EXP 	patch_foreground: autoDraw = True
+364.3660 	EXP 	patch_test: autoDraw = True
+364.3660 	EXP 	text_task: autoDraw = True
+364.7885 	DATA 	Keypress: right
+364.8175 	EXP 	patch_background: autoDraw = False
+364.8175 	EXP 	patch_foreground: autoDraw = False
+364.8175 	EXP 	patch_test: autoDraw = False
+364.8175 	EXP 	text_task: autoDraw = False
+364.8175 	EXP 	text: autoDraw = True
+365.0164 	EXP 	New trial (rep=29, index=5): {'rgb_luminance': 0.4}
+365.0325 	EXP 	text: autoDraw = False
+365.0325 	EXP 	patch_background: autoDraw = True
+365.0325 	EXP 	patch_foreground: autoDraw = True
+365.0325 	EXP 	patch_test: autoDraw = True
+365.0325 	EXP 	text_task: autoDraw = True
+365.3844 	DATA 	Keypress: right
+365.3982 	EXP 	patch_background: autoDraw = False
+365.3982 	EXP 	patch_foreground: autoDraw = False
+365.3982 	EXP 	patch_test: autoDraw = False
+365.3982 	EXP 	text_task: autoDraw = False
+365.3982 	EXP 	text: autoDraw = True
+365.5841 	EXP 	New trial (rep=29, index=6): {'rgb_luminance': 0.45}
+365.5990 	EXP 	text: autoDraw = False
+365.5990 	EXP 	text: autoDraw = False
+365.5990 	EXP 	patch_background: autoDraw = True
+365.5990 	EXP 	patch_foreground: autoDraw = True
+365.5990 	EXP 	patch_test: autoDraw = True
+365.5990 	EXP 	text_task: autoDraw = True
+366.5317 	DATA 	Keypress: right
+366.5367 	EXP 	patch_background: autoDraw = False
+366.5367 	EXP 	patch_foreground: autoDraw = False
+366.5367 	EXP 	patch_test: autoDraw = False
+366.5367 	EXP 	text_task: autoDraw = False
+366.5367 	EXP 	text: autoDraw = True
+366.7316 	EXP 	New trial (rep=29, index=7): {'rgb_luminance': 0.3}
+366.7473 	EXP 	text: autoDraw = False
+366.7473 	EXP 	patch_background: autoDraw = True
+366.7473 	EXP 	patch_foreground: autoDraw = True
+366.7473 	EXP 	patch_test: autoDraw = True
+366.7473 	EXP 	text_task: autoDraw = True
+367.9105 	DATA 	Keypress: right
+367.9155 	EXP 	patch_background: autoDraw = False
+367.9155 	EXP 	patch_foreground: autoDraw = False
+367.9155 	EXP 	patch_test: autoDraw = False
+367.9155 	EXP 	text_task: autoDraw = False
+367.9155 	EXP 	text: autoDraw = True
+368.1135 	EXP 	New trial (rep=29, index=8): {'rgb_luminance': 0.1}
+368.1294 	EXP 	text: autoDraw = False
+368.1294 	EXP 	patch_background: autoDraw = True
+368.1294 	EXP 	patch_foreground: autoDraw = True
+368.1294 	EXP 	patch_test: autoDraw = True
+368.1294 	EXP 	text_task: autoDraw = True
+371.9234 	DATA 	Keypress: left
+371.9284 	EXP 	patch_background: autoDraw = False
+371.9284 	EXP 	patch_foreground: autoDraw = False
+371.9284 	EXP 	patch_test: autoDraw = False
+371.9284 	EXP 	text_task: autoDraw = False
+371.9284 	EXP 	text: autoDraw = True
+372.1424 	EXP 	text: autoDraw = False
+372.1424 	EXP 	text_bye: autoDraw = True
+373.1415 	EXP 	text_bye: autoDraw = False
+373.2803 	EXP 	window1: mouseVisible = True
